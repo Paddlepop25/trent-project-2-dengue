@@ -1,0 +1,2195 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_1",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>D0831A1F3B06E3B3<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191003105015<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.905863773923,
+              1.3220763359766,
+              0
+            ],
+            [
+              103.905863826447,
+              1.32388506378981,
+              0
+            ],
+            [
+              103.907660932031,
+              1.32388501023387,
+              0
+            ],
+            [
+              103.907660878205,
+              1.32207628249385,
+              0
+            ],
+            [
+              103.905863773923,
+              1.3220763359766,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_2",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>803CF7CA12C6B5FC<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191003105015<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.916646398475,
+              1.32207599544606,
+              0
+            ],
+            [
+              103.916646458808,
+              1.32388472279323,
+              0
+            ],
+            [
+              103.918443563923,
+              1.32388466137292,
+              0
+            ],
+            [
+              103.918443502289,
+              1.32207593410969,
+              0
+            ],
+            [
+              103.916646398475,
+              1.32207599544606,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_3",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>328A430551C53B93<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191003105015<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.923834813216,
+              1.322075742247,
+              0
+            ],
+            [
+              103.923834878755,
+              1.32388446924765,
+              0
+            ],
+            [
+              103.925631983522,
+              1.32388440258444,
+              0
+            ],
+            [
+              103.925631916682,
+              1.3220756756749,
+              0
+            ],
+            [
+              103.923834813216,
+              1.322075742247,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_4",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>3<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 3<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 3<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>55596D0C0E614EC2<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.884298042235,
+              1.29856340210497,
+              0
+            ],
+            [
+              103.884298078486,
+              1.30037213099784,
+              0
+            ],
+            [
+              103.886095168035,
+              1.30037209384271,
+              0
+            ],
+            [
+              103.886095130506,
+              1.29856336500154,
+              0
+            ],
+            [
+              103.884298042235,
+              1.29856340210497,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_5",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>3<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 3<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 3<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>31F07156C703F887<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.882500988887,
+              1.30037216686552,
+              0
+            ],
+            [
+              103.882501023908,
+              1.30218089578228,
+              0
+            ],
+            [
+              103.884298114788,
+              1.30218085986469,
+              0
+            ],
+            [
+              103.884298078486,
+              1.30037213099784,
+              0
+            ],
+            [
+              103.882500988887,
+              1.30037216686552,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_6",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>1D34CA1DCEEFBC15<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.938211184761,
+              1.31122281513603,
+              0
+            ],
+            [
+              103.938211260087,
+              1.31303154151585,
+              0
+            ],
+            [
+              103.940008356291,
+              1.31303146499949,
+              0
+            ],
+            [
+              103.940008279674,
+              1.31122273872511,
+              0
+            ],
+            [
+              103.938211184761,
+              1.31122281513603,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_7",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>86F3814268361B1E<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.940008279674,
+              1.31122273872511,
+              0
+            ],
+            [
+              103.940008356291,
+              1.31303146499949,
+              0
+            ],
+            [
+              103.941805452389,
+              1.31303138718315,
+              0
+            ],
+            [
+              103.941805374481,
+              1.311222661016,
+              0
+            ],
+            [
+              103.940008279674,
+              1.31122273872511,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_8",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>F0F501E34315D892<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.907660717168,
+              1.31665009911524,
+              0
+            ],
+            [
+              103.907660770773,
+              1.31845882693451,
+              0
+            ],
+            [
+              103.909457872384,
+              1.31845877229279,
+              0
+            ],
+            [
+              103.909457817483,
+              1.31665004454851,
+              0
+            ],
+            [
+              103.907660717168,
+              1.31665009911524,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_9",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>D4854D8381438A0D<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.873516297292,
+              1.34739927595566,
+              0
+            ],
+            [
+              103.873516326948,
+              1.34920800440593,
+              0
+            ],
+            [
+              103.87531345196,
+              1.34920797386981,
+              0
+            ],
+            [
+              103.875313420977,
+              1.34739924546049,
+              0
+            ],
+            [
+              103.873516297292,
+              1.34739927595566,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_10",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>F9B5C15A5870DFB5<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.966967427128,
+              1.36186571210813,
+              0
+            ],
+            [
+              103.966967526814,
+              1.36367443583656,
+              0
+            ],
+            [
+              103.968764657976,
+              1.36367433476581,
+              0
+            ],
+            [
+              103.968764556949,
+              1.36186561117149,
+              0
+            ],
+            [
+              103.966967427128,
+              1.36186571210813,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_11",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>7D4A4044181EFA6F<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.966967526814,
+              1.36367443583656,
+              0
+            ],
+            [
+              103.966967626633,
+              1.36548315953769,
+              0
+            ],
+            [
+              103.968764759137,
+              1.36548305833283,
+              0
+            ],
+            [
+              103.968764657976,
+              1.36367433476581,
+              0
+            ],
+            [
+              103.966967526814,
+              1.36367443583656,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_12",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>D70C5B54AD372DBC<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.936414984916,
+              1.33292760630827,
+              0
+            ],
+            [
+              103.936415060178,
+              1.33473633247406,
+              0
+            ],
+            [
+              103.938212172113,
+              1.3347362560139,
+              0
+            ],
+            [
+              103.938212095539,
+              1.33292752995176,
+              0
+            ],
+            [
+              103.936414984916,
+              1.33292760630827,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_13",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>A7773142C8CD7902<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.871719145274,
+              1.34559057660042,
+              0
+            ],
+            [
+              103.871719173566,
+              1.34739930511681,
+              0
+            ],
+            [
+              103.873516297292,
+              1.34739927595566,
+              0
+            ],
+            [
+              103.873516267675,
+              1.34559054747843,
+              0
+            ],
+            [
+              103.871719145274,
+              1.34559057660042,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_14",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>9E2C80408B216973<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.893283568393,
+              1.30218066093823,
+              0
+            ],
+            [
+              103.893283611154,
+              1.30398938950263,
+              0
+            ],
+            [
+              103.895080702986,
+              1.30398934578898,
+              0
+            ],
+            [
+              103.895080658942,
+              1.30218061728524,
+              0
+            ],
+            [
+              103.893283568393,
+              1.30218066093823,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_15",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>F18FACE43ACEC895<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.895080835482,
+              1.30941553114351,
+              0
+            ],
+            [
+              103.89508087977,
+              1.31122425954268,
+              0
+            ],
+            [
+              103.896877976686,
+              1.31122421428822,
+              0
+            ],
+            [
+              103.896877931109,
+              1.30941548595151,
+              0
+            ],
+            [
+              103.895080835482,
+              1.30941553114351,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_16",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>738DE5D7FB95B1DF<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.880704102392,
+              1.31122457484345,
+              0
+            ],
+            [
+              103.880704136416,
+              1.31303330365146,
+              0
+            ],
+            [
+              103.882501235062,
+              1.31303326873441,
+              0
+            ],
+            [
+              103.882501199748,
+              1.31122453997452,
+              0
+            ],
+            [
+              103.880704102392,
+              1.31122457484345,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_17",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>A98DD1B0E17781EE<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.918443317891,
+              1.31664975216144,
+              0
+            ],
+            [
+              103.918443379272,
+              1.31845847950392,
+              0
+            ],
+            [
+              103.920240480404,
+              1.31845841703008,
+              0
+            ],
+            [
+              103.920240417726,
+              1.31664968977334,
+              0
+            ],
+            [
+              103.918443317891,
+              1.31664975216144,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_18",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>A7F0F3094553F717<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.904066618415,
+              1.32026766023936,
+              0
+            ],
+            [
+              103.904066669569,
+              1.32207638815042,
+              0
+            ],
+            [
+              103.905863773923,
+              1.3220763359766,
+              0
+            ],
+            [
+              103.90586372147,
+              1.32026760813694,
+              0
+            ],
+            [
+              103.904066618415,
+              1.32026766023936,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_19",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>CB898C2FF8D9F5DF<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191009153614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.877110480132,
+              1.34378175681731,
+              0
+            ],
+            [
+              103.877110512355,
+              1.34559048523777,
+              0
+            ],
+            [
+              103.87890763463,
+              1.3455904521191,
+              0
+            ],
+            [
+              103.878907601085,
+              1.34378172374318,
+              0
+            ],
+            [
+              103.877110480132,
+              1.34378175681731,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_20",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>2<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 2<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 2<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>E9F09EF1346B81B8<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191007161614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.914849294579,
+              1.32207605547349,
+              0
+            ],
+            [
+              103.914849353611,
+              1.32388478290281,
+              0
+            ],
+            [
+              103.916646458808,
+              1.32388472279323,
+              0
+            ],
+            [
+              103.916646398475,
+              1.32207599544606,
+              0
+            ],
+            [
+              103.914849294579,
+              1.32207605547349,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_21",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>F1E230C575838463<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191007161614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.918443502289,
+              1.32207593410969,
+              0
+            ],
+            [
+              103.918443563923,
+              1.32388466137292,
+              0
+            ],
+            [
+              103.920240668954,
+              1.32388459864189,
+              0
+            ],
+            [
+              103.920240606018,
+              1.32207587146439,
+              0
+            ],
+            [
+              103.918443502289,
+              1.32207593410969,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_22",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>2<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 2<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 2<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>96CD2E06B76BA3A4<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191007161614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.948994672701,
+              1.33111831867014,
+              0
+            ],
+            [
+              103.948994757033,
+              1.33292704409944,
+              0
+            ],
+            [
+              103.950791866891,
+              1.33292695850518,
+              0
+            ],
+            [
+              103.950791781249,
+              1.33111823319207,
+              0
+            ],
+            [
+              103.948994672701,
+              1.33111831867014,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_23",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>A629C9BBA78B26E4<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191007161614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.932820329611,
+              1.32207539629717,
+              0
+            ],
+            [
+              103.932820401657,
+              1.32388412282436,
+              0
+            ],
+            [
+              103.934617505949,
+              1.32388404960754,
+              0
+            ],
+            [
+              103.934617432601,
+              1.3220753231804,
+              0
+            ],
+            [
+              103.932820329611,
+              1.32207539629717,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_24",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>2<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 2<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 2<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>4DBA59CBE1B66D7E<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.907660663637,
+              1.31484137126963,
+              0
+            ],
+            [
+              103.907660717168,
+              1.31665009911524,
+              0
+            ],
+            [
+              103.909457817483,
+              1.31665004454851,
+              0
+            ],
+            [
+              103.909457762657,
+              1.31484131677789,
+              0
+            ],
+            [
+              103.907660663637,
+              1.31484137126963,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_25",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>3<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 3<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 3<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>BBB6DC4D9343D7C6<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.882500953914,
+              1.29856343792275,
+              0
+            ],
+            [
+              103.882500988887,
+              1.30037216686552,
+              0
+            ],
+            [
+              103.884298078486,
+              1.30037213099784,
+              0
+            ],
+            [
+              103.884298042235,
+              1.29856340210497,
+              0
+            ],
+            [
+              103.882500953914,
+              1.29856343792275,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_26",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>3886A39B52582107<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.914849471917,
+              1.32750223768195,
+              0
+            ],
+            [
+              103.914849531191,
+              1.32931096503169,
+              0
+            ],
+            [
+              103.916646640303,
+              1.32931090467565,
+              0
+            ],
+            [
+              103.916646579722,
+              1.32750217740806,
+              0
+            ],
+            [
+              103.914849471917,
+              1.32750223768195,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_27",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>271E5E91DCCF358F<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.914848942085,
+              1.31122369034331,
+              0
+            ],
+            [
+              103.914849000632,
+              1.31303241793081,
+              0
+            ],
+            [
+              103.916646098047,
+              1.31303235831413,
+              0
+            ],
+            [
+              103.91664603821,
+              1.31122363080879,
+              0
+            ],
+            [
+              103.914848942085,
+              1.31122369034331,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_28",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>7738834D9A631F86<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.914849000632,
+              1.31303241793081,
+              0
+            ],
+            [
+              103.91484905926,
+              1.31484114549203,
+              0
+            ],
+            [
+              103.916646157968,
+              1.31484108579321,
+              0
+            ],
+            [
+              103.916646098047,
+              1.31303235831413,
+              0
+            ],
+            [
+              103.914849000632,
+              1.31303241793081,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_29",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>D96DC4895DD60E4B<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.913052190602,
+              1.32207611419198,
+              0
+            ],
+            [
+              103.913052248333,
+              1.32388484170166,
+              0
+            ],
+            [
+              103.914849353611,
+              1.32388478290281,
+              0
+            ],
+            [
+              103.914849294579,
+              1.32207605547349,
+              0
+            ],
+            [
+              103.913052190602,
+              1.32207611419198,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_30",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>5<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 5<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 5<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>803CF7CA8A7AFE1A<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.916646398475,
+              1.32207599544606,
+              0
+            ],
+            [
+              103.916646458808,
+              1.32388472279323,
+              0
+            ],
+            [
+              103.918443563923,
+              1.32388466137292,
+              0
+            ],
+            [
+              103.918443502289,
+              1.32207593410969,
+              0
+            ],
+            [
+              103.916646398475,
+              1.32207599544606,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_31",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>2<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 2<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 2<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>954BAC547A883292<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.905863826447,
+              1.32388506378981,
+              0
+            ],
+            [
+              103.905863879044,
+              1.32569379157653,
+              0
+            ],
+            [
+              103.907660985931,
+              1.32569373794739,
+              0
+            ],
+            [
+              103.907660932031,
+              1.32388501023387,
+              0
+            ],
+            [
+              103.905863826447,
+              1.32388506378981,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_32",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>AC3828BA75E55099<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.914849353611,
+              1.32388478290281,
+              0
+            ],
+            [
+              103.914849412723,
+              1.32569351030564,
+              0
+            ],
+            [
+              103.916646519224,
+              1.32569345011391,
+              0
+            ],
+            [
+              103.916646458808,
+              1.32388472279323,
+              0
+            ],
+            [
+              103.914849353611,
+              1.32388478290281,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_33",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>51F5B4C407CBE2DF<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.943603426778,
+              1.33292729296415,
+              0
+            ],
+            [
+              103.943603507288,
+              1.33473601870459,
+              0
+            ],
+            [
+              103.945400618796,
+              1.33473593695855,
+              0
+            ],
+            [
+              103.945400536974,
+              1.33292721132892,
+              0
+            ],
+            [
+              103.943603426778,
+              1.33292729296415,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_34",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>4ED9878C89F607DD<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.875313420977,
+              1.34739924546049,
+              0
+            ],
+            [
+              103.87531345196,
+              1.34920797386981,
+              0
+            ],
+            [
+              103.87711057693,
+              1.34920794199788,
+              0
+            ],
+            [
+              103.877110544621,
+              1.3473992136313,
+              0
+            ],
+            [
+              103.875313420977,
+              1.34739924546049,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_35",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>47658A376D21250E<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.96517039552,
+              1.36367453555718,
+              0
+            ],
+            [
+              103.965170493996,
+              1.36548325939063,
+              0
+            ],
+            [
+              103.966967626633,
+              1.36548315953769,
+              0
+            ],
+            [
+              103.966967526814,
+              1.36367443583656,
+              0
+            ],
+            [
+              103.96517039552,
+              1.36367453555718,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_36",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>2<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 2<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 2<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>C214FF866B075116<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.968764759137,
+              1.36548305833283,
+              0
+            ],
+            [
+              103.968764860432,
+              1.36729178187254,
+              0
+            ],
+            [
+              103.970561994146,
+              1.36729167917987,
+              0
+            ],
+            [
+              103.970561891507,
+              1.36548295577606,
+              0
+            ],
+            [
+              103.968764759137,
+              1.36548305833283,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_37",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>31F071568B5DDD74<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.882500988887,
+              1.30037216686552,
+              0
+            ],
+            [
+              103.882501023908,
+              1.30218089578228,
+              0
+            ],
+            [
+              103.884298114788,
+              1.30218085986469,
+              0
+            ],
+            [
+              103.884298078486,
+              1.30037213099784,
+              0
+            ],
+            [
+              103.882500988887,
+              1.30037216686552,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_38",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>38F5053D8F411B80<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.887892846136,
+              1.32750298407296,
+              0
+            ],
+            [
+              103.887892885808,
+              1.32931171244002,
+              0
+            ],
+            [
+              103.889689995946,
+              1.32931167182551,
+              0
+            ],
+            [
+              103.889689954966,
+              1.32750294351374,
+              0
+            ],
+            [
+              103.887892846136,
+              1.32750298407296,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_39",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>94A5AB368584E1CE<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.882501270424,
+              1.31484199746803,
+              0
+            ],
+            [
+              103.882501305836,
+              1.31665072617534,
+              0
+            ],
+            [
+              103.88429840702,
+              1.3166506898585,
+              0
+            ],
+            [
+              103.884298370314,
+              1.3148419612011,
+              0
+            ],
+            [
+              103.882501270424,
+              1.31484199746803,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_40",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>0E012C9468A08B2C<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.898674793315,
+              1.30037179770844,
+              0
+            ],
+            [
+              103.898674839857,
+              1.30218052611155,
+              0
+            ],
+            [
+              103.900471930218,
+              1.30218047859086,
+              0
+            ],
+            [
+              103.900471882396,
+              1.30037175025378,
+              0
+            ],
+            [
+              103.898674793315,
+              1.30037179770844,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_41",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>7738834D9A631F86<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.914849000632,
+              1.31303241793081,
+              0
+            ],
+            [
+              103.91484905926,
+              1.31484114549203,
+              0
+            ],
+            [
+              103.916646157968,
+              1.31484108579321,
+              0
+            ],
+            [
+              103.916646098047,
+              1.31303235831413,
+              0
+            ],
+            [
+              103.914849000632,
+              1.31303241793081,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_42",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>50DB70BBBFBFF82F<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.93461706737,
+              1.31303169064865,
+              0
+            ],
+            [
+              103.934617140216,
+              1.31484041720769,
+              0
+            ],
+            [
+              103.936414237918,
+              1.31484034318942,
+              0
+            ],
+            [
+              103.93641416378,
+              1.31303161673224,
+              0
+            ],
+            [
+              103.93461706737,
+              1.31303169064865,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_43",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>A318AA8303F1FE8A<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.965170100876,
+              1.35824836389325,
+              0
+            ],
+            [
+              103.96517019896,
+              1.36005708780846,
+              0
+            ],
+            [
+              103.966967327575,
+              1.36005698835246,
+              0
+            ],
+            [
+              103.966967228154,
+              1.35824826456956,
+              0
+            ],
+            [
+              103.965170100876,
+              1.35824836389325,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_44",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>47658A376D21250E<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191011172214<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.96517039552,
+              1.36367453555718,
+              0
+            ],
+            [
+              103.965170493996,
+              1.36548325939063,
+              0
+            ],
+            [
+              103.966967626633,
+              1.36548315953769,
+              0
+            ],
+            [
+              103.966967526814,
+              1.36367443583656,
+              0
+            ],
+            [
+              103.96517039552,
+              1.36367453555718,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_45",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>C5FC4D4BDD8C929A<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191007161614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.902269168228,
+              1.30760661443227,
+              0
+            ],
+            [
+              103.902269217604,
+              1.3094153425971,
+              0
+            ],
+            [
+              103.904066312968,
+              1.3094152922195,
+              0
+            ],
+            [
+              103.904066262305,
+              1.30760656412428,
+              0
+            ],
+            [
+              103.902269168228,
+              1.30760661443227,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_46",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>A34965FF8F535133<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191007161614<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.943603346377,
+              1.33111856719703,
+              0
+            ],
+            [
+              103.943603426778,
+              1.33292729296415,
+              0
+            ],
+            [
+              103.945400536974,
+              1.33292721132892,
+              0
+            ],
+            [
+              103.945400455263,
+              1.33111848567262,
+              0
+            ],
+            [
+              103.943603346377,
+              1.33111856719703,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_47",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>DB271078FEF6B822<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191003105015<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.877110512355,
+              1.34559048523777,
+              0
+            ],
+            [
+              103.877110544621,
+              1.3473992136313,
+              0
+            ],
+            [
+              103.878907668221,
+              1.3473991804681,
+              0
+            ],
+            [
+              103.87890763463,
+              1.3455904521191,
+              0
+            ],
+            [
+              103.877110512355,
+              1.34559048523777,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_48",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>1DE6AF30BB64C21F<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191003105015<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.878907701857,
+              1.34920790879014,
+              0
+            ],
+            [
+              103.878907735538,
+              1.35101663708519,
+              0
+            ],
+            [
+              103.880704861747,
+              1.35101660249532,
+              0
+            ],
+            [
+              103.880704826738,
+              1.34920787424659,
+              0
+            ],
+            [
+              103.878907701857,
+              1.34920790879014,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_49",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>B430DC24BBF9D5E0<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20190930145615<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.94899518041,
+              1.34197067084513,
+              0
+            ],
+            [
+              103.948995265429,
+              1.34377939611385,
+              0
+            ],
+            [
+              103.950792383187,
+              1.34377930982246,
+              0
+            ],
+            [
+              103.950792296846,
+              1.34197058466993,
+              0
+            ],
+            [
+              103.94899518041,
+              1.34197067084513,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_50",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>0B6240040FE77426<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20190926135514<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.909457982413,
+              1.32207622770216,
+              0
+            ],
+            [
+              103.909458037541,
+              1.32388495536719,
+              0
+            ],
+            [
+              103.911255142975,
+              1.32388489918979,
+              0
+            ],
+            [
+              103.911255086546,
+              1.32207617160154,
+              0
+            ],
+            [
+              103.909457982413,
+              1.32207622770216,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_51",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>72104146B7883241<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191003105015<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.938211942704,
+              1.3293100777475,
+              0
+            ],
+            [
+              103.938212019069,
+              1.33111880386295,
+              0
+            ],
+            [
+              103.940009128278,
+              1.3311187262922,
+              0
+            ],
+            [
+              103.940009050604,
+              1.32931000028219,
+              0
+            ],
+            [
+              103.938211942704,
+              1.3293100777475,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_52",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>B9759690445134F0<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191003105015<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.882501023908,
+              1.30218089578228,
+              0
+            ],
+            [
+              103.882501058979,
+              1.30398962467298,
+              0
+            ],
+            [
+              103.88429815114,
+              1.30398958870548,
+              0
+            ],
+            [
+              103.884298114788,
+              1.30218085986469,
+              0
+            ],
+            [
+              103.882501023908,
+              1.30218089578228,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_53",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>34CDD0D0B6C8893E<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191003105015<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.950792296846,
+              1.34197058466993,
+              0
+            ],
+            [
+              103.950792383187,
+              1.34377930982246,
+              0
+            ],
+            [
+              103.952589500828,
+              1.34377922220065,
+              0
+            ],
+            [
+              103.952589413166,
+              1.3419704971661,
+              0
+            ],
+            [
+              103.950792296846,
+              1.34197058466993,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_54",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>AC425EB978041187<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191003105015<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.923834486867,
+              1.31303210684766,
+              0
+            ],
+            [
+              103.923834551957,
+              1.31484083398022,
+              0
+            ],
+            [
+              103.925631650235,
+              1.31484076777255,
+              0
+            ],
+            [
+              103.925631583852,
+              1.3130320407311,
+              0
+            ],
+            [
+              103.923834486867,
+              1.31303210684766,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_55",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>FB7B1AAEF6C0EA0C<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191003105015<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.886095130506,
+              1.29856336500154,
+              0
+            ],
+            [
+              103.886095168035,
+              1.30037209384271,
+              0
+            ],
+            [
+              103.887892257532,
+              1.30037205540014,
+              0
+            ],
+            [
+              103.887892218724,
+              1.29856332661246,
+              0
+            ],
+            [
+              103.886095130506,
+              1.29856336500154,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "kml_56",
+        "Description": "<center><table><tr><th colspan='2' align='center'><em>Attributes<\\/em><\\/th><\\/tr><tr bgcolor=\"#E3E3F3\"> <th>JOIN_COUNT<\\/th> <td>1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>AREANAME<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>DETAIL<\\/th> <td>No. of Dengue Cases : 1<\\/td> <\\/tr><tr bgcolor=\"\"> <th>INC_CRC<\\/th> <td>49FCE1EB65C238C5<\\/td> <\\/tr><tr bgcolor=\"#E3E3F3\"> <th>FMEL_UPD_D<\\/th> <td>20191003105015<\\/td> <\\/tr><\\/table><\\/center>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.904066516319,
+              1.31665020433802,
+              0
+            ],
+            [
+              103.904066567332,
+              1.31845893230188,
+              0
+            ],
+            [
+              103.905863669089,
+              1.31845888027087,
+              0
+            ],
+            [
+              103.90586361678,
+              1.31665015237841,
+              0
+            ],
+            [
+              103.904066516319,
+              1.31665020433802,
+              0
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

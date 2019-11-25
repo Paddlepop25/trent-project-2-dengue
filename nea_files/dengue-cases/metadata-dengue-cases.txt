@@ -1,0 +1,52 @@
+# Metadata for Dengue Cases
+---
+Identifier: '40c39ea3-ce9f-4c7d-bcd9-fbc2bc9eb320'
+Name: 'dengue-cases'
+Title: 'Dengue Cases'
+Description: 'Dengue Cases in various regions.                   Based on notified
+  dengue cases and mosquito breeding habitats detected in the last 14 days.                   Information
+  on dengue cases is provisional and is subject to changes due to epidemiological
+  investigation findings.'
+Topics:
+  - 'Health'
+Keywords:
+  - 'dengue'
+  - 'mosquito'
+Publisher:
+  Name: 'National Environment Agency'
+Sources:
+  - 'National Environment Agency'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Daily'
+Last Updated: '2018-11-07T03:38:07.281889'
+Resources:
+  -
+    Identifier: '91203ff1-38b0-4169-bf70-09a1c5ce4f09'
+    Title: 'Dengue (Cases) - Central (KML)'
+    Url: 'https://geo.data.gov.sg/denguecase-central-area/2018/11/05/kml/denguecase-central-area.kml'
+    Format: 'KML'
+    Last Updated: '2018-11-04T16:00:00'
+  -
+    Identifier: '26473cc7-c1c0-4b0c-960b-57c97f88d2f7'
+    Title: 'Dengue (Cases) - North East (KML)'
+    Url: 'https://geo.data.gov.sg/denguecase-northeast-area/2018/11/05/kml/denguecase-northeast-area.kml'
+    Format: 'KML'
+    Last Updated: '2018-11-04T16:00:00'
+  -
+    Identifier: '79e83619-c72d-476e-ac65-99f299bddf7b'
+    Title: 'Dengue (Cases) - North West (KML)'
+    Url: 'https://geo.data.gov.sg/denguecase-northwest-area/2018/08/13/kml/denguecase-northwest-area.kml'
+    Format: 'KML'
+    Last Updated: '2018-08-12T16:00:00'
+  -
+    Identifier: '5a8b0bce-0ffd-47fc-a1a9-4b8f1c185d11'
+    Title: 'Dengue (Cases) - South East (KML)'
+    Url: 'https://geo.data.gov.sg/denguecase-southeast-area/2018/11/05/kml/denguecase-southeast-area.kml'
+    Format: 'KML'
+    Last Updated: '2018-11-04T16:00:00'
+  -
+    Identifier: '5a4b8419-b403-4e8c-9f8b-04ae5695eadd'
+    Title: 'Dengue (Cases) - South West (KML)'
+    Url: 'https://geo.data.gov.sg/denguecase-southwest-area/2018/11/05/kml/denguecase-southwest-area.kml'
+    Format: 'KML'
+    Last Updated: '2018-11-04T16:00:00'

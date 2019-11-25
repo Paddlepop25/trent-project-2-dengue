@@ -1,0 +1,37 @@
+# Metadata for Zika Cluster
+---
+Identifier: '81f14681-38ac-41f0-8c47-e7af00cf63a8'
+Name: 'zika-cluster'
+Title: 'Zika Cluster'
+Description: 'Active Zika Cluster In Singapore'
+Topics:
+  - 'Health'
+Keywords:
+  - 'Disease'
+  - 'Zika'
+  - 'onemap'
+  - 'themes'
+Publisher:
+  Name: 'National Environment Agency'
+  Admin 1:
+    Name: 'Chio Kaiyun'
+    Department: 'NATIONAL ENVIRONMENT AGENCY'
+    Email: 'chio_kaiyun@nea.gov.sg'
+Sources:
+  - 'National Environment Agency'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Daily'
+Last Updated: '2019-10-09T11:49:46.933340'
+Resources:
+  -
+    Identifier: '4c3d4495-8ccb-4c38-b3f6-248d93d39628'
+    Title: 'Zika Cluster (KML)'
+    Url: 'https://geo.data.gov.sg/zika-cluster/2019/09/19/kml/zika-cluster.kml'
+    Format: 'KML'
+    Last Updated: '2019-09-18T16:00:00'
+  -
+    Identifier: '91958c70-d405-4068-8b26-c5aa92422b15'
+    Title: 'Zika Cluster (GEOJSON)'
+    Url: 'https://geo.data.gov.sg/zika-cluster/2019/09/19/geojson/zika-cluster.geojson'
+    Format: 'GeoJSON'
+    Last Updated: '2019-09-18T16:00:00'

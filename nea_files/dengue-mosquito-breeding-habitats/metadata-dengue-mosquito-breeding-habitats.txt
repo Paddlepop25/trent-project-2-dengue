@@ -1,0 +1,52 @@
+# Metadata for Dengue Mosquito Breeding Habitats
+---
+Identifier: 'bbef5ace-4ac5-494a-a385-07c5acff0ae4'
+Name: 'dengue-mosquito-breeding-habitats'
+Title: 'Dengue Mosquito Breeding Habitats'
+Description: 'Mosquito breeding habitat in various regions.                   Based
+  on notified dengue cases and mosquito breeding habitats detected in the last 14
+  days.                   Information on dengue cases is provisional and is subject
+  to changes due to epidemiological investigation findings.'
+Topics:
+  - 'Health'
+Keywords:
+  - 'dengue'
+  - 'mosquito'
+Publisher:
+  Name: 'National Environment Agency'
+Sources:
+  - 'National Environment Agency'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Daily'
+Last Updated: '2018-11-07T03:38:08.341883'
+Resources:
+  -
+    Identifier: '81f56530-deae-49ad-8ab6-c93def259409'
+    Title: 'Aedes Mosquito Breeding Habitats - Central (KML)'
+    Url: 'https://geo.data.gov.sg/breedinghabitat-central-area/2018/11/05/kml/breedinghabitat-central-area.kml'
+    Format: 'KML'
+    Last Updated: '2018-11-04T16:00:00'
+  -
+    Identifier: '3664d9e2-3e43-4207-adcf-6c5a7826c481'
+    Title: 'Aedes Mosquito Breeding Habitats - North East (KML)'
+    Url: 'https://geo.data.gov.sg/breedinghabitat-northeast-area/2018/11/05/kml/breedinghabitat-northeast-area.kml'
+    Format: 'KML'
+    Last Updated: '2018-11-04T16:00:00'
+  -
+    Identifier: '3ef1a1f9-712f-4d24-8ff4-fd463f95e859'
+    Title: 'Aedes Mosquito Breeding Habitats - North West (KML)'
+    Url: 'https://geo.data.gov.sg/breedinghabitat-northwest-area/2018/11/05/kml/breedinghabitat-northwest-area.kml'
+    Format: 'KML'
+    Last Updated: '2018-11-04T16:00:00'
+  -
+    Identifier: '7b0e732f-6d3b-4932-aa02-e9df9fd169bb'
+    Title: 'Aedes Mosquito Breeding Habitats - South East (KML)'
+    Url: 'https://geo.data.gov.sg/breedinghabitat-southeast-area/2018/11/05/kml/breedinghabitat-southeast-area.kml'
+    Format: 'KML'
+    Last Updated: '2018-11-04T16:00:00'
+  -
+    Identifier: '822d3361-a8de-48f1-b944-b39677491c53'
+    Title: 'Aedes Mosquito Breeding Habitats - South West (KML)'
+    Url: 'https://geo.data.gov.sg/breedinghabitat-southwest-area/2018/11/05/kml/breedinghabitat-southwest-area.kml'
+    Format: 'KML'
+    Last Updated: '2018-11-04T16:00:00'

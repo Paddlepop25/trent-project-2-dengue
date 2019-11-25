@@ -1,0 +1,41 @@
+# Metadata for Dengue (Cases) - North East
+---
+Identifier: '9efcc45e-4f59-4465-b6f5-d5791f70ca56'
+Name: 'dengue-cases-north-east'
+Title: 'Dengue (Cases) - North East'
+Description:
+  - 'Dengue cases in north east region.'
+  - ''
+  - 'Based on notified dengue cases and mosquito breeding habitats detected in the
+    last 14 days. Information on dengue cases is provisional and is subject to changes
+    due to epidemiological investigation findings.'
+Topics:
+  - 'Health'
+Keywords:
+  - 'Dengue cases in north east region'
+  - 'onemap'
+  - 'themes'
+Publisher:
+  Name: 'National Environment Agency'
+  Admin 1:
+    Name: 'Chew Kee Khoon'
+    Department: 'NATIONAL ENVIRONMENT AGENCY'
+    Email: 'chew_kee_khoon@nea.gov.sg'
+Sources:
+  - 'National Environment Agency'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Daily'
+Last Updated: '2019-10-13T05:28:57.328437'
+Resources:
+  -
+    Identifier: '9bacbff4-eaed-4d44-9380-61d13fd8c991'
+    Title: 'Dengue (Cases) - North East (KML)'
+    Url: 'https://geo.data.gov.sg/denguecase-northeast-area/2019/10/11/kml/denguecase-northeast-area.kml'
+    Format: 'KML'
+    Last Updated: '2019-10-10T16:00:00'
+  -
+    Identifier: '1ab83e5a-fd51-4a48-a796-8d7906f52a26'
+    Title: 'Dengue (Cases) - North East (GEOJSON)'
+    Url: 'https://geo.data.gov.sg/denguecase-northeast-area/2019/10/11/geojson/denguecase-northeast-area.geojson'
+    Format: 'GeoJSON'
+    Last Updated: '2019-10-10T16:00:00'

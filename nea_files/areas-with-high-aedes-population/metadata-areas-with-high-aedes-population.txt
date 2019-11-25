@@ -1,0 +1,38 @@
+# Metadata for Areas with High Aedes Population
+---
+Identifier: 'b57357b9-5b25-41dc-9acb-4c4392b571d5'
+Name: 'areas-with-high-aedes-population'
+Title: 'Areas with High Aedes Population'
+Description: 'Areas where Gravitraps deployed by NEA detected relatively higherÂ Aedes
+  aegyptiÂ mosquito populations, from April to June 2019.'
+Topics:
+  - 'Environment'
+Keywords:
+  - 'Aedes'
+  - 'Dengue'
+  - 'Gravitraps'
+  - 'Mosquito'
+Publisher:
+  Name: 'National Environment Agency'
+  Admin 1:
+    Name: 'Goh Jie Wei'
+    Department: 'NATIONAL ENVIRONMENT AGENCY'
+    Email: 'goh_jie_wei@nea.gov.sg'
+Sources:
+  - 'National Environment Agency'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Monthly'
+Last Updated: '2019-09-22T00:12:17.708353'
+Resources:
+  -
+    Identifier: '78cd112c-6664-40e7-97ae-0e593549f94a'
+    Title: 'Areas with High Aedes Population (KML)'
+    Url: 'https://geo.data.gov.sg/areas-hap/2019/09/19/kml/areas-hap.kml'
+    Format: 'KML'
+    Last Updated: '2019-09-18T16:00:00'
+  -
+    Identifier: 'b822748e-31c3-4a7f-9eae-670f2ced0c4b'
+    Title: 'Areas with High Aedes Population (GEOJSON)'
+    Url: 'https://geo.data.gov.sg/areas-hap/2019/09/19/geojson/areas-hap.geojson'
+    Format: 'GeoJSON'
+    Last Updated: '2019-09-18T16:00:00'

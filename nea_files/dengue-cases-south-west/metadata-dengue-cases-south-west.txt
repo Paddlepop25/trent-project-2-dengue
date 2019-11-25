@@ -1,0 +1,41 @@
+# Metadata for Dengue (Cases) - South West
+---
+Identifier: '91508e0b-3a36-4a0d-aeb4-d62a0071f65e'
+Name: 'dengue-cases-south-west'
+Title: 'Dengue (Cases) - South West'
+Description:
+  - 'Dengue cases in southwest region.'
+  - ''
+  - 'Based on notified dengue cases and mosquito breeding habitats detected in the
+    last 14 days. Information on dengue cases is provisional and is subject to changes
+    due to epidemiological investigation findings.'
+Topics:
+  - 'Health'
+Keywords:
+  - 'Dengue cases in southwest region'
+  - 'onemap'
+  - 'themes'
+Publisher:
+  Name: 'National Environment Agency'
+  Admin 1:
+    Name: 'chew kee khoon'
+    Department: 'NATIONAL ENVIRONMENT AGENCY'
+    Email: 'chew_kee_khoon@nea.gov.sg'
+Sources:
+  - 'National Environment Agency'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Daily'
+Last Updated: '2019-10-13T05:29:03.745761'
+Resources:
+  -
+    Identifier: '3d9b1e69-586c-469d-bdac-fad78ef7022e'
+    Title: 'Dengue (Cases) - South West (KML)'
+    Url: 'https://geo.data.gov.sg/denguecase-southwest-area/2019/10/11/kml/denguecase-southwest-area.kml'
+    Format: 'KML'
+    Last Updated: '2019-10-10T16:00:00'
+  -
+    Identifier: '64a8d9f6-7a19-4f01-b81d-78bd7aadddc9'
+    Title: 'Dengue (Cases) - South West (GEOJSON)'
+    Url: 'https://geo.data.gov.sg/denguecase-southwest-area/2019/10/11/geojson/denguecase-southwest-area.geojson'
+    Format: 'GeoJSON'
+    Last Updated: '2019-10-10T16:00:00'

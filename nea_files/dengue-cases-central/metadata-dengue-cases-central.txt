@@ -1,0 +1,41 @@
+# Metadata for Dengue (Cases) - Central
+---
+Identifier: '65de6fb8-693e-4cc1-b608-db8a2d8244ea'
+Name: 'dengue-cases-central'
+Title: 'Dengue (Cases) - Central'
+Description:
+  - 'Dengue Cases in central region.'
+  - ''
+  - 'Based on notified dengue cases and mosquito breeding habitats detected in the
+    last 14 days. Information on dengue cases is provisional and is subject to changes
+    due to epidemiological investigation findings.'
+Topics:
+  - 'Health'
+Keywords:
+  - 'Dengue Cases in central region'
+  - 'onemap'
+  - 'themes'
+Publisher:
+  Name: 'National Environment Agency'
+  Admin 1:
+    Name: 'Chew Kee Khoon'
+    Department: 'NATIONAL ENVIRONMENT AGENCY'
+    Email: 'chew_kee_khoon@nea.gov.sg'
+Sources:
+  - 'National Environment Agency'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Daily'
+Last Updated: '2019-10-13T05:28:55.038338'
+Resources:
+  -
+    Identifier: '353fa394-cd51-41ab-89f7-c6de9526a043'
+    Title: 'Dengue (Cases) - Central (KML)'
+    Url: 'https://geo.data.gov.sg/denguecase-central-area/2019/10/11/kml/denguecase-central-area.kml'
+    Format: 'KML'
+    Last Updated: '2019-10-10T16:00:00'
+  -
+    Identifier: 'de8404aa-206b-4281-9c64-9ec25179192e'
+    Title: 'Dengue (Cases) - Central (GEOJSON)'
+    Url: 'https://geo.data.gov.sg/denguecase-central-area/2019/10/11/geojson/denguecase-central-area.geojson'
+    Format: 'GeoJSON'
+    Last Updated: '2019-10-10T16:00:00'
