@@ -21,38 +21,12 @@ let northEastSelections = document
     getNorthClinics();
   });
 
-// let southEastArea = document
-//   .querySelector(".south-east")
-//   .addEventListener("click", () => {
-//     console.log("south-east");
-//   });
-
-// let centralArea = document
-//   .querySelector(".central")
-//   .addEventListener("click", () => {
-//     console.log("central");
-//   });
-
-// let southWestArea = document
-//   .querySelector(".south-west")
-//   .addEventListener("click", () => {
-//     console.log("south-west");
-//   });
-
-let resetButton = document
-  .querySelector(".reset-btn")
-  .addEventListener("click", () => {
-    // initMap();
-    console.log(4);
-  });
-
 function northeastMap() {
   let northEast = { lat: 1.4326, lng: 103.8267 };
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 13,
     center: northEast
   });
-  // var marker = new google.maps.Marker({ position: northEast, map: map });
 }
 
 function getNorthClinics() {
@@ -81,12 +55,10 @@ function loadClinicMarkers(googleData) {
     zoom: 13,
     center: northEast
   });
-  // let result = Object.entries(googleData)[2][1][0]["geometry"]["location"];
   let googleObject = Object.entries(googleData)[2][1];
   for (let i = 0; i < googleObject.length; i++) {
-    // console.log(results[i]["geometry"]["location"]) // get 20 locations;
     let location = googleObject[i]["geometry"]["location"];
-    // console.log(i);
+    console.log(location);
     addMarkers(map, location);
   }
 
@@ -121,3 +93,28 @@ function loadClinicMarkers(googleData) {
 //   setTimeout(dropMarker(i), i * 100);
 //   addResult(results[i], i);
 // }
+
+// let southEastArea = document
+//   .querySelector(".south-east")
+//   .addEventListener("click", () => {
+//     console.log("south-east");
+//   });
+
+// let centralArea = document
+//   .querySelector(".central")
+//   .addEventListener("click", () => {
+//     console.log("central");
+//   });
+
+// let southWestArea = document
+//   .querySelector(".south-west")
+//   .addEventListener("click", () => {
+//     console.log("south-west");
+//   });
+
+let resetButton = document
+  .querySelector(".reset-btn")
+  .addEventListener("click", () => {
+    // initMap();
+    console.log(4);
+  });
