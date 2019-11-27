@@ -73,6 +73,36 @@ function getNorthClinics() {
 }
 
 function loadClinicMarkers(googleData) {
-  const latlongLocation = Object.entries(googleData)[2][1];
-  console.log(latlongLocation);
+  let northEast = { lat: 1.4326, lng: 103.8267 };
+  let map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 13,
+    center: northEast
+  });
+  // let result = Object.entries(googleData)[2][1][0]["geometry"]["location"];
+  let googleObject = Object.entries(googleData)[2][1];
+  for (let i = 0; i < googleObject.length; i++) {
+    // console.log(results[i]["geometry"]["location"]) // get 20 locations;
+    let location = googleObject[i]["geometry"]["location"];
+
+    addMarkers(map, location);
+  }
+
+  function addMarkers(map, latlong) {
+    let marker = new google.maps.Marker({
+      position: latlong,
+      map: map,
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png"
+    });
+  }
+
+  // let map = new google.maps.Map(document.getElementById("map"), {
+  //   zoom: 13,
+  //   center: result
+  // });
+
+  // let marker = new google.maps.Marker({
+  //   position: result,
+  //   map: map,
+  //   icon: "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png"
+  // });
 }
