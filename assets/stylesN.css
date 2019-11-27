@@ -1,6 +1,7 @@
 #map {
-  height: 400px;
-  width: 100%;
+  width: 60vw;
+  height: 60vh;
+  margin: 30px auto;
 }
 
 #right-panel {
