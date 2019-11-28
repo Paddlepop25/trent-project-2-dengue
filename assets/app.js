@@ -1,6 +1,3 @@
-// let MARKER_PATH =
-//   "https://developers.google.com/maps/documentation/javascript/images/marker_green";
-
 function initMap() {
   let singapore = { lat: 1.35027, lng: 103.851959 };
   let map = new google.maps.Map(document.getElementById("map"), {
@@ -38,7 +35,7 @@ function getNorthClinics() {
 
   xhr.open(
     "GET",
-    "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.4326,103.8267&radius=5000&type=doctor&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
+    "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.4326,103.8267&radius=5000&type=hospital&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
     true
   );
 
@@ -61,40 +58,84 @@ function loadClinicMarkers(googleData) {
   });
   let googleObject = Object.entries(googleData)[2][1];
   for (let i = 0; i < googleObject.length; i++) {
-    let location = googleObject[i]["geometry"]["location"];
-    // console.log(location);
-    addMarkers(map, location);
-    console.log(googleObject[i]["name"]);
+    let listOfObjects = googleObject[i];
+    // let location = googleObject[i]["geometry"]["location"];
+    addMarkers(map, listOfObjects);
+    // console.log(googleObject[i]["name"]);
   }
 }
 
-function addMarkers(map, location) {
+function addMarkers(map, place) {
   let marker = new google.maps.Marker({
-    position: location,
+    position: place["geometry"]["location"],
     map: map,
     animation: google.maps.Animation.DROP
-    // icon: markerIcon
-    // icon: "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png"
   });
 
-  // for (let i = 0; i < 6; i++) {
-  //   let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
-  //   let markerIcon = MARKER_PATH + markerLetter + ".png";
-  //   let marker = new google.maps.Marker({
-  //     position: location,
-  //     map: map,
-  //     animation: google.maps.Animation.DROP,
-  //     icon: markerIcon
-  //     // icon: "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png"
-  //   });
+  google.maps.event.addListener(marker, "click", function() {
+    // console.log(place["vicinity"])
+    // clearResults(marker);
+    let display = {};
+    display.name = place.name;
+    display.vicinity = place.vicinity;
+
+    if (place["name"] === undefined) {
+      place["name"] = "No Available Name";
+    } else {
+      place["name"] = place["name"];
+    }
+
+    if (place["vicinity"] === undefined) {
+      place["vicinity"] = "No Available Address";
+    } else {
+      place["vicinity"] = place["vicinity"];
+    }
+
+    let box = new google.maps.InfoWindow({
+      content: `<h5>${display.name}</h5>
+             <p>Address: ${display.vicinity}</p>`
+    });
+
+    box.open(map, marker);
+  });
+
+  return marker;
+
+  // function clearResults(markers) {
+  //   for (let m in markers) {
+  //     markers[m].setMap(null);
+  //   }
+  //   markers = [];
   // }
-
-  // let box = new google.maps.InfoWindow({
-  //   content: "<h1>Clinic</h1>"
-  // });
-
-  // box.open(map, marker);
 }
+
+// function addMarkers(map, location) {
+//   let marker = new google.maps.Marker({
+//     position: location,
+//     map: map,
+//     animation: google.maps.Animation.DROP
+//     // icon: markerIcon
+//     // icon: "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png"
+//   });
+
+//   // for (let i = 0; i < 6; i++) {
+//   //   let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
+//   //   let markerIcon = MARKER_PATH + markerLetter + ".png";
+//   //   let marker = new google.maps.Marker({
+//   //     position: location,
+//   //     map: map,
+//   //     animation: google.maps.Animation.DROP,
+//   //     icon: markerIcon
+//   //     // icon: "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png"
+//   //   });
+//   // }
+
+//   // let box = new google.maps.InfoWindow({
+//   //   content: "<h6>Clinic</h6>"
+//   // });
+
+//   // box.open(map, marker);
+// }
 
 // function infoWindow(googleData) {
 //   console.log()
@@ -144,6 +185,5 @@ function addMarkers(map, location) {
 let resetButton = document
   .querySelector(".reset-btn")
   .addEventListener("click", () => {
-    // initMap();
-    console.log(4);
+    initMap();
   });
