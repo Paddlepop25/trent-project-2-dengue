@@ -1,5 +1,5 @@
-let MARKER_PATH =
-  "https://developers.google.com/maps/documentation/javascript/images/marker_green";
+// let MARKER_PATH =
+//   "https://developers.google.com/maps/documentation/javascript/images/marker_green";
 
 function initMap() {
   let singapore = { lat: 1.35027, lng: 103.851959 };
@@ -7,6 +7,10 @@ function initMap() {
     zoom: 11,
     center: singapore
   });
+
+  // infoWindow = new google.maps.InfoWindow({
+  //   content: document.getElementById("info-content")
+  // });
 }
 
 let northEastArea = document
@@ -58,24 +62,49 @@ function loadClinicMarkers(googleData) {
   let googleObject = Object.entries(googleData)[2][1];
   for (let i = 0; i < googleObject.length; i++) {
     let location = googleObject[i]["geometry"]["location"];
-    console.log(location);
+    // console.log(location);
     addMarkers(map, location);
+    console.log(googleObject[i]["name"]);
   }
 }
 
 function addMarkers(map, location) {
-  for (let i = 0; i < 6; i++) {
-    let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
-    let markerIcon = MARKER_PATH + markerLetter + ".png";
-    let marker = new google.maps.Marker({
-      position: location,
-      map: map,
-      animation: google.maps.Animation.DROP,
-      icon: markerIcon
-      // icon: "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png"
-    });
-  }
+  let marker = new google.maps.Marker({
+    position: location,
+    map: map,
+    animation: google.maps.Animation.DROP
+    // icon: markerIcon
+    // icon: "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png"
+  });
+
+  // for (let i = 0; i < 6; i++) {
+  //   let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
+  //   let markerIcon = MARKER_PATH + markerLetter + ".png";
+  //   let marker = new google.maps.Marker({
+  //     position: location,
+  //     map: map,
+  //     animation: google.maps.Animation.DROP,
+  //     icon: markerIcon
+  //     // icon: "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png"
+  //   });
+  // }
+
+  // let box = new google.maps.InfoWindow({
+  //   content: "<h1>Clinic</h1>"
+  // });
+
+  // box.open(map, marker);
 }
+
+// function infoWindow(googleData) {
+//   console.log()
+// }
+
+// function dropMarker(i) {
+//   return function() {
+//     markers[i].setMap(map);
+//   };
+// }
 
 // for (var i = 0; i < results.length; i++) {
 //   var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));

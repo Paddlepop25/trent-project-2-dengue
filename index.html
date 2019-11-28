@@ -8,7 +8,7 @@
   <title>DENGUE</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
     integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="stylesheet" href="/trent-project-2-dengue/assets/styles.css" />
 </head>
 
 <body>
@@ -51,76 +51,43 @@
     <div class="select-zone">
       <h3>Please select ZONES to see the dengue clusters</h3>
       <div class="zonebtns">
-        <button type="button" class="btn btn-primary north-east" data-toggle="collapse" data-target="#collapseExample1"
-          aria-expanded="false" aria-controls="collapseExample">
+        <button type="button" class="btn btn-primary north-east">
           North East
         </button>
-        <div class="collapse" id="collapseExample1">
-          <div class="card card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-            reprehenderit iure error corporis. Illo ipsa fugit consectetur
-            facere doloribus quae reprehenderit consequatur esse odio. Quas
-            pariatur eligendi aut iste possimus.
-          </div>
-        </div>
 
-        <button type="button" class="btn btn-success south-east" data-toggle="collapse" data-target="#collapseExample2"
-          aria-expanded="false" aria-controls="collapseExample">
+
+        <button type="button" class="btn btn-success south-east">
           South East
         </button>
-        <div class="collapse" id="collapseExample2">
-          <div class="card card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-            reprehenderit iure error corporis. Illo ipsa fugit consectetur
-            facere doloribus quae reprehenderit consequatur esse odio. Quas
-            pariatur eligendi aut iste possimus.
-          </div>
-        </div>
 
-        <button type="button" class="btn btn-warning central" data-toggle="collapse" data-target="#collapseExample3"
-          aria-expanded="false" aria-controls="collapseExample">
+
+        <button type="button" class="btn btn-warning central">
           Central
         </button>
-        <div class="collapse" id="collapseExample3">
-          <div class="card card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-            reprehenderit iure error corporis. Illo ipsa fugit consectetur
-            facere doloribus quae reprehenderit consequatur esse odio. Quas
-            pariatur eligendi aut iste possimus.
-          </div>
-        </div>
 
-        <button type="button" class="btn btn-info south-west" data-toggle="collapse" data-target="#collapseExample4"
-          aria-expanded="false" aria-controls="collapseExample">
+
+        <button type="button" class="btn btn-info south-west">
           South West
         </button>
-        <div class="collapse" id="collapseExample4">
-          <div class="card card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-            reprehenderit iure error corporis. Illo ipsa fugit consectetur
-            facere doloribus quae reprehenderit consequatur esse odio. Quas
-            pariatur eligendi aut iste possimus.
-          </div>
-        </div>
 
-        <button type="button" class="btn btn-secondary reset-btn">
+
+        <button type="button" class="btn btn-danger reset-btn">
           Reset
         </button>
 
-      </div>
-
-      <div class="btn-group">
-        <button type="button" class="btn btn-danger btn-lg dropdown-toggle cluster-dropdown" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Select
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item northeastclinics" href="#">Clinics</a>
-          <a class="dropdown-item" href="#">Hospitals</a>
-          <a class="dropdown-item" href="#">Doctors</a>
-          <a class="dropdown-item" href="#">Dengue Cluster</a>
-          <a class="dropdown-item" href="#">Meal Delivery</a>
+        <!-- Dengue Card -->
+        <div class="card" style="width: 70%;">
+          <div class="card-body">
+            <h5 class="card-title">North East</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem magnam neque illum natus amet delectus asperiores nesciunt ipsa provident quo. Ab commodi illum minima voluptates dicta eos, cum incidunt laborum?
+              content.</p>
+            <a href="#" class="card-link northeastclinics">Clinics</a>
+            <a href="#" class="card-link northeasthospital">Hospitals</a>
+            <a href="#" class="card-link">Food Delivery</a>
+            <a href="#" class="card-link">Dengue Cluster</a>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -132,13 +99,13 @@
   </div>
 
   <!-- Google Map results -->
-  <div id="listing">
+  <!-- <div id="listing">
     <table id="resultsTable">
       <tbody id="results"></tbody>
     </table>
-  </div>
+  </div> -->
 
-  <div style="display: none">
+  <!-- <div style="display: none">
     <div id="info-content">
       <table>
         <tr id="iw-url-row" class="iw_table_row">
@@ -163,7 +130,7 @@
         </tr>
       </table>
     </div>
-  </div>
+  </div> -->
 
   <!-- Years section -->
   <div class="container">
@@ -186,6 +153,8 @@
       </button>
     </div>
 
+    <!--load jquery first, else console mention $ not define-->
+    <script src="/trent-project-2-dengue/assets/jquery.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"></script>
@@ -195,12 +164,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
       integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
       crossorigin="anonymous"></script>
-    <script src="/assets/jquery.js"></script>
-    <script src="/assets/app.js"></script>
-
-    <script
+    
+    <!--Google Map API-->
+        <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU&libraries=places&callback=initMap"
       async defer></script>
+
+       <!--Own js file-->
+    <script src="/trent-project-2-dengue/assets/app.js"></script>
+
+
 </body>
 
 </html>
