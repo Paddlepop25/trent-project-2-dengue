@@ -24,8 +24,8 @@ function northeastMap() {
   });
 }
 
-let northEastSelections = document
-  .querySelector(".northeastclinics")
+let northEastClinics = document
+  .querySelector(".northeast-clinics")
   .addEventListener("click", () => {
     getNorthClinics();
   });
