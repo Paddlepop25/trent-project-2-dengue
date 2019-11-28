@@ -16,12 +16,6 @@ let northEastArea = document
     northeastMap();
   });
 
-let northEastSelections = document
-  .querySelector(".northeastclinics")
-  .addEventListener("click", () => {
-    getNorthClinics();
-  });
-
 function northeastMap() {
   let northEast = { lat: 1.4326, lng: 103.8267 };
   let map = new google.maps.Map(document.getElementById("map"), {
@@ -29,6 +23,12 @@ function northeastMap() {
     center: northEast
   });
 }
+
+let northEastSelections = document
+  .querySelector(".northeastclinics")
+  .addEventListener("click", () => {
+    getNorthClinics();
+  });
 
 function getNorthClinics() {
   const xhr = new XMLHttpRequest();
