@@ -61,19 +61,19 @@ function loadClinicMarkers(googleData) {
     console.log(location);
     addMarkers(map, location);
   }
+}
 
-  function addMarkers(map, location) {
-    for (let i = 0; i < 6; i++) {
-      let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
-      let markerIcon = MARKER_PATH + markerLetter + ".png";
-      let marker = new google.maps.Marker({
-        position: location,
-        map: map,
-        animation: google.maps.Animation.DROP,
-        icon: markerIcon
-        // icon: "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png"
-      });
-    }
+function addMarkers(map, location) {
+  for (let i = 0; i < 6; i++) {
+    let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
+    let markerIcon = MARKER_PATH + markerLetter + ".png";
+    let marker = new google.maps.Marker({
+      position: location,
+      map: map,
+      animation: google.maps.Animation.DROP,
+      icon: markerIcon
+      // icon: "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png"
+    });
   }
 }
 
