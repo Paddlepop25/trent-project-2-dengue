@@ -1,8 +1,17 @@
 function initMap() {
   let singapore = { lat: 1.35027, lng: 103.851959 };
   let map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 11,
+    zoom: 12,
     center: singapore
+  });
+
+  let data = map.data.loadGeoJson("/nea_files/dengue-clusters-geojson.geojson");
+
+  map.data.addGeoJson(data);
+
+  map.data.setStyle({
+    fillColor: "green",
+    strokeWeight: 1
   });
 
   // infoWindow = new google.maps.InfoWindow({
@@ -13,16 +22,26 @@ function initMap() {
 let northEastArea = document
   .querySelector(".north-east")
   .addEventListener("click", () => {
-    northeastMap();
+    getNorthDengue();
   });
 
-function northeastMap() {
-  let northEast = { lat: 1.4326, lng: 103.8267 };
-  let map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 13,
-    center: northEast
+let southEastArea = document
+  .querySelector(".south-east")
+  .addEventListener("click", () => {
+    getSouthEastDengue();
   });
-}
+
+let centralArea = document
+  .querySelector(".central")
+  .addEventListener("click", () => {
+    getCentralDengue();
+  });
+
+let southWestArea = document
+  .querySelector(".south-west")
+  .addEventListener("click", () => {
+    getSouthWestDengue();
+  });
 
 function addMarkers(map, place) {
   let marker = new google.maps.Marker({
@@ -122,24 +141,6 @@ function addMarkers(map, place) {
 //   setTimeout(dropMarker(i), i * 100);
 //   addResult(results[i], i);
 // }
-
-// let southEastArea = document
-//   .querySelector(".south-east")
-//   .addEventListener("click", () => {
-//     console.log("south-east");
-//   });
-
-// let centralArea = document
-//   .querySelector(".central")
-//   .addEventListener("click", () => {
-//     console.log("central");
-//   });
-
-// let southWestArea = document
-//   .querySelector(".south-west")
-//   .addEventListener("click", () => {
-//     console.log("south-west");
-//   });
 
 let resetButton = document
   .querySelector(".reset-btn")
