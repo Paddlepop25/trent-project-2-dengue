@@ -9,7 +9,7 @@ function getNorthPharmacies() {
 
   xhr.open(
     "GET",
-    "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.4326,103.8267&radius=5000&type=pharmacy&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
+    "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.3923,103.8948&radius=5000&type=pharmacy&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
     true
   );
 
@@ -27,9 +27,9 @@ function getNorthPharmacies() {
 }
 
 function loadNorthPharmacyMarkers(googleData) {
-  let northEast = { lat: 1.4326, lng: 103.8267 };
+  let northEast = { lat: 1.3923, lng: 103.8948 };
   let map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 13,
+    zoom: 14,
     center: northEast
   });
   let googleObject = Object.entries(googleData)[2][1];
