@@ -1,7 +1,44 @@
-.mozzie-wipeout {
+.stagnant-water img {
   width: 100vw;
-  /* margin: 0 auto; */
+}
+
+.mozzie-wipeout img {
+  width: 80vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.dengue-description {
+  border: 2px dotted rgb(255, 25, 0);
+  margin: 20px auto;
+}
+
+.dengue-cases {
+  border: 2px dotted rgb(255, 25, 0);
+  margin: 20px auto;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+.mosq-icon {
   border: 1px solid red;
+  /* display: inline; */
+  width: 130px;
+  height: 110px;
+  float: left;
+  margin: 19px 20px;
+}
+
+.number-cases {
+  display: block;
+  float: right;
+}
+
+.reported-cases {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 #map {
