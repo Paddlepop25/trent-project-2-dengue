@@ -1,9 +1,15 @@
+.mozzie-wipeout {
+  width: 100vw;
+  /* margin: 0 auto; */
+  border: 1px solid red;
+}
+
 #map {
   width: 60vw;
   height: 60vh;
   margin: 30px auto;
 }
-
+/* 
 table {
   font-size: 12px;
 }
@@ -36,7 +42,7 @@ table {
 }
 .iw_table_icon {
   text-align: right;
-}
+} */
 /* 
 #right-panel {
   font-family: "Roboto", "sans-serif";
