@@ -24,6 +24,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#select-zone">Dengue Clusters</a>
         <a class="nav-item nav-link" href="#">Symptoms</a>
         <a class="nav-item nav-link" href="#">Prevention</a>
       </div>
@@ -76,14 +77,14 @@
 
   <!-- Start of Select Zone -->
   <div class="container">
-    <div class="select-zone">
+    <div class="select-zone" id="select-zone">
       <h3>
-        Select to see the dengue clusters
+        Click to view the dengue clusters
       </h3>
       <div class="zonebtns">
         <div class="row">
           <div class="col-6 col-md-3">
-            <button type="button" class="btn btn-primary btn-block north-east">
+            <button type="button" class="btn btn-primary btn-block north-east"><a href="#select-zone"></a>
               North East
             </button>
           </div>
@@ -122,18 +123,10 @@
   </div>
 
   <!-- North East Dengue Card -->
-  <div class="card northeastcard" style="width: 70%;">
+  <div class="card northeastcard" style="width: 90%;">
     <div class="card-body">
       <h5 class="card-title">North East</h5>
       <p class="card-text">
-        The North-East Region of Singapore is one of the five regions in
-        the city-state. The region is the most densely populated and has
-        the third highest population among the five, with Hougang being
-        its most populous town as of 2018 and Seletar as the regional
-        centre. Comprising 13,810 hectares, it includes seven planning
-        areas and is largely a residential region with 217,120 homes. As
-        its name implies, it is located in the north-eastern part of
-        Singapore.
         <a href="https://www.nea.gov.sg/dengue-zika/dengue/dengue-cases" target="_blank">Read More </a>for the
         latest
         Dengue Information
@@ -145,33 +138,7 @@
       <a href="#" class="card-link northeast-supermarkets">Supermarkets</a>
     </div>
   </div>
-  <!--  -->
-  <div class="card d-none">
-    <div class="southeastcard" style="width: 70%;">
-      <div class="card-body">
-        <h5 class="card-title">South East</h5>
-        <p class="card-text">
-          The South-East Region of Singapore is one of the five regions in
-          the city-state. The region is the most densely populated and has
-          the third highest population among the five, with Hougang being
-          its most populous town as of 2018 and Seletar as the regional
-          centre. Comprising 13,810 hectares, it includes seven planning
-          areas and is largely a residential region with 217,120 homes. As
-          its name implies, it is located in the north-eastern part of
-          Singapore.
-          <a href="https://www.nea.gov.sg/dengue-zika/dengue/dengue-cases" target="_blank">Read More </a>for the
-          latest
-          Dengue Information
-        </p>
 
-        <a href="#" class="card-link southeast-clinics">Clinics</a>
-        <a href="#" class="card-link southeast-pharmacies">Pharmacies</a>
-        <a href="#" class="card-link southeast-meals">Meal Delivery</a>
-        <a href="#" class="card-link southeast-supermarkets">Supermarkets</a>
-      </div>
-    </div>
-  </div>
-  <!--  -->
   <!-- Google Map results -->
   <!-- <div id="listing">
     <table id="resultsTable">

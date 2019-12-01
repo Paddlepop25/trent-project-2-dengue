@@ -66,6 +66,11 @@ h4 {
   height: 50vh;
   margin: 30px auto;
 }
+
+.northeastcard {
+  border: 2px solid red;
+  margin: 0 auto
+}
 /* 
 table {
   font-size: 12px;
