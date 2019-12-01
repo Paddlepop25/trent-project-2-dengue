@@ -41,6 +41,26 @@ h4 {
   font-weight: bold;
 }
 
+.zonebtns .north-east {
+  margin: 5px 0;
+}
+
+.zonebtns .central {
+  margin: 5px 0;
+}
+
+.zonebtns .south-east {
+  margin: 5px 0;
+}
+
+.zonebtns .south-west {
+  margin: 5px 0;
+}
+
+.zonebtns .reset-btn {
+  margin: 5px 0;
+}
+
 #map {
   width: 60vw;
   height: 60vh;
