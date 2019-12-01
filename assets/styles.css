@@ -2,28 +2,78 @@
   margin: 0 15px;
 }
 
-.navbar {
-  background-color: #ffdddd;
-}
-
 .navbar-nav a {
   color: #333333;
   font-weight: bold;
   font-size: 1.1rem;
+  text-align: center;
 }
+/* 
+.navbar-nav a:first-child {
+  margin-top: 15px;
+}
+.navbar-nav a:last-child {
+  margin-bottom: 15px;
+} */
 
 .navbar-nav a:hover {
   color: rgb(171, 0, 0);
 }
 
-.stagnant-water img {
-  width: 100vw;
+/* .navbar-toggler {
+  border: 1px solid black;
+} */
+/*  */
+.menu {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  right: 25px;
 }
+.menu span {
+  margin: 0 auto;
+  position: relative;
+  top: 8px;
+  right: 13px;
+}
+.menu span:before,
+.menu span:after {
+  position: absolute;
+  content: "";
+}
+.menu span,
+.menu span:before,
+.menu span:after {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  display: block;
+}
+.menu span:before {
+  margin-top: -12px;
+}
+.menu span:after {
+  margin-top: 12px;
+}
+.example1 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.example1:hover {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/*  */
 
 .mozzie-wipeout img {
   width: 80vw;
   display: block;
-  margin: 0 auto;
+  margin: 70px auto;
+  border: 2px solid black;
 }
 
 .dengue-description {
