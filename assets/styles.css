@@ -1,3 +1,21 @@
+.moz-brand {
+  margin: 0 15px;
+}
+
+.navbar {
+  background-color: #ffdddd;
+}
+
+.navbar-nav a {
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar-nav a:hover {
+  color: rgb(171, 0, 0);
+}
+
 .stagnant-water img {
   width: 100vw;
 }
@@ -69,7 +87,7 @@ h4 {
 
 .northeastcard {
   border: 2px solid red;
-  margin: 0 auto
+  margin: 0 auto;
 }
 /* 
 table {
