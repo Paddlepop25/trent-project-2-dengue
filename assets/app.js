@@ -55,7 +55,7 @@ function addMarkers(map, place) {
     let display = {};
     display.name = place.name;
     display.vicinity = place.vicinity;
-    // clearResults(markers);
+    // clearResults(marker);
 
     if (place["name"] === undefined) {
       place["name"] = "No Available Name";
@@ -71,7 +71,7 @@ function addMarkers(map, place) {
 
     let box = new google.maps.InfoWindow({
       content: `<h5>${display.name}</h5>
-             <p>Address: ${display.vicinity}</p>`
+      <p>Address: ${display.vicinity}</p>`
     });
 
     box.open(map, marker);
@@ -79,13 +79,13 @@ function addMarkers(map, place) {
 
   return marker;
 
-  // function clearResults(markers) {
-  //   for (let m in markers) {
-  //     console.log(m);
-  //     markers[m].setMap(null);
-  //   }
-  //   markers = [];
-  // }
+  function clearResults(markers) {
+    for (let m in markers) {
+      console.log(m);
+      markers[m].setMap(null);
+    }
+    markers = [];
+  }
 }
 
 // function addMarkers(map, location) {
