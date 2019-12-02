@@ -5,9 +5,7 @@ function initMap() {
     center: singapore
   });
 
-  let data = map.data.loadGeoJson(
-    "/trent-project-2-dengue/nea_files/dengue-clusters-geojson.geojson"
-  );
+  let data = map.data.loadGeoJson("/nea_files/dengue-clusters-geojson.geojson");
 
   map.data.addGeoJson(data);
 

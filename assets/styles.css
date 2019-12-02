@@ -74,8 +74,6 @@
   transform: rotate(90deg);
 }
 
-/*  */
-
 .mozzie-wipeout img {
   width: 80vw;
   display: block;
@@ -117,6 +115,10 @@ h4 {
 .reported-cases {
   font-size: 2.5rem;
   font-weight: bold;
+}
+
+#givespace {
+  height: 40px;
 }
 
 .select-zone h3 {
