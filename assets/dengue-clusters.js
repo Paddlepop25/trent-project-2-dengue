@@ -1,10 +1,10 @@
 function getNorthDengue() {
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 11,
-    center: { lat: 1.35027, lng: 103.851959 }
+    center: { lat: 1.35027, lng: 103.821959 }
   });
   data = map.data.loadGeoJson(
-    "/nea_files/dengue-cases-north-east-geojson.geojson"
+    "/trent-project-2-dengue/nea_files/dengue-cases-north-east-geojson.geojson"
   );
   map.data.addGeoJson(data);
   map.data.setStyle({
@@ -16,10 +16,10 @@ function getNorthDengue() {
 function getSouthEastDengue() {
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 11,
-    center: { lat: 1.35027, lng: 103.851959 }
+    center: { lat: 1.35027, lng: 103.821959 }
   });
   data = map.data.loadGeoJson(
-    "/nea_files/dengue-cases-south-east-geojson.geojson"
+    "/trent-project-2-dengue/nea_files/dengue-cases-south-east-geojson.geojson"
   );
   map.data.addGeoJson(data);
   map.data.setStyle({
@@ -31,10 +31,10 @@ function getSouthEastDengue() {
 function getSouthWestDengue() {
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 11,
-    center: { lat: 1.35027, lng: 103.851959 }
+    center: { lat: 1.35027, lng: 103.821959 }
   });
   data = map.data.loadGeoJson(
-    "/nea_files/dengue-cases-south-west-geojson.geojson"
+    "/trent-project-2-dengue/nea_files/dengue-cases-south-west-geojson.geojson"
   );
   map.data.addGeoJson(data);
   map.data.setStyle({
@@ -46,10 +46,10 @@ function getSouthWestDengue() {
 function getCentralDengue() {
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 11,
-    center: { lat: 1.35027, lng: 103.851959 }
+    center: { lat: 1.35027, lng: 103.821959 }
   });
   data = map.data.loadGeoJson(
-    "/nea_files/dengue-cases-central-geojson.geojson"
+    "/trent-project-2-dengue/nea_files/dengue-cases-central-geojson.geojson"
   );
   map.data.addGeoJson(data);
   map.data.setStyle({
