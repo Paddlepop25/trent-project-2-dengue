@@ -9,7 +9,7 @@ function getNorthMeals() {
 
   xhr.open(
     "GET",
-    "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.3397222222,103.9544444444&radius=5000&type=meal_delivery&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
+    "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.3397222222,103.9544444444&radius=4000&type=meal_delivery&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
     true
   );
 
@@ -29,7 +29,7 @@ function getNorthMeals() {
 function loadNorthMealMarkers(googleData) {
   let northEast = { lat: 1.3397222222, lng: 103.9544444444 };
   let map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 14,
+    zoom: 13,
     center: northEast
   });
   let googleObject = Object.entries(googleData)[2][1];

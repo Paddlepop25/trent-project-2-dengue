@@ -1,3 +1,7 @@
+.navbar {
+  background: #fde3e3;
+}
+
 .moz-brand {
   margin: 0 15px;
   width: 40px;
@@ -242,3 +246,24 @@ li:nth-child(odd) {
   width: 100%;
   margin: 5px 0 0 0;
 } */
+
+.northeastcard {
+  margin: 30px auto;
+}
+.footer {
+  background: #fde3e3;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.footer p {
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+.footer small {
+  /* padding-top: 20px;
+  margin-bottom: 0; */
+}
