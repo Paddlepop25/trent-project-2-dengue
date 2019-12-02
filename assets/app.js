@@ -50,6 +50,7 @@ function addMarkers(map, place) {
     position: place["geometry"]["location"],
     map: map,
     animation: google.maps.Animation.DROP
+    // animation: google.maps.Animation.BOUNCE
   });
 
   google.maps.event.addListener(marker, "click", function() {
