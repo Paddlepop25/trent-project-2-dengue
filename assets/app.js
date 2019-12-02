@@ -1,5 +1,5 @@
 function initMap() {
-  let singapore = { lat: 1.35027, lng: 103.851959 };
+  let singapore = { lat: 1.35027, lng: 103.821959 };
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 11,
     center: singapore

@@ -1,5 +1,7 @@
 .moz-brand {
   margin: 0 15px;
+  width: 40px;
+  height: 40px;
 }
 
 .navbar-nav a {
@@ -7,6 +9,7 @@
   font-weight: bold;
   font-size: 1.1rem;
   text-align: center;
+  margin-left: 25px;
 }
 /* 
 .navbar-nav a:first-child {
@@ -78,12 +81,15 @@
 
 .dengue-description {
   border: 2px dotted rgb(255, 25, 0);
-  margin: 20px auto;
+  /* width: 100%; */
+  height: 300px;
+  margin: 10px auto;
 }
 
 .dengue-cases {
   border: 2px dotted rgb(255, 25, 0);
-  margin: 20px auto;
+  height: 300px;
+  margin: 10px auto;
 }
 
 h4 {
@@ -95,18 +101,23 @@ h4 {
   /* display: inline; */
   width: 130px;
   height: 110px;
-  float: left;
-  margin: 19px 20px;
+  /* margin: 40px 20px; */
 }
 
 .number-cases {
-  display: block;
-  float: right;
+  /* position: relative; */
+  /* display: inline; */
+  /* float: right; */
 }
 
 .reported-cases {
   font-size: 2.5rem;
   font-weight: bold;
+}
+
+.select-zone h3 {
+  margin-top: 25px;
+  /* margin-bottom: 20px; */
 }
 
 .zonebtns .north-east {
