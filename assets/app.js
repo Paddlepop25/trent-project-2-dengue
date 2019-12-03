@@ -15,7 +15,7 @@ function initMap() {
   });
 
   // infoWindow = new google.maps.InfoWindow({
-  //   content: document.getElementById("info-content")
+  //   // content: document.getElementById("info-content")
   // });
 }
 
@@ -44,23 +44,33 @@ let southWestArea = document
   });
 
 function addMarkers(map, place) {
+  // console.log(place);
   let marker = new google.maps.Marker({
     position: place["geometry"]["location"],
     map: map,
+    icon: "http://maps.google.com/mapfiles/marker.png",
     animation: google.maps.Animation.DROP
     // animation: google.maps.Animation.BOUNCE
   });
 
   google.maps.event.addListener(marker, "click", function() {
+    // let lastOpenedBox;
+    // closeLastOpenedBox();
     let display = {};
     display.name = place.name;
+    display.rating = place.rating;
     display.vicinity = place.vicinity;
-    // clearResults(marker);
 
     if (place["name"] === undefined) {
       place["name"] = "No Available Name";
     } else {
       place["name"] = place["name"];
+    }
+
+    if (place["rating"] === undefined) {
+      place["rating"] = "No Available Rating";
+    } else {
+      place["rating"] = place["rating"];
     }
 
     if (place["vicinity"] === undefined) {
@@ -71,53 +81,53 @@ function addMarkers(map, place) {
 
     let box = new google.maps.InfoWindow({
       content: `<h5>${display.name}</h5>
-      <p>Address: ${display.vicinity}</p>`
+      <br>
+    <p>Address: ${display.vicinity}</p>
+    <p>Rating: ${display.rating}</p>`
     });
 
     box.open(map, marker);
+    // lastOpenedBox = box;
+
+    // function closeLastOpenedBox() {
+    //   if (lastOpenedBox) {
+    //     lastOpenedBox.close();
+    //   }
+    //   console.log(lastOpenedBox);
+    // }
   });
 
   return marker;
-
-  function clearResults(markers) {
-    for (let m in markers) {
-      console.log(m);
-      markers[m].setMap(null);
-    }
-    markers = [];
-  }
 }
 
-// function addMarkers(map, location) {
+// function addMarkers(map, place) {
 //   let marker = new google.maps.Marker({
-//     position: location,
+//     position: place["geometry"]["location"],
 //     map: map,
-//     animation: google.maps.Animation.DROP
-//     // icon: markerIcon
-//     // icon: "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png"
+//     animation: google.maps.Animation.DROP,
+//     icon: markerIcon
 //   });
 
-//   // for (let i = 0; i < 6; i++) {
-//   //   let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
-//   //   let markerIcon = MARKER_PATH + markerLetter + ".png";
-//   //   let marker = new google.maps.Marker({
-//   //     position: location,
-//   //     map: map,
-//   //     animation: google.maps.Animation.DROP,
-//   //     icon: markerIcon
-//   //     // icon: "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png"
-//   //   });
-//   // }
+//   for (let i = 0; i < 6; i++) {
+//     let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
+//     let markerIcon = MARKER_PATH + markerLetter + ".png";
+//     let marker = new google.maps.Marker({
+//       position: location,
+//       map: map,
+//       animation: google.maps.Animation.DROP,
+//       icon: markerIcon
+//     });
+//   }
 
-//   // let box = new google.maps.InfoWindow({
-//   //   content: "<h6>Clinic</h6>"
-//   // });
+//   let box = new google.maps.InfoWindow({
+//     content: "<h6>Clinic</h6>"
+//   });
 
-//   // box.open(map, marker);
+//   box.open(map, marker);
 // }
 
 // function infoWindow(googleData) {
-//   console.log()
+//   console.log();
 // }
 
 // function dropMarker(i) {
@@ -127,8 +137,8 @@ function addMarkers(map, place) {
 // }
 
 // for (var i = 0; i < results.length; i++) {
-//   var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
-//   var markerIcon = MARKER_PATH + markerLetter + '.png';
+//   var markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
+//   var markerIcon = MARKER_PATH + markerLetter + ".png";
 //   // Use marker animation to drop the icons incrementally on the map.
 //   markers[i] = new google.maps.Marker({
 //     position: results[i].geometry.location,
@@ -138,7 +148,7 @@ function addMarkers(map, place) {
 //   // If the user clicks a hotel marker, show the details of that hotel
 //   // in an info window.
 //   markers[i].placeResult = results[i];
-//   google.maps.event.addListener(markers[i], 'click', showInfoWindow);
+//   google.maps.event.addListener(markers[i], "click", showInfoWindow);
 //   setTimeout(dropMarker(i), i * 100);
 //   addResult(results[i], i);
 // }
