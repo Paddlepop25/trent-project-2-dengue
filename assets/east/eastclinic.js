@@ -20,7 +20,9 @@ function getNorthClinics() {
       loadClinicMarkers(response);
       loadClinicTable(response);
     } else {
-      console.log("There is something wrong");
+      alert(
+        "I'm sorry, there are too many requests. \nPlease try again in a second."
+      );
     }
   };
 
@@ -55,6 +57,7 @@ function loadClinicTable(googleData) {
 </thead>`;
   let tableRow;
   let status = googleObject[3][1];
+
   if (status === "OK") {
     for (let i = 0; i < googleResult.length; i++) {
       let tableList = googleResult[i];
@@ -62,12 +65,15 @@ function loadClinicTable(googleData) {
       if (tableRating === undefined) {
         tableRating = "N/A";
       }
-      tableRow += `<tr>
+
+      tableRow += `
+      a<tr>
           <th scope="row">${i}</th>
           <td>${tableList["name"]}</td>
           <td>${tableRating}</td>
           <td>${tableList["vicinity"]}</td>
         </tr>
+        s
       `;
       resultsTable.innerHTML = `<table class="table">
       ${tableHead}<tbody>${tableRow}</tbody>

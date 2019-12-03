@@ -16,7 +16,9 @@ function getNorthSupermarkets() {
       const response = JSON.parse(this.responseText);
       loadNorthSupermarketMarkers(response);
     } else {
-      console.log("There is something wrong");
+      alert(
+        "I'm sorry, there are too many requests. \nPlease try again in a second."
+      );
     }
   };
   xhr.send();
