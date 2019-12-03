@@ -64,23 +64,31 @@
 }
 
 .mozzie-wipeout img {
-  width: 100%;
+  width: 80%;
   display: block;
-  margin: 50px auto;
+  margin: 60px auto;
   border: 2px solid black;
+}
+
+.dengue-box1 {
+  top: -30px;
 }
 
 .dengue-description {
   border: 2px dotted rgb(255, 25, 0);
   /* width: 100%; */
-  height: 380px;
-  margin: 10px auto;
+  height: 400px;
+  /* margin: 10px auto; */
+}
+
+.dengue-description ul {
+  line-height: 30px;
 }
 
 .dengue-cases {
   border: 2px dotted rgb(255, 25, 0);
-  height: 380px;
-  margin: 10px auto;
+  height: 400px;
+  /* margin: 10px auto; */
 }
 
 h4 {
@@ -106,9 +114,9 @@ h4 {
   font-weight: bold;
 }
 
-#givespace {
+/* #givespace {
   height: 40px;
-}
+} */
 
 .select-zone h3 {
   margin-top: 25px;
@@ -143,7 +151,7 @@ h4 {
 
 .northeastcard {
   border: 2px solid red;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 /* 
 table {
@@ -163,7 +171,8 @@ table {
 
 .northeastcard {
   margin: 30px auto;
-}
+} */
+
 .footer {
   background: #fde3e3;
   color: #333333;
@@ -177,10 +186,10 @@ table {
   margin-bottom: 0;
 }
 
-/* .footer small {
-  /* padding-top: 20px;
-  margin-bottom: 0; */
-/* }  */
+.footer small {
+  padding-top: 20px;
+  margin-bottom: 0;
+}
 
 @media (max-width: 767.98px) {
   .navbar-nav a:first-child {
@@ -188,5 +197,14 @@ table {
   }
   .navbar-nav a:last-child {
     margin-bottom: 20px;
+  }
+  .mozzie-wipeout img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .dengue-box2 {
+    top: -30px;
   }
 }
