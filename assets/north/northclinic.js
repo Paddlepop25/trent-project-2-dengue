@@ -45,34 +45,36 @@ function loadClinicTable(googleData) {
   let resultsTable = document.querySelector(".results-table");
   let googleObject = Object.entries(googleData);
   let googleResult = googleObject[2][1];
+  let tableHead = `<thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Name</th>
+    <th scope="col">Rating</th>
+    <th scope="col">Address</th>
+  </tr>
+</thead>`;
+  let tableRow;
   let status = googleObject[3][1];
   if (status === "OK") {
     for (let i = 0; i < googleResult.length; i++) {
-      let tableList = JSON.stringify(googleResult[i]);
-      console.log(tableList[0]["name"]);
-      // resultsTable.innerHTML = `${tableList} here`;
-      let tableHead = `<thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Rating</th>
-        <th scope="col">Address</th>
-      </tr>
-    </thead>`;
-      let tableRow;
-      tableRow += ` <tr>
-      <th scope="row">${i}</th>
-      <td>${tableList["name"]}</td>
-      <td>${tableList["rating"]}</td>
-      <td>${tableList["vicinity"]}</td>
-    </tr>
-  `;
+      let tableList = googleResult[i];
+      let tableRating = tableList["rating"];
+      if (tableRating === undefined) {
+        tableRating = "N/A";
+      }
+      tableRow += `<tr>
+          <th scope="row">${i}</th>
+          <td>${tableList["name"]}</td>
+          <td>${tableRating}</td>
+          <td>${tableList["vicinity"]}</td>
+        </tr>
+      `;
       resultsTable.innerHTML = `<table class="table">
       ${tableHead}<tbody>${tableRow}</tbody>
-      /table>`;
+      </table>`;
     }
   } else {
     resultsTable.innerHTML = `There is no data available`;
-    alert("There was an error with data retrieval because of: " + status);
+    alert("There was an error with data retrieval because: " + status);
   }
 }
