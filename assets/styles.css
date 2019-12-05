@@ -1,5 +1,5 @@
 body {
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -72,7 +72,7 @@ body {
   width: 80%;
   display: block;
   margin: 60px auto;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .dengue-description {
@@ -88,6 +88,16 @@ body {
 .dengue-description ul {
   line-height: 30px;
   padding-left: 20px;
+}
+
+.dengue-description a {
+  color: #333333;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.dengue-description a:hover {
+  color: rgb(171, 0, 0);
 }
 
 .dengue-cases {
@@ -114,21 +124,11 @@ body {
 .reported-cases {
   font-size: 2rem;
   font-weight: bold;
-  /* text-align: center; */
 }
 
-/* .dengue-box1 {
-  top: -30px;
-} 
-
-h4 {
-  text-decoration: underline;
-}
- */
-
-/* #givespace {
+#givespace {
   height: 40px;
-} */
+}
 
 .select-zone h3 {
   margin-top: 25px;
@@ -161,9 +161,22 @@ h4 {
   margin: 30px auto;
 }
 
-.northeastcard {
-  border: 2px solid red;
+.eastcard {
+  border: 2px dotted red;
   margin-bottom: 20px;
+}
+
+.eastcard p {
+  margin-top: -10px;
+}
+
+.eastcard a {
+  color: rgb(171, 0, 0);
+  font-style: italic;
+}
+
+.eastcard a:hover {
+  color: #333333;
 }
 /* 
 table {
@@ -179,11 +192,7 @@ table {
   top: 0px;
   cursor: pointer;
   overflow-x: hidden;
-}
-
-.northeastcard {
-  margin: 30px auto;
-} */
+}*/
 
 .footer {
   background: #fde3e3;
