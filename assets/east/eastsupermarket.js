@@ -8,7 +8,7 @@ function getNorthSupermarkets() {
   const xhr = new XMLHttpRequest();
   xhr.open(
     "GET",
-    "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.3397222222,103.9544444444&radius=4000&type=supermarket&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
+    "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.3497222222,103.9544444444&radius=4000&type=supermarket&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
     true
   );
   xhr.onload = function() {
@@ -25,7 +25,7 @@ function getNorthSupermarkets() {
 }
 
 function loadNorthSupermarketMarkers(googleData) {
-  let northEast = { lat: 1.3397222222, lng: 103.9544444444 };
+  let northEast = { lat: 1.3497222222, lng: 103.9544444444 };
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 13,
     center: northEast
