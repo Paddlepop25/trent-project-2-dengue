@@ -91,7 +91,7 @@ body {
 }
 
 .dengue-description a {
-  color: #333333;
+  color: rgb(171, 0, 0);
   font-style: italic;
   text-decoration: underline;
 }
