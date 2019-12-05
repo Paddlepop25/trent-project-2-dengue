@@ -1,21 +1,21 @@
-let northEastSupermarkets = document
-  .querySelector(".northeast-spmkt")
+let eastLaundromat = document
+  .querySelector(".northeast-laundromats")
   .addEventListener("click", () => {
-    getNorthSupermarkets();
+    getEastLaundromats();
   });
 
-function getNorthSupermarkets() {
+function getEastLaundromats() {
   const xhr = new XMLHttpRequest();
   xhr.open(
     "GET",
-    "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.3497222222,103.9544444444&radius=4000&type=grocery_or_supermarket&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
+    "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.3497222222,103.9544444444&radius=4000&type=laundromat&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
     true
   );
   xhr.onload = function() {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
-      loadNorthSupermarketMarkers(response);
-      loadSupermarketTable(response);
+      loadEastLaundromatMarkers(response);
+      loadLaundromatTable(response);
     } else {
       alert(
         "I'm sorry, there are too many requests. \nPlease try again in a second."
@@ -25,7 +25,7 @@ function getNorthSupermarkets() {
   xhr.send();
 }
 
-function loadNorthSupermarketMarkers(googleData) {
+function loadEastLaundromatMarkers(googleData) {
   let northEast = { lat: 1.3497222222, lng: 103.9544444444 };
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 13,
@@ -38,17 +38,17 @@ function loadNorthSupermarketMarkers(googleData) {
   }
 }
 
-function loadSupermarketTable(googleData) {
+function loadLaundromatTable(googleData) {
   let resultsTable = document.querySelector(".results-table");
   let googleObject = Object.entries(googleData);
   let googleResult = googleObject[2][1];
   let tableHead = `<thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Rating</th>
-      <th scope="col">Address</th>
-    </tr>
+  <tr>
+  <th scope="col">#</th>
+  <th scope="col">Name</th>
+  <th scope="col">Rating</th>
+  <th scope="col">Address</th>
+  </tr>
   </thead>`;
   let tableRow = "";
   let status = googleObject[3][1];
@@ -75,6 +75,6 @@ function loadSupermarketTable(googleData) {
     }
   } else {
     resultsTable.innerHTML = `There is no data available`;
-    alert("There was an error with data retrieval because: " + status);
+    alert("There was an error with data retrieval. \nPlease try again.");
   }
 }
