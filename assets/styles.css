@@ -93,7 +93,6 @@ body {
 .dengue-description a {
   color: rgb(171, 0, 0);
   font-style: italic;
-  text-decoration: underline;
 }
 
 .dengue-description a:hover {
@@ -124,6 +123,7 @@ body {
 .reported-cases {
   font-size: 2rem;
   font-weight: bold;
+  color: rgb(171, 0, 0);
 }
 
 #givespace {
