@@ -55,7 +55,7 @@ function loadClinicTable(googleData) {
     <th scope="col">Address</th>
   </tr>
 </thead>`;
-  let tableRow;
+  let tableRow = "";
   let status = googleObject[3][1];
 
   if (status === "OK") {
