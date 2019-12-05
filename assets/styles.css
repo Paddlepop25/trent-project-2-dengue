@@ -69,11 +69,16 @@ body {
 }
 
 .mozzie-wipeout img {
-  width: 80%;
+  width: 90%;
   display: block;
-  margin: 60px auto;
+  margin: 100px auto;
+  margin-bottom: 50px;
   /* border: 2px solid black; */
 }
+/* 
+.givespace1 {
+  height: 40px;
+} */
 
 .dengue-description {
   border: 2px dotted rgb(255, 25, 0);
@@ -121,12 +126,12 @@ body {
 }
 
 .reported-cases {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   color: rgb(171, 0, 0);
 }
 
-#givespace {
+#givespace2 {
   height: 40px;
 }
 
@@ -202,14 +207,24 @@ table {
   text-align: center;
 }
 
+.footer-icons i {
+  color: #333333;
+  font-size: 1.7rem;
+  margin: 20px 5px 0 5px;
+}
+
+.footer-icons i:hover {
+  color: rgb(171, 0, 0);
+}
+
 .footer p {
-  padding-top: 20px;
+  padding-top: 10px;
   margin-bottom: 0;
 }
 
 .footer small {
-  padding-top: 20px;
-  margin-bottom: 0;
+  display: block;
+  /* margin-bottom: 10px; */
 }
 
 @media (min-width: 992px) {
