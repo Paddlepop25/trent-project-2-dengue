@@ -66,14 +66,12 @@ function loadClinicTable(googleData) {
         tableRating = "N/A";
       }
 
-      tableRow += `
-      a<tr>
+      tableRow += `<tr>
           <th scope="row">${i}</th>
           <td>${tableList["name"]}</td>
           <td>${tableRating}</td>
           <td>${tableList["vicinity"]}</td>
         </tr>
-        s
       `;
       resultsTable.innerHTML = `<table class="table">
       ${tableHead}<tbody>${tableRow}</tbody>
