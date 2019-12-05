@@ -44,80 +44,65 @@ let southWestArea = document
   });
 
 function addMarkers(map, place) {
-  // console.log(place);
-  let marker = new google.maps.Marker({
-    position: place["geometry"]["location"],
-    map: map,
-    icon: "http://maps.google.com/mapfiles/marker.png",
-    animation: google.maps.Animation.DROP
-    // animation: google.maps.Animation.BOUNCE
-  });
+  let markerPath = "http://maps.google.com/mapfiles/marker";
+  let marker = "";
 
-  google.maps.event.addListener(marker, "click", function() {
-    // let lastOpenedBox;
-    // closeLastOpenedBox();
-    let display = {};
-    display.name = place.name;
-    display.rating = place.rating;
-    display.vicinity = place.vicinity;
+  for (let i = 0; i < 27; i++) {
+    let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
+    let markerIcon = markerPath + markerLetter + ".png";
+    marker = new google.maps.Marker({
+      position: place["geometry"]["location"],
+      map: map,
+      icon: markerIcon,
+      animation: google.maps.Animation.DROP
+    });
 
-    if (place["name"] === undefined) {
-      place["name"] = "No Available Name";
-    } else {
-      place["name"] = place["name"];
-    }
+    google.maps.event.addListener(marker, "click", function() {
+      // let lastOpenedBox;
+      // closeLastOpenedBox();
+      let display = {};
+      display.name = place.name;
+      display.rating = place.rating;
+      display.vicinity = place.vicinity;
 
-    if (place["rating"] === undefined) {
-      place["rating"] = "No Available Rating";
-    } else {
-      place["rating"] = place["rating"];
-    }
+      if (place["name"] === undefined) {
+        place["name"] = "No Available Name";
+      } else {
+        place["name"] = place["name"];
+      }
 
-    if (place["vicinity"] === undefined) {
-      place["vicinity"] = "No Available Address";
-    } else {
-      place["vicinity"] = place["vicinity"];
-    }
+      if (place["rating"] === undefined) {
+        place["rating"] = "No Available Rating";
+      } else {
+        place["rating"] = place["rating"];
+      }
 
-    let box = new google.maps.InfoWindow({
-      content: `<h5>${display.name}</h5>
+      if (place["vicinity"] === undefined) {
+        place["vicinity"] = "No Available Address";
+      } else {
+        place["vicinity"] = place["vicinity"];
+      }
+
+      let box = new google.maps.InfoWindow({
+        content: `<h5>${display.name}</h5>
       <br>
     <p>Address: ${display.vicinity}</p>
     <p>Rating: ${display.rating}</p>`
+      });
+
+      box.open(map, marker);
+      // lastOpenedBox = box;
+
+      // function closeLastOpenedBox() {
+      //   if (lastOpenedBox) {
+      //     lastOpenedBox.close();
+      //   }
+      //   console.log(lastOpenedBox);
+      // }
+      return marker;
     });
-
-    box.open(map, marker);
-    // lastOpenedBox = box;
-
-    // function closeLastOpenedBox() {
-    //   if (lastOpenedBox) {
-    //     lastOpenedBox.close();
-    //   }
-    //   console.log(lastOpenedBox);
-    // }
-  });
-
-  return marker;
+  }
 }
-
-// function addMarkers(map, place) {
-//   let marker = new google.maps.Marker({
-//     position: place["geometry"]["location"],
-//     map: map,
-//     animation: google.maps.Animation.DROP,
-//     icon: markerIcon
-//   });
-
-//   for (let i = 0; i < 6; i++) {
-//     let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
-//     let markerIcon = MARKER_PATH + markerLetter + ".png";
-//     let marker = new google.maps.Marker({
-//       position: location,
-//       map: map,
-//       animation: google.maps.Animation.DROP,
-//       icon: markerIcon
-//     });
-//   }
 
 //   let box = new google.maps.InfoWindow({
 //     content: "<h6>Clinic</h6>"

@@ -57,9 +57,9 @@ function loadClinicTable(googleData) {
 </thead>`;
   let tableRow = "";
   let status = googleObject[3][1];
-
   if (status === "OK") {
     for (let i = 0; i < googleResult.length; i++) {
+      let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
       let tableList = googleResult[i];
       let tableRating = tableList["rating"];
       if (tableRating === undefined) {
@@ -67,15 +67,15 @@ function loadClinicTable(googleData) {
       }
 
       tableRow += `<tr>
-          <th scope="row">${i + 1}</th>
-          <td>${tableList["name"]}</td>
-          <td>${tableRating}</td>
-          <td>${tableList["vicinity"]}</td>
-        </tr>
-      `;
+            <th scope="row">${markerLetter}</th>
+            <td>${tableList["name"]}</td>
+            <td>${tableRating}</td>
+            <td>${tableList["vicinity"]}</td>
+          </tr>
+        `;
       resultsTable.innerHTML = `<table class="table">
-      ${tableHead}<tbody>${tableRow}</tbody>
-      </table>`;
+        ${tableHead}<tbody>${tableRow}</tbody>
+        </table>`;
     }
   } else {
     resultsTable.innerHTML = `There is no data available`;
