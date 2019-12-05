@@ -18,6 +18,7 @@ function getNorthPharmacies() {
       const response = JSON.parse(this.responseText);
 
       loadNorthPharmacyMarkers(response);
+      loadPharmacyTable(response);
     } else {
       alert(
         "I'm sorry, there are too many requests. \nPlease try again in a second."
@@ -38,5 +39,46 @@ function loadNorthPharmacyMarkers(googleData) {
   for (let i = 0; i < googleObject.length; i++) {
     let listOfObjects = googleObject[i];
     addMarkers(map, listOfObjects);
+  }
+}
+
+function loadPharmacyTable(googleData) {
+  let resultsTable = document.querySelector(".results-table");
+  let googleObject = Object.entries(googleData);
+  let googleResult = googleObject[2][1];
+  let tableHead = `<thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Rating</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>`;
+  let tableRow = "";
+  let status = googleObject[3][1];
+
+  if (status === "OK") {
+    for (let i = 0; i < googleResult.length; i++) {
+      let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
+      let tableList = googleResult[i];
+      let tableRating = tableList["rating"];
+      if (tableRating === undefined) {
+        tableRating = "N/A";
+      }
+
+      tableRow += `<tr>
+              <th scope="row">${markerLetter}</th>
+              <td>${tableList["name"]}</td>
+              <td>${tableRating}</td>
+              <td>${tableList["vicinity"]}</td>
+            </tr>
+          `;
+      resultsTable.innerHTML = `<table class="table">
+          ${tableHead}<tbody>${tableRow}</tbody>
+          </table>`;
+    }
+  } else {
+    resultsTable.innerHTML = `There is no data available`;
+    alert("There was an error with data retrieval because: " + status);
   }
 }
