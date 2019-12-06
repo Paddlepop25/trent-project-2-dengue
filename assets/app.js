@@ -1,24 +1,3 @@
-function initMap() {
-  let singapore = { lat: 1.35027, lng: 103.821959 };
-  let map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 11,
-    center: singapore
-  });
-
-  let data = map.data.loadGeoJson("/nea_files/dengue-clusters-geojson.geojson");
-
-  map.data.addGeoJson(data);
-
-  map.data.setStyle({
-    fillColor: "green",
-    strokeWeight: 1
-  });
-
-  // infoWindow = new google.maps.InfoWindow({
-  //   // content: document.getElementById("info-content")
-  // });
-}
-
 let northEastArea = document
   .querySelector(".north-east")
   .addEventListener("click", () => {
@@ -42,6 +21,33 @@ let southWestArea = document
   .addEventListener("click", () => {
     getSouthWestDengue();
   });
+
+let resetButton = document
+  .querySelector(".reset-btn")
+  .addEventListener("click", () => {
+    initMap();
+  });
+
+function initMap() {
+  let singapore = { lat: 1.35027, lng: 103.821959 };
+  let map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 11,
+    center: singapore
+  });
+
+  let data = map.data.loadGeoJson("/nea_files/dengue-clusters-geojson.geojson");
+
+  map.data.addGeoJson(data);
+
+  map.data.setStyle({
+    fillColor: "green",
+    strokeWeight: 1
+  });
+
+  // infoWindow = new google.maps.InfoWindow({
+  //   // content: document.getElementById("info-content")
+  // });
+}
 
 function addMarkers(map, place) {
   let markerPath = "http://maps.google.com/mapfiles/marker";
@@ -138,8 +144,51 @@ function addMarkers(map, place) {
 //   addResult(results[i], i);
 // }
 
-let resetButton = document
-  .querySelector(".reset-btn")
-  .addEventListener("click", () => {
-    initMap();
-  });
+document.addEventListener("DOMContentLoaded", amenitiesMedCSS);
+
+function amenitiesMedCSS() {
+  let query = window.matchMedia("(min-width: 482px) and (max-width: 991.98px)");
+  if (query.matches) {
+    let aTagsInAmeneties = document.querySelector(".nearby-places a")
+      .nextElementSibling.nextElementSibling;
+    let addBrTags = document.createElement("br");
+    aTagsInAmeneties.parentNode.insertBefore(
+      addBrTags,
+      aTagsInAmeneties.nextSibling
+    );
+    console.log(aTagsInAmeneties);
+  }
+}
+
+// start of chunk of code worked for first a tag
+// function amenitiesCSS() {
+//   let query = window.matchMedia("(max-width: 767px)");
+//   if (query.matches) {
+//     //
+//     let aTagsInAmeneties = document.querySelector(".nearby-places a");
+//     let addBrTags = document.createElement("br");
+//     aTagsInAmeneties.parentNode.insertBefore(
+//       addBrTags,
+//       aTagsInAmeneties.nextSibling
+//     );
+//   }
+//   console.log(aTagsInAmeneties);
+// }
+// end of chunk of code worked for first a tag
+
+// let aTagsInAmeneties = document.querySelector(".nearby-places a");
+// let addBrTags = document.createElement("br");
+// aTagsInAmeneties.parentNode.insertBefore(
+//   addBrTags,
+//   aTagsInAmeneties.nextSibling
+// );
+// document.querySelector(".nearby-places").style.lineHeight = "30px".marginRight = "9px"; ;
+// // document.querySelector(".eastcard i").style.marginRight = "9px";
+// document.querySelector(".eastcard").style.color = "blue";
+
+// @media(max - width: 767px) {
+//   .eastcard i {
+//     line - height: 30px;
+//     margin - right: 9px;
+//   }
+// }
