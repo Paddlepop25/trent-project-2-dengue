@@ -81,7 +81,7 @@ body {
 } */
 
 .dengue-description {
-  border: 2px dotted rgb(255, 25, 0);
+  border: 2px dotted rgb(171, 0, 0);
   padding: 15px 10px;
   margin-bottom: 20px;
 }
@@ -105,7 +105,7 @@ body {
 }
 
 .dengue-cases {
-  border: 2px dotted rgb(255, 25, 0);
+  border: 2px dotted rgb(171, 0, 0);
   padding: 15px 10px;
 }
 .dengue-cases h4 {
@@ -142,22 +142,55 @@ body {
 
 .zonebtns .north-east {
   margin: 5px 0;
+  font-weight: bold;
+  background: #ffdc36;
+}
+
+.zonebtns .north-east:hover {
+  background: rgb(243, 170, 1);
+  color: #ffffff;
 }
 
 .zonebtns .central {
   margin: 5px 0;
+  font-weight: bold;
+  background: #59b7ff;
+}
+
+.zonebtns .central:hover {
+  background: #248cdb;
+  color: #ffffff;
 }
 
 .zonebtns .south-east {
   margin: 5px 0;
+  font-weight: bold;
+  background: #93ee93;
+}
+
+.zonebtns .south-east:hover {
+  background: #1db61d;
+  color: #ffffff;
 }
 
 .zonebtns .south-west {
   margin: 5px 0;
+  font-weight: bold;
+  background: #d380fa;
+}
+
+.zonebtns .south-west:hover {
+  background: rgb(185, 35, 255);
+  color: #ffffff;
 }
 
 .zonebtns .reset-btn {
   margin: 5px 0;
+  font-weight: bold;
+}
+
+.zonebtns .reset-btn:hover {
+  color: #333333;
 }
 
 #map {
@@ -167,7 +200,7 @@ body {
 }
 
 .eastcard {
-  border: 2px dotted red;
+  border: 2px dotted rgb(171, 0, 0);
   margin-bottom: 20px;
 }
 

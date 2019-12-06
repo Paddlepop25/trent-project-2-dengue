@@ -52,8 +52,8 @@ function initMap() {
 function addMarkers(map, place) {
   let markerPath = "http://maps.google.com/mapfiles/marker";
   let marker = "";
-
-  for (let i = 0; i < 27; i++) {
+  let numberOfPlaces = Object.keys(place).length;
+  for (let i = 0; i < numberOfPlaces; i++) {
     let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
     let markerIcon = markerPath + markerLetter + ".png";
     marker = new google.maps.Marker({
@@ -117,10 +117,6 @@ function addMarkers(map, place) {
 //   box.open(map, marker);
 // }
 
-// function infoWindow(googleData) {
-//   console.log();
-// }
-
 // function dropMarker(i) {
 //   return function() {
 //     markers[i].setMap(map);
@@ -144,7 +140,11 @@ function addMarkers(map, place) {
 //   addResult(results[i], i);
 // }
 
-document.addEventListener("DOMContentLoaded", amenitiesMedCSS);
+document.addEventListener(
+  "DOMContentLoaded",
+  amenitiesMedCSS
+  // amenitiesSmallCSS
+);
 
 function amenitiesMedCSS() {
   let query = window.matchMedia("(min-width: 482px) and (max-width: 991.98px)");
@@ -156,35 +156,26 @@ function amenitiesMedCSS() {
       addBrTags,
       aTagsInAmeneties.nextSibling
     );
-    console.log(aTagsInAmeneties);
   }
 }
 
-// start of chunk of code worked for first a tag
-// function amenitiesCSS() {
-//   let query = window.matchMedia("(max-width: 767px)");
+// function amenitiesSmallCSS() {
+//   let query = window.matchMedia("(max-width: 481px)");
 //   if (query.matches) {
-//     //
-//     let aTagsInAmeneties = document.querySelector(".nearby-places a");
 //     let addBrTags = document.createElement("br");
-//     aTagsInAmeneties.parentNode.insertBefore(
+//     let amenetiesClinic = document.querySelector(".nearby-places a");
+//     let amenetiesPharmacy = document.querySelector(".nearby-places a").nextElementSibling;
+//     amenetiesClinic.parentNode.insertBefore(
 //       addBrTags,
-//       aTagsInAmeneties.nextSibling
+//       amenetiesClinic.nextSibling
 //     );
+//     // amenetiesPharmacy.parentNode.insertBefore(
+//     //   addBrTags,
+//     //   amenetiesPharmacy.nextSibling
+//     // );
+//     console.log(amenetiesPharmacy);
 //   }
-//   console.log(aTagsInAmeneties);
 // }
-// end of chunk of code worked for first a tag
-
-// let aTagsInAmeneties = document.querySelector(".nearby-places a");
-// let addBrTags = document.createElement("br");
-// aTagsInAmeneties.parentNode.insertBefore(
-//   addBrTags,
-//   aTagsInAmeneties.nextSibling
-// );
-// document.querySelector(".nearby-places").style.lineHeight = "30px".marginRight = "9px"; ;
-// // document.querySelector(".eastcard i").style.marginRight = "9px";
-// document.querySelector(".eastcard").style.color = "blue";
 
 // @media(max - width: 767px) {
 //   .eastcard i {
