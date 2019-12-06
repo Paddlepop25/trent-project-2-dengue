@@ -72,10 +72,10 @@ function loadClinicTable(googleData) {
             <th scope="row">${markerLetter}</th>
             <td>${tableList["name"]}</td>
             <td style="
-    text-align: center;
+    text-align: center; 
 ">${tableRating}</td>
             <td style="
-    text-align: center;
+    text-align: center; 
 ">${tableList["vicinity"]}</td>
           </tr>
         `;
