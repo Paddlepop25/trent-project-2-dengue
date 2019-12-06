@@ -175,6 +175,10 @@ body {
   margin-top: -10px;
 }
 
+.eastcard i {
+  margin-right: 5px;
+}
+
 .eastcard a {
   color: rgb(171, 0, 0);
   font-style: italic;
@@ -210,7 +214,7 @@ table {
 .footer-icons i {
   color: #333333;
   font-size: 1.7rem;
-  margin: 20px 5px 0 5px;
+  margin: 20px 10px 0 10px;
 }
 
 .footer-icons i:hover {
@@ -227,14 +231,10 @@ table {
   /* margin-bottom: 10px; */
 }
 
-@media (min-width: 992px) {
-  .dengue-cases {
-    height: 296px;
-  }
-  .mosq-icon {
-    width: 140px;
-    height: 120px;
-    margin-top: 15px;
+@media (max-width: 767px) {
+  .eastcard i {
+    line-height: 30px;
+    margin-right: 9px;
   }
 }
 
@@ -247,5 +247,16 @@ table {
   }
   .mozzie-wipeout img {
     width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .dengue-cases {
+    height: 296px;
+  }
+  .mosq-icon {
+    width: 140px;
+    height: 120px;
+    margin-top: 15px;
   }
 }

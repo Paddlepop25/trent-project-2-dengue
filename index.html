@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
     integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Roboto|Tomorrow&display=swap" rel="stylesheet">
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
-    type='text/css'>
+  <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+    type='text/css'> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 
@@ -136,15 +138,37 @@
       <div class=" card-body">
         <h5 class="card-title" id="amenities">Amenities near you</h5>
         <p class="card-text">
-          Select options to see information on nearby medical supplies and services.
+          Select options below to see information on nearby medical supplies and services.
         </p>
-        <div class="nearby-places">
-          <a href="#singapore" class="card-link northeast-clinics">Clinics</a>
-          <a href="#singapore" class="card-link northeast-pharmacies">Pharmacies</a>
-          <a href="#singapore" class="card-link northeast-spmkt">Supermarkets</a>
-          <a href="#singapore" class="card-link northeast-meals">Meal Delivery</a>
-          <a href="#singapore" class="card-link northeast-laundromats">Laundromats</a>
-          <a href="#singapore" class="card-link east-shopping">Shopping Malls</a>
+        <div class="nearby-places d-md-none">
+          <a href="#singapore" class="card-link northeast-clinics"><i class="fas fa-clinic-medical"></i>Clinics</a>
+           <br>
+          <a href="#singapore" class="card-link northeast-pharmacies"><i class="fas fa-pills"></i>Pharmacies</a>
+          <br>
+          <a href="#singapore" class="card-link northeast-spmkt"><i class="fas fa-shopping-cart"></i>Supermarkets</a>
+          <br>
+          <a href="#singapore" class="card-link northeast-meals"><i class="fas fa-utensils"></i>Meal Delivery</a>
+          <br>
+          <a href="#singapore" class="card-link northeast-laundromats"><i class="fas fa-tshirt"></i>Laundromats</a>
+           <br>
+          <a href="#singapore" class="card-link east-shopping"><i class="fas fa-store"></i>Shopping Malls</a>
+        </div>
+        <div class="nearby-places d-none d-md-block d-lg-none">
+          <a href="#singapore" class="card-link northeast-clinics"><i class="fas fa-clinic-medical"></i>Clinics</a>
+          <a href="#singapore" class="card-link northeast-pharmacies"><i class="fas fa-pills"></i>Pharmacies</a>
+          <a href="#singapore" class="card-link northeast-spmkt"><i class="fas fa-shopping-cart"></i>Supermarkets</a>
+          <br>
+          <a href="#singapore" class="card-link northeast-meals"><i class="fas fa-utensils"></i>Meal Delivery</a>
+          <a href="#singapore" class="card-link northeast-laundromats"><i class="fas fa-tshirt"></i>Laundromats</a>
+          <a href="#singapore" class="card-link east-shopping"><i class="fas fa-store"></i>Shopping Malls</a>
+        </div>
+        <div class="nearby-places d-none d-lg-block">
+          <a href="#singapore" class="card-link northeast-clinics"><i class="fas fa-clinic-medical"></i>Clinics</a>
+          <a href="#singapore" class="card-link northeast-pharmacies"><i class="fas fa-pills"></i>Pharmacies</a>
+          <a href="#singapore" class="card-link northeast-spmkt"><i class="fas fa-shopping-cart"></i>Supermarkets</a>
+          <a href="#singapore" class="card-link northeast-meals"><i class="fas fa-utensils"></i>Meal Delivery</a>
+          <a href="#singapore" class="card-link northeast-laundromats"><i class="fas fa-tshirt"></i>Laundromats</a>
+          <a href="#singapore" class="card-link east-shopping"><i class="fas fa-store"></i>Shopping Malls</a>
         </div>
       </div>
     </div>
@@ -158,10 +182,10 @@
 
   <footer class="footer">
     <div class="footer-icons">
-      <a href="https://www.nea.gov.sg/dengue-zika"><i class="fa fa-plus-square"></i></a>
-      <a href="https://www.linkedin.com/in/lindahsu007/"><i class="fa fa-linkedin"></i></a>
-      <a href="https://twitter.com/shecodeshsucode"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.instagram.com/shecodeshsucodes/" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.nea.gov.sg/dengue-zika"><i class="fas fa-first-aid"></i></a>
+      <a href="https://www.linkedin.com/in/lindahsu007/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://twitter.com/shecodeshsucode"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/shecodeshsucodes/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
     <p>&copy; Linda Hsu, 2019</p>
     <small>For educational purpose</small>
