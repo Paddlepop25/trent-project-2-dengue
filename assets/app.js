@@ -63,7 +63,7 @@ function addMarkers(map, place) {
       animation: google.maps.Animation.DROP
     });
 
-    google.maps.event.addListener(marker, "click", function() {
+    google.maps.event.addListener(marker, "click", function () {
       // let lastOpenedBox;
       // closeLastOpenedBox();
       let display = {};
@@ -143,7 +143,8 @@ function addMarkers(map, place) {
 document.addEventListener(
   "DOMContentLoaded",
   amenitiesMedCSS
-  // amenitiesSmallCSS
+  // amenitiesSmallCSS,
+  // changeTableRating
 );
 
 function amenitiesMedCSS() {
@@ -181,5 +182,13 @@ function amenitiesMedCSS() {
 //   .eastcard i {
 //     line - height: 30px;
 //     margin - right: 9px;
+//   }
+// }
+
+// function changeTableRating() {
+//   let query = window.matchMedia("(min-width: 768px)");
+//   let tableRating = document.querySelector(".tablerating");
+//   if (query.matches) {
+//     console.log(tableRating);
 //   }
 // }

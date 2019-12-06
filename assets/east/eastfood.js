@@ -11,7 +11,7 @@ function getNorthMeals() {
     "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.3497222222,103.9544444444&radius=4000&type=meal_delivery&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
     true
   );
-  xhr.onload = function() {
+  xhr.onload = function () {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
       loadNorthMealMarkers(response);
@@ -46,8 +46,11 @@ function loadMealTable(googleData) {
   <tr>
   <th scope="col">#</th>
   <th scope="col">Name</th>
-  <th scope="col">Rating</th>
-  <th scope="col">Address</th>
+  <th scope="col" style="
+    text-align: center;
+">Rating</th>
+  <th scope="col" style="
+    text-align: center;">Address</th>
   </tr>
   </thead>`;
   let tableRow = "";
@@ -64,8 +67,12 @@ function loadMealTable(googleData) {
       tableRow += `<tr>
               <th scope="row">${markerLetter}</th>
               <td>${tableList["name"]}</td>
-              <td>${tableRating}</td>
-              <td>${tableList["vicinity"]}</td>
+              <td style="
+    text-align: center;
+">${tableRating}</td>
+              <td style="
+    text-align: center;
+">${tableList["vicinity"]}</td>
             </tr>
           `;
       resultsTable.innerHTML = `<table class="table">

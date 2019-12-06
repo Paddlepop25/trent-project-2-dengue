@@ -220,21 +220,10 @@ body {
 .eastcard a:hover {
   color: #333333;
 }
-/* 
-table {
-  font-size: 12px;
-}
 
-#listing {
-  position: absolute;
-  width: 200px;
-  height: 470px;
-  overflow: auto;
-  left: 442px;
-  top: 0px;
-  cursor: pointer;
-  overflow-x: hidden;
-}*/
+tbody {
+  /* text-align: justify; */
+}
 
 .footer {
   background: #fde3e3;
@@ -261,7 +250,6 @@ table {
 
 .footer small {
   display: block;
-  /* margin-bottom: 10px; */
 }
 
 /* @media (max-width: 767px) {
