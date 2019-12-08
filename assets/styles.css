@@ -261,6 +261,10 @@ thead .table-header {
   margin-bottom: 0;
 }
 
+.footer-mosq {
+  width: 40px;
+}
+
 .footer small {
   display: block;
 }
