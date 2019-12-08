@@ -205,20 +205,25 @@ body {
 }
 
 .eastcard p {
-  margin-top: -10px;
+  /* margin-top: -10px; */
 }
 
 .eastcard i {
-  margin-right: 5px;
+  margin-right: 8px;
+  font-size: 1.3rem;
+  text-align: left;
 }
 
 .eastcard a {
   color: rgb(171, 0, 0);
   font-style: italic;
+  text-align: left;
+  line-height: 28px;
+  /* padding-right: 115px; */
 }
 
 .eastcard a:hover {
-  color: #333333;
+  color: rgb(101, 0, 0);
 }
 
 tbody {

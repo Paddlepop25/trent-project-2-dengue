@@ -1,3 +1,5 @@
+// let markers = [];
+
 let northEastArea = document
   .querySelector(".north-east")
   .addEventListener("click", () => {
@@ -50,10 +52,12 @@ function initMap() {
 }
 
 function addMarkers(map, place) {
+  // let markers = [];
   let markerPath = "http://maps.google.com/mapfiles/marker";
-  let marker = "";
-  let numberOfPlaces = Object.keys(place).length;
-  for (let i = 0; i < numberOfPlaces; i++) {
+  // let numberOfPlaces = Object.keys(place).length;
+  // let numberOfPlaces2 = a.length;
+  for (let i = 0; i < 30; i++) {
+    // console.log(place);
     let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
     let markerIcon = markerPath + markerLetter + ".png";
     marker = new google.maps.Marker({
@@ -63,9 +67,7 @@ function addMarkers(map, place) {
       animation: google.maps.Animation.DROP
     });
 
-    google.maps.event.addListener(marker, "click", function () {
-      // let lastOpenedBox;
-      // closeLastOpenedBox();
+    google.maps.event.addListener(marker, "click", function() {
       let display = {};
       display.name = place.name;
       display.rating = place.rating;
@@ -97,17 +99,11 @@ function addMarkers(map, place) {
       });
 
       box.open(map, marker);
-      // lastOpenedBox = box;
-
-      // function closeLastOpenedBox() {
-      //   if (lastOpenedBox) {
-      //     lastOpenedBox.close();
-      //   }
-      //   console.log(lastOpenedBox);
-      // }
-      return marker;
     });
+    // markers.push(marker);
+    return marker;
   }
+  // console.log(marker);
 }
 
 //   let box = new google.maps.InfoWindow({
@@ -140,25 +136,25 @@ function addMarkers(map, place) {
 //   addResult(results[i], i);
 // }
 
-document.addEventListener(
-  "DOMContentLoaded",
-  amenitiesMedCSS
-  // amenitiesSmallCSS,
-  // changeTableRating
-);
+// document.addEventListener(
+//   "DOMContentLoaded",
+//   amenitiesMedCSS
+//   // amenitiesSmallCSS,
+//   // changeTableRating
+// );
 
-function amenitiesMedCSS() {
-  let query = window.matchMedia("(min-width: 482px) and (max-width: 991.98px)");
-  if (query.matches) {
-    let aTagsInAmeneties = document.querySelector(".nearby-places a")
-      .nextElementSibling.nextElementSibling;
-    let addBrTags = document.createElement("br");
-    aTagsInAmeneties.parentNode.insertBefore(
-      addBrTags,
-      aTagsInAmeneties.nextSibling
-    );
-  }
-}
+// function amenitiesMedCSS() {
+//   let query = window.matchMedia("(min-width: 482px) and (max-width: 991.98px)");
+//   if (query.matches) {
+//     let aTagsInAmeneties = document.querySelector(".nearby-places a")
+//       .nextElementSibling.nextElementSibling;
+//     let addBrTags = document.createElement("br");
+//     aTagsInAmeneties.parentNode.insertBefore(
+//       addBrTags,
+//       aTagsInAmeneties.nextSibling
+//     );
+//   }
+// }
 
 // function amenitiesSmallCSS() {
 //   let query = window.matchMedia("(max-width: 481px)");
@@ -170,10 +166,10 @@ function amenitiesMedCSS() {
 //       addBrTags,
 //       amenetiesClinic.nextSibling
 //     );
-//     // amenetiesPharmacy.parentNode.insertBefore(
-//     //   addBrTags,
-//     //   amenetiesPharmacy.nextSibling
-//     // );
+//     amenetiesPharmacy.parentNode.insertBefore(
+//       addBrTags,
+//       amenetiesPharmacy.nextSibling
+//     );
 //     console.log(amenetiesPharmacy);
 //   }
 // }

@@ -12,7 +12,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto|Tomorrow&display=swap" rel="stylesheet">
   <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
     type='text/css'> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
@@ -58,7 +59,7 @@
             <li>Risk is present year-round with peak
               transmission during the rainy season, from September to
               February.</li>
-            <li >Read some advice from a <a
+            <li>Read some advice from a <a
                 href="https://uexglobal.com/2019/06/21/dengue-in-singapore-advice-by-dr-leong-hoe-nam-specialist-in-infectious-diseases/"
                 target="_blank" id="doctor">doctor.</a></li>
           </ul>
@@ -132,7 +133,7 @@
     <div id="map"></div>
   </div>
 
-  <!-- North East Dengue Card -->
+  <!-- Amenities Card -->
   <div class="container">
     <div class="card eastcard">
       <div class=" card-body">
@@ -140,14 +141,32 @@
         <p class="card-text">
           Select options below to see information on nearby medical supplies and services.
         </p>
-        
-        <div class="nearby-places" id="nearby-places">
-          <a href="#singapore" class="card-link northeast-clinics"><i class="fas fa-clinic-medical"></i>Clinics</a>
-          <a href="#singapore" class="card-link northeast-pharmacies"><i class="fas fa-pills"></i>Pharmacies</a>
-          <a href="#singapore" class="card-link northeast-spmkt"><i class="fas fa-shopping-cart"></i>Supermarkets</a>
-          <a href="#singapore" class="card-link northeast-meals"><i class="fas fa-utensils"></i>Meal Delivery</a>
-          <a href="#singapore" class="card-link northeast-laundromats"><i class="fas fa-tshirt"></i>Laundromats</a>
-          <a href="#singapore" class="card-link east-shopping"><i class="fas fa-store"></i>Shopping Malls</a>
+
+        <div class="row nearby-places" id="nearby-places">
+          <div class="col-md-4 col-lg-3">
+            <a href="#singapore" class="card-link northeast-clinics"><i class="fas fa-clinic-medical"></i>Clinics</a>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <a href="#singapore" class="card-link northeast-pharmacies"><i class="fas fa-pills"></i>Pharmacies</a>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <a href="#singapore" class="card-link northeast-spmkt"><i class="fas fa-shopping-cart"></i>Supermarkets</a>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <a href="#singapore" class="card-link northeast-meals"><i class="fas fa-utensils"></i>Meal Delivery</a>
+          </div>
+          <div class="col-md-4 col-lg-3 laundromat">
+            <a href="#singapore" class="card-link northeast-laundromats"><i class="fas fa-tshirt"></i>Laundromats</a>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <a href="#singapore" class="card-link east-shopping"><i class="far fa-building"></i>Shopping Malls</a>
+          </div>
+          <div class="col-lg-3 d-none d-lg-block">
+            <a href="#singapore" class="card-link east-insurance"><i class="fas fa-landmark"></i>Insurance agencies</a>
+          </div>
+          <div class="col-lg-3 d-none d-lg-block">
+            <a href="#singapore" class="card-link east-funeral"><i class="fas fa-store"></i>Funeral</a>
+          </div>
         </div>
       </div>
     </div>
@@ -198,6 +217,8 @@
   <script src="/assets/east/eastlaundromat.js"></script>
   <script src="/assets/east/eastsupermarket.js"></script>
   <script src="/assets/east/eastshoppingmalls.js"></script>
+  <script src="/assets/east/eastinsurance.js"></script>
+  <script src="/assets/east/eastfuneral.js"></script>
 </body>
 
 </html>

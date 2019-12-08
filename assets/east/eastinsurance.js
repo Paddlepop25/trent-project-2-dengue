@@ -1,15 +1,15 @@
-let northEastClinics = document
-  .querySelector(".northeast-clinics")
+let eastInsurance = document
+  .querySelector(".east-insurance")
   .addEventListener("click", () => {
-    getNorthClinics();
+    getEastInsurance();
   });
 
-function getNorthClinics() {
+function getEastInsurance() {
   const xhr = new XMLHttpRequest();
 
   xhr.open(
     "GET",
-    "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.3497222222,103.9544444444&radius=4000&type=hospital&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
+    "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.3497222222,103.9544444444&radius=4000&type=insurance_agency&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
     true
   );
 
@@ -17,8 +17,8 @@ function getNorthClinics() {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
 
-      loadClinicMarkers(response);
-      loadClinicTable(response);
+      loadInsuranceMarkers(response);
+      loadInsuranceTable(response);
     } else {
       alert(
         "I'm sorry, there are too many requests. \nPlease try again in a second."
@@ -29,7 +29,7 @@ function getNorthClinics() {
   xhr.send();
 }
 
-function loadClinicMarkers(googleData) {
+function loadInsuranceMarkers(googleData) {
   let tampines = { lat: 1.3497222222, lng: 103.9544444444 };
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 13,
@@ -42,7 +42,7 @@ function loadClinicMarkers(googleData) {
   }
 }
 
-function loadClinicTable(googleData) {
+function loadInsuranceTable(googleData) {
   let resultsTable = document.querySelector(".results-table");
   let googleObject = Object.entries(googleData);
   let googleResult = googleObject[2][1];
