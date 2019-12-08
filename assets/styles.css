@@ -73,8 +73,8 @@ body {
   display: block;
   margin: 100px auto;
   margin-bottom: 50px;
-  /* border: 2px solid black; */
 }
+
 /* 
 .givespace1 {
   height: 40px;
@@ -221,6 +221,18 @@ body {
   color: rgb(101, 0, 0);
 }
 
+.results-table {
+  margin-bottom: 50px;
+}
+
+tr:nth-child(even) {
+  background: #fcf6f6;
+}
+
+thead .table-header {
+  background: #fcf1f1;
+}
+
 .footer-div {
   padding-left: 0;
   padding-right: 0;
@@ -280,5 +292,11 @@ body {
     width: 140px;
     height: 120px;
     margin-top: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .table-sm {
+    margin: 0 auto;
   }
 }

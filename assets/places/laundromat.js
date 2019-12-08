@@ -1,10 +1,10 @@
-let eastLaundromat = document
-  .querySelector(".northeast-laundromats")
+let laundromat = document
+  .querySelector(".laundromats")
   .addEventListener("click", () => {
-    getEastLaundromats();
+    getLaundromats();
   });
 
-function getEastLaundromats() {
+function getLaundromats() {
   const xhr = new XMLHttpRequest();
   xhr.open(
     "GET",
@@ -14,7 +14,7 @@ function getEastLaundromats() {
   xhr.onload = function() {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
-      loadEastLaundromatMarkers(response);
+      loadLaundromatMarkers(response);
       loadLaundromatTable(response);
     } else {
       alert(
@@ -25,7 +25,7 @@ function getEastLaundromats() {
   xhr.send();
 }
 
-function loadEastLaundromatMarkers(googleData) {
+function loadLaundromatMarkers(googleData) {
   let northEast = { lat: 1.3497222222, lng: 103.9544444444 };
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 13,
@@ -43,7 +43,7 @@ function loadLaundromatTable(googleData) {
   let googleObject = Object.entries(googleData);
   let googleResult = googleObject[2][1];
   let tableHead = `<thead>
-  <tr>
+  <tr class="table-header">
   <th scope="col">#</th>
   <th scope="col">Name</th>
   <th scope="col">Address</th>
@@ -63,7 +63,7 @@ function loadLaundromatTable(googleData) {
               <td>${tableList["vicinity"]}</td>
             </tr>
           `;
-      resultsTable.innerHTML = `<table class="table">
+      resultsTable.innerHTML = `<table class="table-sm">
           ${tableHead}<tbody>${tableRow}</tbody>
           </table>`;
     }
