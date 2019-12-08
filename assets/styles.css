@@ -204,10 +204,6 @@ body {
   margin-bottom: 20px;
 }
 
-.eastcard p {
-  /* margin-top: -10px; */
-}
-
 .eastcard i {
   margin-right: 8px;
   font-size: 1.3rem;
@@ -219,15 +215,10 @@ body {
   font-style: italic;
   text-align: left;
   line-height: 28px;
-  /* padding-right: 115px; */
 }
 
 .eastcard a:hover {
   color: rgb(101, 0, 0);
-}
-
-tbody {
-  /* text-align: justify; */
 }
 
 .footer-div {
@@ -241,8 +232,6 @@ tbody {
   font-weight: bold;
   font-size: 1.1rem;
   text-align: center;
-  /* padding-left: 0; */
-  /* padding-right: 0; */
 }
 
 .footer-icons i {

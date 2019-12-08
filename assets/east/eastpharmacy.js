@@ -13,7 +13,7 @@ function getNorthPharmacies() {
     true
   );
 
-  xhr.onload = function () {
+  xhr.onload = function() {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
 
@@ -50,12 +50,7 @@ function loadPharmacyTable(googleData) {
     <tr>
       <th scope="col">#</th>
       <th scope="col">Name</th>
-      <th scope="col" style="
-    text-align: center;
-">Rating</th>
-      <th scope="col" style="
-    text-align: center;
-">Address</th>
+      <th scope="col">Address</th>
     </tr>
   </thead>`;
   let tableRow = "";
@@ -65,20 +60,11 @@ function loadPharmacyTable(googleData) {
     for (let i = 0; i < googleResult.length; i++) {
       let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
       let tableList = googleResult[i];
-      let tableRating = tableList["rating"];
-      if (tableRating === undefined) {
-        tableRating = "N/A";
-      }
 
       tableRow += `<tr>
               <th scope="row">${markerLetter}</th>
               <td>${tableList["name"]}</td>
-              <td style="
-    text-align: center;
-">${tableRating}</td>
-              <td style="
-    text-align: center;
-">${tableList["vicinity"]}</td>
+              <td>${tableList["vicinity"]}</td>
             </tr>
           `;
       resultsTable.innerHTML = `<table class="table">
