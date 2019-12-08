@@ -2,6 +2,7 @@ let clinics = document
   .querySelector(".clinics")
   .addEventListener("click", () => {
     getClinics();
+    clearResults(markers);
   });
 
 function getClinics() {
@@ -39,6 +40,7 @@ function loadClinicMarkers(googleData) {
   for (let i = 0; i < googleObject.length; i++) {
     let listOfObjects = googleObject[i];
     addMarkers(map, listOfObjects);
+    console.log(listOfObjects);
   }
 }
 

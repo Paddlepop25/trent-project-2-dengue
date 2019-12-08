@@ -32,76 +32,6 @@ function initMap() {
     service.nearbySearch(request, callback);
   });
 
-  $("#button2").click(function(load) {
-    (document.getElementById("display_filter_selection_id").innerHTML =
-      "You have selected : Meal Deliveries"),
-      (request = {
-        location: singapore,
-        radius: 5000,
-        types: ["meal_delivery"]
-      });
-    clearResults(markers);
-
-    currentSelectedMode = "meal_delivery";
-    service.nearbySearch(request, callback);
-  });
-
-  $("#button3").click(function(load) {
-    (document.getElementById("display_filter_selection_id").innerHTML =
-      "You have selected : Meal Takeaways"),
-      (request = {
-        location: singapore,
-        radius: 5000,
-        types: ["meal_takeaway"]
-      });
-    clearResults(markers);
-
-    currentSelectedMode = "meal_takeaway";
-    service.nearbySearch(request, callback);
-  });
-
-  $("#button6").click(function(load) {
-    (document.getElementById("display_filter_selection_id").innerHTML =
-      "You have selected : Shopping Malls"),
-      (request = {
-        location: singapore,
-        radius: 5000,
-        types: ["shopping_mall"]
-      });
-    clearResults(markers);
-
-    currentSelectedMode = "mall";
-    service.nearbySearch(request, callback);
-  });
-
-  $("#button4").click(function(load) {
-    (document.getElementById("display_filter_selection_id").innerHTML =
-      "You have selected : Cafes"),
-      (request = {
-        location: singapore,
-        radius: 5000,
-        types: ["cafe"]
-      });
-    clearResults(markers);
-
-    currentSelectedMode = "cafe";
-    service.nearbySearch(request, callback);
-  });
-
-  $("#button5").click(function(load) {
-    (document.getElementById("display_filter_selection_id").innerHTML =
-      "You have selected : Restaurants"),
-      (request = {
-        location: singapore,
-        radius: 5000,
-        types: ["restaurant"]
-      });
-    clearResults(markers);
-
-    currentSelectedMode = "restaurant";
-    service.nearbySearch(request, callback);
-  });
-
   infoWindow = new google.maps.InfoWindow();
 
   service = new google.maps.places.PlacesService(map);
@@ -217,21 +147,10 @@ function initMap() {
         console.log(display.vicinity);
       }
 
-      // if (place.photos === undefined) {
-      //     display.photo = 'Not Available';
-
-      // }
-      // else {
-      //     display.photo = place.photos[0].getUrl()
-      // }
-
       let content = `<h3>${display.name}</h3>
             <p>Address: ${display.vicinity}</p>
             <p>Rating: ${display.rating}</p>
             <p>Price Level: ${display.price_level}</p>`;
-
-      // removed from content
-      // <p><img id="img" src="${display.photo}"></p>
 
       infoWindow.setContent(place.name);
       infoWindow.setContent(place.place_id);

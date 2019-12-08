@@ -1,4 +1,7 @@
-// let markers = [];
+let markers = [];
+let infoWindow;
+let request;
+let service;
 
 let northEastArea = document
   .querySelector(".north-east")
@@ -54,9 +57,9 @@ function initMap() {
 function addMarkers(map, place) {
   // let markers = [];
   let markerPath = "http://maps.google.com/mapfiles/marker";
-  // let numberOfPlaces = Object.keys(place).length;
+  let numberOfPlaces = Object.keys(place).length;
   // let numberOfPlaces2 = a.length;
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < numberOfPlaces; i++) {
     // console.log(place);
     let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
     let markerIcon = markerPath + markerLetter + ".png";
@@ -68,21 +71,15 @@ function addMarkers(map, place) {
     });
 
     google.maps.event.addListener(marker, "click", function() {
+      clearResults(markers);
       let display = {};
       display.name = place.name;
-      display.rating = place.rating;
       display.vicinity = place.vicinity;
 
       if (place["name"] === undefined) {
         place["name"] = "No Available Name";
       } else {
         place["name"] = place["name"];
-      }
-
-      if (place["rating"] === undefined) {
-        place["rating"] = "No Available Rating";
-      } else {
-        place["rating"] = place["rating"];
       }
 
       if (place["vicinity"] === undefined) {
@@ -101,90 +98,14 @@ function addMarkers(map, place) {
       box.open(map, marker);
     });
     // markers.push(marker);
-    return marker;
   }
+  // return marker;
   // console.log(marker);
+
+  function clearResults(markers) {
+    for (let m in markers) {
+      markers[m].setMap(null);
+    }
+    markers = [];
+  }
 }
-
-//   let box = new google.maps.InfoWindow({
-//     content: "<h6>Clinic</h6>"
-//   });
-
-//   box.open(map, marker);
-// }
-
-// function dropMarker(i) {
-//   return function() {
-//     markers[i].setMap(map);
-//   };
-// }
-
-// for (var i = 0; i < results.length; i++) {
-//   var markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
-//   var markerIcon = MARKER_PATH + markerLetter + ".png";
-//   // Use marker animation to drop the icons incrementally on the map.
-//   markers[i] = new google.maps.Marker({
-//     position: results[i].geometry.location,
-//     animation: google.maps.Animation.DROP,
-//     icon: markerIcon
-//   });
-//   // If the user clicks a hotel marker, show the details of that hotel
-//   // in an info window.
-//   markers[i].placeResult = results[i];
-//   google.maps.event.addListener(markers[i], "click", showInfoWindow);
-//   setTimeout(dropMarker(i), i * 100);
-//   addResult(results[i], i);
-// }
-
-// document.addEventListener(
-//   "DOMContentLoaded",
-//   amenitiesMedCSS
-//   // amenitiesSmallCSS,
-//   // changeTableRating
-// );
-
-// function amenitiesMedCSS() {
-//   let query = window.matchMedia("(min-width: 482px) and (max-width: 991.98px)");
-//   if (query.matches) {
-//     let aTagsInAmeneties = document.querySelector(".nearby-places a")
-//       .nextElementSibling.nextElementSibling;
-//     let addBrTags = document.createElement("br");
-//     aTagsInAmeneties.parentNode.insertBefore(
-//       addBrTags,
-//       aTagsInAmeneties.nextSibling
-//     );
-//   }
-// }
-
-// function amenitiesSmallCSS() {
-//   let query = window.matchMedia("(max-width: 481px)");
-//   if (query.matches) {
-//     let addBrTags = document.createElement("br");
-//     let amenetiesClinic = document.querySelector(".nearby-places a");
-//     let amenetiesPharmacy = document.querySelector(".nearby-places a").nextElementSibling;
-//     amenetiesClinic.parentNode.insertBefore(
-//       addBrTags,
-//       amenetiesClinic.nextSibling
-//     );
-//     amenetiesPharmacy.parentNode.insertBefore(
-//       addBrTags,
-//       amenetiesPharmacy.nextSibling
-//     );
-//     console.log(amenetiesPharmacy);
-//   }
-// }
-
-// @media(max - width: 767px) {
-//   .eastcard i {
-//     line - height: 30px;
-//     margin - right: 9px;
-//   }
-// }
-
-// function changeTableRating() {
-//   let query = window.matchMedia("(min-width: 768px)");
-//   let tableRating = document.querySelector(".tablerating");
-//   if (query.matches) {
-//     console.log(tableRating);
-//   }
-// }
