@@ -230,12 +230,19 @@ tbody {
   /* text-align: justify; */
 }
 
+.footer-div {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .footer {
   background: #fde3e3;
   color: #333333;
   font-weight: bold;
   font-size: 1.1rem;
   text-align: center;
+  /* padding-left: 0; */
+  /* padding-right: 0; */
 }
 
 .footer-icons i {
