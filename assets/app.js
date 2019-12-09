@@ -33,7 +33,7 @@ let resetButton = document
     initMap();
   });
 
-1
+1;
 
 function initMap() {
   // let infoWindow = new google.maps.InfoWindow();
@@ -43,7 +43,9 @@ function initMap() {
     center: singapore
   });
 
-  let data = map.data.loadGeoJson("assets/nea_files/dengue-clusters-geojson.geojson");
+  let data = map.data.loadGeoJson(
+    "assets/nea_files/dengue-clusters-geojson.geojson"
+  );
 
   map.data.addGeoJson(data);
 
@@ -52,18 +54,16 @@ function initMap() {
     strokeWeight: 1
   });
 
-  map.data.addListener('click', function (event) {
+  map.data.addListener("click", function(event) {
     let myHTML = event.feature.getProperty("Description");
     // console.log(myHTML)
     let infoWindow = new google.maps.InfoWindow({
       content: `<div>${myHTML}</div>`
-    })
-    console.log(infoWindow)
+    });
 
-    infoWindow.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+    infoWindow.setContent("<div id='cluster-infobox'>" + myHTML + "</div>");
     infoWindow.setPosition(event.latLng);
     infoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
     infoWindow.open(map);
-
   });
 }

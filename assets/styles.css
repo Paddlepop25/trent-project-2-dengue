@@ -76,11 +76,6 @@ body {
   margin-bottom: 50px;
 }
 
-/* 
-.givespace1 {
-  height: 40px;
-} */
-
 .dengue-description {
   border: 2px dotted rgb(171, 0, 0);
   padding: 15px 10px;
@@ -207,7 +202,12 @@ body {
   margin: 30px auto;
 }
 
-/* Styling for infowindow */
+/* Styling for clusters' infowindows */
+#cluster-infobox {
+  line-height: 23px;
+}
+
+/* Styling for amenities' infowindows */
 .infoWindow-header {
   font-family: "Rubik", sans-serif;
   margin-bottom: -8px;
