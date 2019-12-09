@@ -47,5 +47,5 @@ function initMap() {
   map.data.setStyle({
     fillColor: "green",
     strokeWeight: 1
-  });
+});   
 }

@@ -294,16 +294,13 @@ thead .table-header {
   width: 40px;
 }
 
+.footer-mosq:hover {
+  filter: drop-shadow(2px 3px 5px rgb(158, 145, 145));
+}
+
 .footer small {
   display: block;
 }
-
-/* @media (max-width: 767px) {
-  .eastcard i {
-    line-height: 30px;
-    margin-right: 9px;
-  }
-} */
 
 @media (max-width: 767.98px) {
   .navbar-nav a:first-child {
