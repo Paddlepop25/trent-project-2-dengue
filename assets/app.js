@@ -40,7 +40,7 @@ function initMap() {
     center: singapore
   });
 
-  let data = map.data.loadGeoJson("/nea_files/dengue-clusters-geojson.geojson");
+  let data = map.data.loadGeoJson("/assets/nea_files/dengue-clusters-geojson.geojson");
 
   map.data.addGeoJson(data);
 
@@ -70,7 +70,7 @@ function addMarkers(map, place) {
       animation: google.maps.Animation.DROP
     });
 
-    google.maps.event.addListener(marker, "click", function() {
+    google.maps.event.addListener(marker, "click", function () {
       clearResults(markers);
       let display = {};
       display.name = place.name;
