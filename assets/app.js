@@ -45,7 +45,7 @@ function initMap() {
   map.data.addGeoJson(data);
 
   map.data.setStyle({
-    fillColor: "green",
+    fillColor: "#c82333",
     strokeWeight: 1
-});   
+  });
 }

@@ -151,7 +151,7 @@ body {
 .zonebtns .north-east {
   margin: 5px 0;
   font-weight: bold;
-  background: #ffdc36;
+  background: #ffd500;
 }
 
 .zonebtns .north-east:hover {
@@ -188,7 +188,7 @@ body {
 }
 
 .zonebtns .south-west:hover {
-  background: rgb(185, 35, 255);
+  background: #a12dee;
   color: #ffffff;
 }
 
