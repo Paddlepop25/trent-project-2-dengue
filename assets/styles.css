@@ -14,6 +14,7 @@ body {
 }
 
 .navbar-nav a {
+  font-family: "Rubik", sans-serif;
   color: #333333;
   font-weight: bold;
   font-size: 1.1rem;
@@ -88,6 +89,8 @@ body {
 
 .dengue-description h4 {
   text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
 }
 
 .dengue-description ul {
@@ -109,6 +112,8 @@ body {
   padding: 15px 10px;
 }
 .dengue-cases h4 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -136,6 +141,9 @@ body {
 }
 
 .select-zone h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
   margin-top: 25px;
   /* margin-bottom: 20px; */
 }
@@ -199,9 +207,28 @@ body {
   margin: 30px auto;
 }
 
+/* Styling for infowindow */
+.infoWindow-header {
+  font-family: "Rubik", sans-serif;
+  margin-bottom: -8px;
+  color: rgb(171, 0, 0);
+  font-weight: bold;
+}
+
+.infoWindow-content {
+  background: #fcf6f6;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
 .eastcard {
   border: 2px dotted rgb(171, 0, 0);
   margin-bottom: 20px;
+}
+
+.eastcard h4 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
 }
 
 .eastcard i {
@@ -214,7 +241,8 @@ body {
   color: rgb(171, 0, 0);
   font-style: italic;
   text-align: left;
-  line-height: 28px;
+  line-height: 32px;
+  font-family: "Rubik", sans-serif;
 }
 
 .eastcard a:hover {
@@ -241,6 +269,7 @@ thead .table-header {
 .footer {
   background: #fde3e3;
   color: #333333;
+  font-family: "Rubik", sans-serif;
   font-weight: bold;
   font-size: 1.1rem;
   text-align: center;

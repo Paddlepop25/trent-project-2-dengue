@@ -21,7 +21,7 @@ function getPharmacies() {
       loadPharmacyTable(response);
     } else {
       alert(
-        "I'm sorry, there are too many requests. \nPlease try again in a second."
+        "I'm sorry, there are too many requests to Heroku's servers. \nPlease try again in a second."
       );
     }
   };
@@ -46,6 +46,42 @@ function loadNorthPharmacyMarkers(googleData) {
       map: map,
       icon: markerIcon,
       animation: google.maps.Animation.DROP
+    });
+
+    google.maps.event.addListener(marker, "click", function () {
+
+      let display = {};
+      display.name = listOfObjects.name;
+      display.rating = listOfObjects.rating;
+      display.vicinity = listOfObjects.vicinity;
+
+      if (display["name"] === undefined) {
+        display["name"] = "No Available Name";
+      } else {
+        display["name"] = display["name"];
+      }
+
+      if (display["rating"] === undefined) {
+        display["rating"] = "No Available Rating";
+      } else {
+        display["vicinity"] = display["vicinity"];
+      }
+
+      if (display["vicinity"] === undefined) {
+        display["vicinity"] = "No Available Address";
+      } else {
+        display["vicinity"] = display["vicinity"];
+      }
+
+
+      let infoWindow = new google.maps.InfoWindow({
+        content: `<h5 class="infoWindow-header">${display.name}</h5>
+      <br>
+    <p class="infoWindow-content">Address: ${display.vicinity}</p>
+    <p class="infoWindow-content">Rating: ${display.rating}</p>`
+      });
+
+      infoWindow.open(map, marker);
     });
   }
 }

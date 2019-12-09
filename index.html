@@ -1,223 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DENGUE</title>
+    <link
+      rel="icon"
+      href="/assets/images/mosquito-favicon-no.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+      integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>DENGUE</title>
-  <link rel="icon" href="/assets/images/mosquito-favicon-no.png" type="image/png" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
-    integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Tomorrow&display=swap" rel="stylesheet">
-  <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
-    type='text/css'> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
 
-  <link rel="stylesheet" href="/assets/styles.css" />
-</head>
-
-<body>
-  <!-- Start of Navbar -->
-  <div class="container">
-    <nav class="navbar fixed-top navbar-expand-md">
-      <img src="/assets/images/mosquito-favicon-no.png" alt="mosquito" class="moz-brand" />
-      <a href="#" class="navbar-toggler hamburger hamburger-animation" data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"><span></span></a>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Home</a>
-          <a class="nav-item nav-link" href="#doctor">Dengue Update</a>
-          <a class="nav-item nav-link" href="#givespace2">Dengue Clusters</a>
-          <a class="nav-item nav-link" href="#amenities">Amenities Near You</a>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <!-- End of Navbar -->
-
-  <!-- Mozzie Wipeout Image -->
-  <div class="container-fluid">
-    <div class="mozzie-wipeout">
-      <img src="/assets/images/do-the-5-step-mw-banner.jpg" alt="" />
-    </div>
-  </div>
-
-  <!-- Start of Dengue Description -->
-  <div class="container" id="dengue-update">
-    <div class="row">
-      <div class="col-sm-12 col-lg-6">
-        <div class="dengue-description">
-          <h4>About Dengue</h4>
-          <ul>
-            <li>Singapore has reported
-              recent Dengue cases. </li>
-            <li>Dengue is a viral infection caused by four types of viruses
-              transmitted through the bite of infected Aedes female mosquitoes
-              that feed both indoors and outdoors. </li>
-            <li>Risk is present year-round with peak
-              transmission during the rainy season, from September to
-              February.</li>
-            <li>Read some advice from a <a
-                href="https://uexglobal.com/2019/06/21/dengue-in-singapore-advice-by-dr-leong-hoe-nam-specialist-in-infectious-diseases/"
-                target="_blank" id="doctor">doctor.</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-lg-6">
-        <div class="dengue-cases" id="dengue-cases">
-          <h4>Dengue cases</h4>
-          <div class="div-for-icon">
-            <img src="/assets/images/mosquito1.png" alt="" class="mosq-icon" /></div>
-          <!-- <span class="number-cases"> -->
-          <div class="div-for-cases">
-            <span class="reported-cases">29</span>
-            <span>cases notified as at</span><br />
-            <span>10 Dec 2019 at 3pm</span>
+  <body>
+    <!-- Start of Navbar -->
+    <div class="container">
+      <nav class="navbar fixed-top navbar-expand-md">
+        <img
+          src="/assets/images/mosquito-favicon-no.png"
+          alt="mosquito"
+          class="moz-brand"
+        />
+        <a
+          href="#"
+          class="navbar-toggler hamburger hamburger-animation"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          ><span></span
+        ></a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">Home</a>
+            <a class="nav-item nav-link" href="#doctor">Dengue Update</a>
+            <a class="nav-item nav-link" href="#givespace2">Dengue Clusters</a>
+            <a class="nav-item nav-link" href="#amenities"
+              >Amenities Near You</a
+            >
           </div>
         </div>
+      </nav>
+    </div>
+    <!-- End of Navbar -->
+
+    <!-- Mozzie Wipeout Image -->
+    <div class="container-fluid">
+      <div class="mozzie-wipeout">
+        <img src="/assets/images/do-the-5-step-mw-banner.jpg" alt="" />
       </div>
     </div>
-  </div>
 
-  <!-- End of Dengue Description -->
-  <div class="container">
-    <div id="givespace2"></div>
-  </div>
-  <!-- Start of Select Zone -->
-  <div class="container">
-    <div class="select-zone" id="select-zone">
-      <h3>
-        Click to view the dengue clusters
-      </h3>
-      <div class="zonebtns">
-        <div class="row">
-          <div class="col-6 col-md-3">
-            <button type="button" class="btn btn-block north-east">
-              <a href="#givespace2"></a>
-              North East
-            </button>
-          </div>
-          <div class="col-6 col-md-3">
-            <button type="button" class="btn btn-block central">
-              Central
-            </button>
-          </div>
-          <div class="col-6 col-md-3">
-            <button type="button" class="btn btn-block south-east">
-              South East
-            </button>
-          </div>
-          <div class="col-6 col-md-3">
-            <button type="button" class="btn btn-block south-west">
-              South West
-            </button>
+    <!-- Start of Dengue Description -->
+    <div class="container" id="dengue-update">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6">
+          <div class="dengue-description">
+            <h4>About Dengue</h4>
+            <ul>
+              <li>Singapore has reported recent Dengue cases.</li>
+              <li>
+                Dengue is a viral infection caused by four types of viruses
+                transmitted through the bite of infected Aedes female mosquitoes
+                that feed both indoors and outdoors.
+              </li>
+              <li>
+                Risk is present year-round with peak transmission during the
+                rainy season, from September to February.
+              </li>
+              <li>
+                Read some advice from a
+                <a
+                  href="https://uexglobal.com/2019/06/21/dengue-in-singapore-advice-by-dr-leong-hoe-nam-specialist-in-infectious-diseases/"
+                  target="_blank"
+                  id="doctor"
+                  >doctor.</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <button type="button" class="btn btn-danger btn-block reset-btn singapore">
-              Singapore
-            </button>
+
+        <div class="col-sm-12 col-lg-6">
+          <div class="dengue-cases" id="dengue-cases">
+            <h4>Dengue cases</h4>
+            <div class="div-for-icon">
+              <img
+                src="/assets/images/mosquito1.png"
+                alt=""
+                class="mosq-icon"
+              />
+            </div>
+            <!-- <span class="number-cases"> -->
+            <div class="div-for-cases">
+              <span class="reported-cases">29</span>
+              <span>cases notified as at</span><br />
+              <span>10 Dec 2019 at 3pm</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End of Select Zone -->
 
-  <!-- Google Map -->
-  <div class="container-fluid">
-    <div id="map"></div>
-  </div>
+    <!-- End of Dengue Description -->
+    <div class="container">
+      <div id="givespace2"></div>
+    </div>
+    <!-- Start of Select Zone -->
+    <div class="container">
+      <div class="select-zone" id="select-zone">
+        <h3>
+          Click to view the dengue clusters
+        </h3>
+        <div class="zonebtns">
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <button type="button" class="btn btn-block north-east">
+                <a href="#givespace2"></a>
+                North East
+              </button>
+            </div>
+            <div class="col-6 col-md-3">
+              <button type="button" class="btn btn-block central">
+                Central
+              </button>
+            </div>
+            <div class="col-6 col-md-3">
+              <button type="button" class="btn btn-block south-east">
+                South East
+              </button>
+            </div>
+            <div class="col-6 col-md-3">
+              <button type="button" class="btn btn-block south-west">
+                South West
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <button
+                type="button"
+                class="btn btn-danger btn-block reset-btn singapore"
+              >
+                Singapore
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Select Zone -->
 
-  <!-- Amenities Card -->
-  <div class="container">
-    <div class="card eastcard">
-      <div class=" card-body">
-        <h5 class="card-title" id="amenities">Amenities near you</h5>
-        <p class="card-text">
-          Select options below to see information on nearby medical supplies and services.
+    <!-- Google Map -->
+    <div class="container-fluid">
+      <div id="map"></div>
+    </div>
+
+    <!-- Amenities Card -->
+    <div class="container">
+      <div class="card eastcard">
+        <div class=" card-body">
+          <h4 class="card-title" id="amenities">Amenities near you</h4>
+          <p class="card-text">
+            Select options below to see information on nearby medical supplies
+            and services.
+          </p>
+
+          <div class="row nearby-places" id="nearby-places">
+            <div class="col-md-4 col-lg-3">
+              <a href="#singapore" class="card-link clinics"
+                ><i class="fas fa-clinic-medical"></i>Clinics</a
+              >
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <a href="#singapore" class="card-link pharmacies"
+                ><i class="fas fa-pills"></i>Pharmacies</a
+              >
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <a href="#singapore" class="card-link spmkt"
+                ><i class="fas fa-shopping-cart"></i>Supermarkets</a
+              >
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <a href="#singapore" class="card-link meals"
+                ><i class="fas fa-utensils"></i>Meal Delivery</a
+              >
+            </div>
+            <div class="col-md-4 col-lg-3 laundromat">
+              <a href="#singapore" class="card-link laundromats"
+                ><i class="fas fa-tshirt"></i>Laundromats</a
+              >
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <a href="#singapore" class="card-link shopping"
+                ><i class="far fa-building"></i>Shopping Malls</a
+              >
+            </div>
+            <div class="col-lg-3 d-none d-lg-block">
+              <a href="#singapore" class="card-link insurance"
+                ><i class="fas fa-landmark"></i>Insurance agencies</a
+              >
+            </div>
+            <div class="col-lg-3 d-none d-lg-block">
+              <a href="#singapore" class="card-link funeral"
+                ><i class="fas fa-store"></i>Funeral</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Google Map results table-->
+    <div class="container">
+      <div class="results-table"></div>
+    </div>
+
+    <div class="container-fluid footer-div">
+      <footer class="footer">
+        <div class="footer-icons">
+          <a href="https://www.nea.gov.sg/dengue-zika"
+            ><i class="fas fa-first-aid"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/lindahsu007/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://twitter.com/shecodeshsucode"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/shecodeshsucodes/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <p>
+          &copy; Designed by Linda Hsu, 2019
+          <a href="https://www.nea.gov.sg/dengue-zika"
+            ><img
+              src="/assets/images/mosquito-favicon-big.png"
+              alt=""
+              class="footer-mosq"
+            />
+          </a>
         </p>
-
-        <div class="row nearby-places" id="nearby-places">
-          <div class="col-md-4 col-lg-3">
-            <a href="#singapore" class="card-link clinics"><i class="fas fa-clinic-medical"></i>Clinics</a>
-          </div>
-          <div class="col-md-4 col-lg-3">
-            <a href="#singapore" class="card-link pharmacies"><i class="fas fa-pills"></i>Pharmacies</a>
-          </div>
-          <div class="col-md-4 col-lg-3">
-            <a href="#singapore" class="card-link spmkt"><i class="fas fa-shopping-cart"></i>Supermarkets</a>
-          </div>
-          <div class="col-md-4 col-lg-3">
-            <a href="#singapore" class="card-link meals"><i class="fas fa-utensils"></i>Meal Delivery</a>
-          </div>
-          <div class="col-md-4 col-lg-3 laundromat">
-            <a href="#singapore" class="card-link laundromats"><i class="fas fa-tshirt"></i>Laundromats</a>
-          </div>
-          <div class="col-md-4 col-lg-3">
-            <a href="#singapore" class="card-link shopping"><i class="far fa-building"></i>Shopping Malls</a>
-          </div>
-          <div class="col-lg-3 d-none d-lg-block">
-            <a href="#singapore" class="card-link insurance"><i class="fas fa-landmark"></i>Insurance agencies</a>
-          </div>
-          <div class="col-lg-3 d-none d-lg-block">
-            <a href="#singapore" class="card-link funeral"><i class="fas fa-store"></i>Funeral</a>
-          </div>
-        </div>
-      </div>
+        <small>For educational purpose</small>
+        <br />
+      </footer>
     </div>
-  </div>
-  <!-- Google Map results table-->
-  <div class="container">
-    <div class="results-table">
-    </div>
-  </div>
+    <!--load jquery first, else console mention $ not define-->
+    <script src="/assets/jquery.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+      integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+      crossorigin="anonymous"
+    ></script>
 
-  <div class="container-fluid footer-div">
-    <footer class="footer">
-      <div class="footer-icons">
-        <a href="https://www.nea.gov.sg/dengue-zika"><i class="fas fa-first-aid"></i></a>
-        <a href="https://www.linkedin.com/in/lindahsu007/"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://twitter.com/shecodeshsucode"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/shecodeshsucodes/" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-      <p>&copy; Designed by Linda Hsu, 2019s <img src="/assets/images/mosquito-favicon-big.png" alt="" class="footer-mosq"></p>
-      <small>For educational purpose</small>
-      <br>
-    </footer>
-  </div>
-  <!--load jquery first, else console mention $ not define-->
-  <script src="/assets/jquery.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
-    integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
-    crossorigin="anonymous"></script>
+    <!--Google Map API-->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU&libraries=places&callback=initMap"
+      async
+      defer
+    ></script>
 
-  <!--Google Map API-->
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU&libraries=places&callback=initMap"
-    async defer></script>
-
-  <!--Own js file-->
-  <script src="/assets/app.js"></script>
-  <script src="/assets/dengue-clusters.js"></script>
-  <script src="/assets/places/clinic.js"></script>
-  <script src="/assets/places/pharmacy.js"></script>
-  <script src="/assets/places/food.js"></script>
-  <script src="/assets/places/laundromat.js"></script>
-  <script src="/assets/places/supermarket.js"></script>
-  <script src="/assets/places/shoppingmalls.js"></script>
-  <script src="/assets/places/insurance.js"></script>
-  <script src="/assets/places/funeral.js"></script>
-</body>
-
+    <!--Own js file-->
+    <script src="/assets/app.js"></script>
+    <script src="/assets/dengue-clusters.js"></script>
+    <script src="/assets/places/clinic.js"></script>
+    <script src="/assets/places/pharmacy.js"></script>
+    <script src="/assets/places/food.js"></script>
+    <script src="/assets/places/laundromat.js"></script>
+    <script src="/assets/places/supermarket.js"></script>
+    <script src="/assets/places/shoppingmalls.js"></script>
+    <script src="/assets/places/insurance.js"></script>
+    <script src="/assets/places/funeral.js"></script>
+  </body>
 </html>
