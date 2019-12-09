@@ -295,7 +295,7 @@ thead .table-header {
 }
 
 .footer-mosq:hover {
-  filter: drop-shadow(2px 3px 5px rgb(158, 145, 145));
+  filter: drop-shadow(2px 3px 2px rgb(116, 107, 107));
 }
 
 .footer small {
