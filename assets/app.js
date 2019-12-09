@@ -56,56 +56,60 @@ function initMap() {
 
 function addMarkers(map, place) {
   // let markers = [];
-  let markerPath = "http://maps.google.com/mapfiles/marker";
-  let numberOfPlaces = Object.keys(place).length;
+  // let markerPath = "http://maps.google.com/mapfiles/marker";
+  // let numberOfPlaces = Object.keys(place).length;
+  let numberOfPlaces = 30;
+  // let markerIcon = "http://maps.google.com/mapfiles/markerL.png";
   // let numberOfPlaces2 = a.length;
-  for (let i = 0; i < numberOfPlaces; i++) {
-    // console.log(place);
-    let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
-    let markerIcon = markerPath + markerLetter + ".png";
-    marker = new google.maps.Marker({
-      position: place["geometry"]["location"],
-      map: map,
-      icon: markerIcon,
-      animation: google.maps.Animation.DROP
-    });
+  // for (let i = 0; i < numberOfPlaces; i++) {
+  //   // console.log(numberOfPlaces);
+  //   let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
+  //   // markerIcon += markerPath + markerLetter + ".png";
+  // }
+  // console.log(markerIcon)
+  marker = new google.maps.Marker({
+    position: place["geometry"]["location"],
+    map: map,
+    // icon: markerIcon,
+    animation: google.maps.Animation.DROP
+  });
+  return marker;
 
-    google.maps.event.addListener(marker, "click", function () {
-      clearResults(markers);
-      let display = {};
-      display.name = place.name;
-      display.vicinity = place.vicinity;
+  // google.maps.event.addListener(marker, "click", function () {
+  //   // clearResults(markers);
+  //   let display = {};
+  //   display.name = place.name;
+  //   display.vicinity = place.vicinity;
 
-      if (place["name"] === undefined) {
-        place["name"] = "No Available Name";
-      } else {
-        place["name"] = place["name"];
-      }
+  //   if (place["name"] === undefined) {
+  //     place["name"] = "No Available Name";
+  //   } else {
+  //     place["name"] = place["name"];
+  //   }
 
-      if (place["vicinity"] === undefined) {
-        place["vicinity"] = "No Available Address";
-      } else {
-        place["vicinity"] = place["vicinity"];
-      }
+  //   if (place["vicinity"] === undefined) {
+  //     place["vicinity"] = "No Available Address";
+  //   } else {
+  //     place["vicinity"] = place["vicinity"];
+  //   }
 
-      let box = new google.maps.InfoWindow({
-        content: `<h5>${display.name}</h5>
-      <br>
-    <p>Address: ${display.vicinity}</p>
-    <p>Rating: ${display.rating}</p>`
-      });
+  //   let box = new google.maps.InfoWindow({
+  //     content: `<h5>${display.name}</h5>
+  //   <br>
+  // <p>Address: ${display.vicinity}</p>
+  // <p>Rating: ${display.rating}</p>`
+  //   });
 
-      box.open(map, marker);
-    });
-    // markers.push(marker);
-  }
-  // return marker;
+  //   box.open(map, marker);
+  // });
+  // markers.push(marker);
+  // }
   // console.log(marker);
 
-  function clearResults(markers) {
-    for (let m in markers) {
-      markers[m].setMap(null);
-    }
-    markers = [];
-  }
+  // function clearResults(markers) {
+  //   for (let m in markers) {
+  //     markers[m].setMap(null);
+  //   }
+  //   markers = [];
+  // }
 }

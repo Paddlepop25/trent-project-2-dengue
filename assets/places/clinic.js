@@ -2,7 +2,7 @@ let clinics = document
   .querySelector(".clinics")
   .addEventListener("click", () => {
     getClinics();
-    clearResults(markers);
+    // clearResults(markers);
   });
 
 function getClinics() {
@@ -14,7 +14,7 @@ function getClinics() {
     true
   );
 
-  xhr.onload = function() {
+  xhr.onload = function () {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
 
@@ -38,9 +38,19 @@ function loadClinicMarkers(googleData) {
   });
   let googleObject = Object.entries(googleData)[2][1];
   for (let i = 0; i < googleObject.length; i++) {
+    let markerPath = "http://maps.google.com/mapfiles/marker";
+    let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
+    let markerIcon = markerPath + markerLetter + ".png";
     let listOfObjects = googleObject[i];
-    addMarkers(map, listOfObjects);
-    console.log(listOfObjects);
+    marker = new google.maps.Marker({
+      position: listOfObjects["geometry"]["location"],
+      map: map,
+      icon: markerIcon,
+      animation: google.maps.Animation.DROP
+    });
+    // console.log(listOfObjects["geometry"]["location"]);
+
+    // addMarkers(map, listOfObjects);
   }
 }
 
