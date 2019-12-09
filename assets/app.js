@@ -33,7 +33,10 @@ let resetButton = document
     initMap();
   });
 
+1
+
 function initMap() {
+  // let infoWindow = new google.maps.InfoWindow();
   let singapore = { lat: 1.35027, lng: 103.821959 };
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 11,
@@ -47,5 +50,20 @@ function initMap() {
   map.data.setStyle({
     fillColor: "#c82333",
     strokeWeight: 1
+  });
+
+  map.data.addListener('click', function (event) {
+    let myHTML = event.feature.getProperty("Description");
+    // console.log(myHTML)
+    let infoWindow = new google.maps.InfoWindow({
+      content: `<div>${myHTML}</div>`
+    })
+    console.log(infoWindow)
+
+    infoWindow.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+    infoWindow.setPosition(event.latLng);
+    infoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
+    infoWindow.open(map);
+
   });
 }
