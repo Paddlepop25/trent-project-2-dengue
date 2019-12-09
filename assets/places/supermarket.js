@@ -11,7 +11,7 @@ function getSupermarkets() {
     "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.3497222222,103.9544444444&radius=4000&type=grocery_or_supermarket&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
     true
   );
-  xhr.onload = function() {
+  xhr.onload = function () {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
       loadSupermarketMarkers(response);
@@ -33,8 +33,16 @@ function loadSupermarketMarkers(googleData) {
   });
   let googleObject = Object.entries(googleData)[2][1];
   for (let i = 0; i < googleObject.length; i++) {
+    let markerPath = "http://maps.google.com/mapfiles/marker";
+    let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
+    let markerIcon = markerPath + markerLetter + ".png";
     let listOfObjects = googleObject[i];
-    addMarkers(map, listOfObjects);
+    marker = new google.maps.Marker({
+      position: listOfObjects["geometry"]["location"],
+      map: map,
+      icon: markerIcon,
+      animation: google.maps.Animation.DROP
+    });
   }
 }
 

@@ -37,8 +37,16 @@ function loadFuneralMarkers(googleData) {
   });
   let googleObject = Object.entries(googleData)[1][1];
   for (let i = 0; i < googleObject.length; i++) {
+    let markerPath = "http://maps.google.com/mapfiles/marker";
+    let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
+    let markerIcon = markerPath + markerLetter + ".png";
     let listOfObjects = googleObject[i];
-    addMarkers(map, listOfObjects);
+    marker = new google.maps.Marker({
+      position: listOfObjects["geometry"]["location"],
+      map: map,
+      icon: markerIcon,
+      animation: google.maps.Animation.DROP
+    });
   }
 }
 

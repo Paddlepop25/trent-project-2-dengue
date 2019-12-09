@@ -2,7 +2,6 @@ let clinics = document
   .querySelector(".clinics")
   .addEventListener("click", () => {
     getClinics();
-    // clearResults(markers);
   });
 
 function getClinics() {
@@ -48,9 +47,6 @@ function loadClinicMarkers(googleData) {
       icon: markerIcon,
       animation: google.maps.Animation.DROP
     });
-    // console.log(listOfObjects["geometry"]["location"]);
-
-    // addMarkers(map, listOfObjects);
   }
 }
 
