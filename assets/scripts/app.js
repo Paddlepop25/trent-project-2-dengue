@@ -26,8 +26,8 @@ let southWestArea = document
   });
 
 // Initialize Google Map
-let resetButton = document
-  .querySelector(".reset-btn")
+let singaporeButton = document
+  .querySelector(".singapore")
   .addEventListener("click", () => {
     initMap();
   });

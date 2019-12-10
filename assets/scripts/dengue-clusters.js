@@ -10,7 +10,7 @@ function getNorthDengue() {
   );
   map.data.addGeoJson(data);
   map.data.setStyle({
-    fillColor: "#ffd500",
+    fillColor: "#c82333",
     strokeWeight: 1
   });
 
@@ -37,7 +37,7 @@ function getCentralDengue() {
   );
   map.data.addGeoJson(data);
   map.data.setStyle({
-    fillColor: "#59b7ff",
+    fillColor: "#c82333",
     strokeWeight: 1
   });
 
@@ -64,7 +64,7 @@ function getSouthEastDengue() {
   );
   map.data.addGeoJson(data);
   map.data.setStyle({
-    fillColor: "#93ee93",
+    fillColor: "#c82333",
     strokeWeight: 1
   });
 
@@ -91,7 +91,7 @@ function getSouthWestDengue() {
   );
   map.data.addGeoJson(data);
   map.data.setStyle({
-    fillColor: "#d380fa",
+    fillColor: "#c82333",
     strokeWeight: 1
   });
 

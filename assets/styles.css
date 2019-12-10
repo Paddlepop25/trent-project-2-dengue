@@ -202,60 +202,76 @@ body {
   font-weight: bold;
   font-size: 1.5rem;
   margin-top: 25px;
-  /* margin-bottom: 20px; */
 }
 
 .zonebtns .north-east {
   margin: 5px 0;
   font-weight: bold;
-  background: #ffd500;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  color: rgb(171, 2, 2);
+  background: #fcf6f6;
+  border: 1px solid rgb(138, 2, 2);
 }
 
 .zonebtns .north-east:hover {
-  background: rgb(243, 170, 1);
-  color: #ffffff;
+  background: rgb(255, 237, 237);
+  color: rgb(109, 2, 2);
 }
 
 .zonebtns .central {
   margin: 5px 0;
   font-weight: bold;
-  background: #59b7ff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  color: rgb(171, 2, 2);
+  background: #fcf6f6;
+  border: 1px solid rgb(138, 2, 2);
 }
 
 .zonebtns .central:hover {
-  background: #248cdb;
-  color: #ffffff;
+  background: rgb(255, 237, 237);
+  color: rgb(109, 2, 2);
 }
 
 .zonebtns .south-east {
   margin: 5px 0;
   font-weight: bold;
-  background: #93ee93;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  color: rgb(171, 2, 2);
+  background: #fcf6f6;
+  border: 1px solid rgb(138, 2, 2);
 }
 
 .zonebtns .south-east:hover {
-  background: #1db61d;
-  color: #ffffff;
+  background: rgb(255, 237, 237);
+  color: rgb(109, 2, 2);
 }
 
 .zonebtns .south-west {
   margin: 5px 0;
   font-weight: bold;
-  background: #d380fa;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  color: rgb(171, 2, 2);
+  background: #fcf6f6;
+  border: 1px solid rgb(138, 2, 2);
 }
 
 .zonebtns .south-west:hover {
-  background: #a12dee;
-  color: #ffffff;
+  background: rgb(255, 237, 237);
+  color: rgb(109, 2, 2);
 }
 
-.zonebtns .reset-btn {
+.zonebtns .singapore {
   margin: 5px 0;
   font-weight: bold;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  color: rgb(171, 2, 2);
+  background: #fcf6f6;
+  border: 1px solid rgb(138, 2, 2);
 }
 
-.zonebtns .reset-btn:hover {
-  color: #333333;
+.zonebtns .singapore:hover {
+  background: rgb(255, 237, 237);
+  color: rgb(109, 2, 2);
 }
 
 #map {
