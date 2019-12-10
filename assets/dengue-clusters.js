@@ -13,6 +13,18 @@ function getNorthDengue() {
     fillColor: "#ffd500",
     strokeWeight: 1
   });
+
+  map.data.addListener("click", function (event) {
+    let myHTML = event.feature.getProperty("Description");
+    let infoWindow = new google.maps.InfoWindow({
+      content: `<div>${myHTML}</div>`
+    });
+
+    infoWindow.setContent("<div id='cluster-infobox'>" + myHTML + "</div>");
+    infoWindow.setPosition(event.latLng);
+    infoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
+    infoWindow.open(map);
+  });
 }
 
 function getCentralDengue() {
@@ -27,6 +39,18 @@ function getCentralDengue() {
   map.data.setStyle({
     fillColor: "#59b7ff",
     strokeWeight: 1
+  });
+
+  map.data.addListener("click", function (event) {
+    let myHTML = event.feature.getProperty("Description");
+    let infoWindow = new google.maps.InfoWindow({
+      content: `<div>${myHTML}</div>`
+    });
+
+    infoWindow.setContent("<div id='cluster-infobox'>" + myHTML + "</div>");
+    infoWindow.setPosition(event.latLng);
+    infoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
+    infoWindow.open(map);
   });
 }
 
@@ -43,6 +67,18 @@ function getSouthEastDengue() {
     fillColor: "#93ee93",
     strokeWeight: 1
   });
+
+  map.data.addListener("click", function (event) {
+    let myHTML = event.feature.getProperty("Description");
+    let infoWindow = new google.maps.InfoWindow({
+      content: `<div>${myHTML}</div>`
+    });
+
+    infoWindow.setContent("<div id='cluster-infobox'>" + myHTML + "</div>");
+    infoWindow.setPosition(event.latLng);
+    infoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
+    infoWindow.open(map);
+  });
 }
 
 function getSouthWestDengue() {
@@ -57,6 +93,18 @@ function getSouthWestDengue() {
   map.data.setStyle({
     fillColor: "#d380fa",
     strokeWeight: 1
+  });
+
+  map.data.addListener("click", function (event) {
+    let myHTML = event.feature.getProperty("Description");
+    let infoWindow = new google.maps.InfoWindow({
+      content: `<div>${myHTML}</div>`
+    });
+
+    infoWindow.setContent("<div id='cluster-infobox'>" + myHTML + "</div>");
+    infoWindow.setPosition(event.latLng);
+    infoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
+    infoWindow.open(map);
   });
 }
 

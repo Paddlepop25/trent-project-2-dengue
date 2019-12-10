@@ -26,7 +26,6 @@ let southWestArea = document
   });
 
 // Initialize Google Map
-
 let resetButton = document
   .querySelector(".reset-btn")
   .addEventListener("click", () => {
@@ -36,7 +35,6 @@ let resetButton = document
 1;
 
 function initMap() {
-  // let infoWindow = new google.maps.InfoWindow();
   let singapore = { lat: 1.35027, lng: 103.821959 };
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 11,
@@ -54,9 +52,8 @@ function initMap() {
     strokeWeight: 1
   });
 
-  map.data.addListener("click", function(event) {
+  map.data.addListener("click", function (event) {
     let myHTML = event.feature.getProperty("Description");
-    // console.log(myHTML)
     let infoWindow = new google.maps.InfoWindow({
       content: `<div>${myHTML}</div>`
     });
