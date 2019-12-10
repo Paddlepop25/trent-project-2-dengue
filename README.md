@@ -47,3 +47,57 @@ The [landing](https://paddlepop25.github.io/trent-project-2-dengue/) page was de
 Following that, the users are presented with boxes of information separated appropriately. They could choose to go to the place on the website directly by clicking on the [dengue](https://paddlepop25.github.io/trent-project-2-dengue/#dengue-update) link on the navbar. I included the most asked questions one may have if he/she has contracted dengue or their loved ones have. The information is brief, but sufficient as it covers the most important aspects of dengue. There are also links to other sources and these are highlighted with the theme color.
 
 Next is the [dengue cluster](https://paddlepop25.github.io/trent-project-2-dengue/#abovezones) section where one could see where the dengue clusters are in Singapore with a click of a button. Several zones are provided that shows the different parts of Singapore and one can 'reset' the map with click on the 'Singapore' button. This shows the initial map with all the collective clusters in the country.
+
+Each pink box or polygon on the google map is a link which would show an infobox when the user clicks on it. Information about the exact locality, cases counts, and places where mosquito breeding ground are found is displayed on it. I gave the table some light pink background to be aligned with the theme color of the website. The infoboxes are best displayed on a large screen device, but is also shown for small and medium sized devices. There are horizontal and vertical scroll bars for the user to navigate on.
+
+The [amenities near you](https://paddlepop25.github.io/trent-project-2-dengue/#amenities) section was provided to give information on twenty nearby places and services a dengue patient or their loved one may need. I thought of medical supplies, clinics, meal delivery and even insurance agencies and funeral homes. I chose my home area as the home ground for these amenities. In future development I would like to use a google geolocation API that can locate where the user is and give the places near their location.
+
+Upon clicking on one of the amenity, google markers will drop on the map with alphabets on the pins. One could click on the pin to see the name, address and rating of the amenity. The twenty locations are also listed below the amenity box, and this is communicated in the last sentence of the amenity box. The alphabets of the list is an exact match to the pins on the map so one could refer to one or the other easily.
+
+## Wireframes
+
+## User Stories
+
+These are the user stories that I intended to achieve while building this website:
+
+1. To build a modern looking website that is easy for the user to navigate around
+2. To provide accurate, important and basic information on dengue. This includes on what it is, what symptoms does one have from dengue fever, how to prevent mosquito breeding
+3. To show users where the dengue clusters in Singapore are with added information in each infobox
+4. To provide users information on nearby amenities for those who need medical supplies or relevant useful services
+5. To direct users to other websites for further reading. This includes a doctor's interview, the Ministry of Health's official website and others
+6. To showcase my current skills utilizing HTML5, CSS3, Bootstrap, Javascript and other tools to make a website inspired by an unfortunate incident 2 Christmas ago
+
+## Features
+
+Future features
+
+## Technologies Used
+
+Here are a list of programming languages, frameworks, technologies and tools used for this website.
+
+- HTML5
+- CSS3
+- JavaScript
+- JQuery
+- Markdown
+  - Used for writing this README.md file
+- [Visual Studio Code](https://code.visualstudio.com/)
+  - Used as the IDE to write the codes for this website
+- [Bootstrap 4.4.0 framework](https://getbootstrap.com/)
+  - Used for it's grid system, page layout with styling and responsive navigation bar.
+- [Google Fonts](https://fonts.google.com/)
+  - Used 'Roboto' and 'Rubik'
+- [Font Awesome](https://fontawesome.com/)
+  - Used for social media icons and other icons
+- [Favicon & App Icon Generator](https://www.favicon-generator.org/)
+  - Used for generating Dengue's favicon
+- [Mockflow](https://mockflow.com/)
+  - Used to design and create the wireframes for this project
+- [Git](https://git-scm.com/)
+  - Used for version control to commit to Github
+- [Github](https://github.com)
+- [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+- [Am I Responsive?](http://ami.responsivedesign.is/?url=#)
+  - Used to see across multiple devices with different screen sizes the responsiveness of the website
+- [Screen To Gif](https://www.screentogif.com/)
+  - Used to capture the responsive screens into a gif file
