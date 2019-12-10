@@ -8,7 +8,7 @@ By: Linda Hsu
 
 A live demo of the finished project can be found [here](https://paddlepop25.github.io/trent-project-2-dengue/).
 
-![Desktop Demo](https://raw.githubusercontent.com/Paddlepop25/trent-project-2-dengue/tree/master/assets/images/dengue.gif)
+![Desktop Demo](https://raw.githubusercontent.com/Paddlepop25/trent-project-2-dengue/assets/images/dengue.gif)
 
 ## Aim
 
