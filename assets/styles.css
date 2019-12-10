@@ -127,6 +127,7 @@ body {
   color: rgb(171, 0, 0);
   font-style: italic;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .about-dengue a:hover {
@@ -164,8 +165,17 @@ body {
   font-weight: bold;
 }
 
-.dengue-treatment strong {
+.dengue-treatment a {
   color: rgb(171, 0, 0);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.dengue-treatment a:hover {
+  color: rgb(138, 2, 2);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .more-information {
