@@ -295,7 +295,7 @@ thead .table-header {
 }
 
 .footer-mosq:hover {
-  filter: drop-shadow(2px 3px 2px rgb(116, 107, 107));
+  filter: drop-shadow(1px 1px 1px rgb(116, 107, 107));
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
@@ -327,6 +327,7 @@ thead .table-header {
 
 .footer small {
   display: block;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 767.98px) {
