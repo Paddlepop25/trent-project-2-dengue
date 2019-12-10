@@ -18,14 +18,14 @@
 
 <body>
   <!-- Start of Navbar -->
-  <div class="container">
+  <div class="container" id="page-top">
     <nav class="navbar fixed-top navbar-expand-md">
       <img src="assets/images/mosquito-favicon-no.png" alt="mosquito" class="moz-brand" />
       <a href="#" class="navbar-toggler hamburger hamburger-animation" data-toggle="collapse"
         data-target="#navbarNavAltMarkup"><span></span></a>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Home</a>
+          <a class="nav-item nav-link" href="#page-top">Home</a>
           <a class="nav-item nav-link" href="#dengue-update">Dengue Update</a>
           <a class="nav-item nav-link" href="#abovezones">Dengue Clusters</a>
           <a class="nav-item nav-link" href="#amenities">Amenities Near You</a>
@@ -125,10 +125,10 @@
           <p>Visit the official
             <a href="https://www.moh.gov.sg/diseases-updates/dengue" target="_blank">MOH</a> website.
           </p>
-          <!-- <i class="fab fa-phone-alt"></i> -->
-          <span>Call MOH hotline 1800 225 4122</span>
+
+          <span>Call MOH hotline <i class="fas fa-phone"></i> 1800 225 4122</span>
           <br>
-          <span>Call NEA hotline 6225 5632</span>
+          <span>Call NEA hotline <i class="fas fa-phone"></i> 6225 5632</span>
         </div>
       </div>
     </div>
@@ -194,11 +194,6 @@
           Are you or your loved ones suffering from dengue fever?</p>
         <p>
           Here are some recommendations to assist in this difficult time.</p>
-        <p>Select an option below to see the nearby 20 places for medical supplies and services on the Google map above.
-        </p>
-        <p>
-          Scroll down further to see an expanded list of the option selected.
-        </p>
 
         <div class="row nearby-places" id="nearby-places">
           <div class="col-md-4 col-lg-3">
@@ -226,6 +221,14 @@
             <a href="#zonebtns" class="card-link funeral"><i class="fas fa-store"></i>Funeral</a>
           </div>
         </div>
+        <br>
+        <p>Select an option to see the nearby 20 places for medical supplies and services on the Google map above.
+        </p>
+        <p>
+          Scroll down further to see an expanded list of the option selected.
+        </p>
+
+
       </div>
     </div>
   </div>
@@ -270,16 +273,17 @@
     async defer></script>
 
   <!--Own js file-->
-  <script src="assets/app.js"></script>
-  <script src="assets/dengue-clusters.js"></script>
-  <script src="assets/places/clinic.js"></script>
-  <script src="assets/places/pharmacy.js"></script>
-  <script src="assets/places/mealdelivery.js"></script>
-  <script src="assets/places/laundromat.js"></script>
-  <script src="assets/places/supermarket.js"></script>
-  <script src="assets/places/shoppingmalls.js"></script>
-  <script src="assets/places/insurance.js"></script>
-  <script src="assets/places/funeral.js"></script>
+  <script src="assets/scripts/app.js"></script>
+  <script src="assets/scripts/scrolling-effect.js"></script>
+  <script src="assets/scripts/dengue-clusters.js"></script>
+  <script src="assets/scripts/places/clinic.js"></script>
+  <script src="assets/scripts/places/pharmacy.js"></script>
+  <script src="assets/scripts/places/mealdelivery.js"></script>
+  <script src="assets/scripts/places/laundromat.js"></script>
+  <script src="assets/scripts/places/supermarket.js"></script>
+  <script src="assets/scripts/places/shoppingmalls.js"></script>
+  <script src="assets/scripts/places/insurance.js"></script>
+  <script src="assets/scripts/places/funeral.js"></script>
 </body>
 
 </html>

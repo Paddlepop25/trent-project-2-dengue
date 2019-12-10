@@ -126,23 +126,25 @@ body {
 .about-dengue a {
   color: rgb(171, 0, 0);
   font-style: italic;
+  font-weight: bold;
 }
 
 .about-dengue a:hover {
   color: rgb(138, 2, 2);
   text-decoration: none;
+  font-weight: bold;
 }
 
 .dengue-symptoms {
   border: 2px dotted rgb(171, 0, 0);
   padding: 15px 10px;
-  margin-bottom: 20px;dengue-
+  margin-bottom: 20px;
 }
 
 .dengue-symptoms h4 {
   text-align: center;
   font-family: "Rubik", sans-serif;
-  font-weight: bold;dengue-
+  font-weight: bold;
 }
 
 .dengue-symptoms ul {
@@ -162,15 +164,10 @@ body {
   font-weight: bold;
 }
 
-.dengue-treatment a {
+.dengue-treatment strong {
   color: rgb(171, 0, 0);
-  font-style: italic;
 }
 
-.dengue-treatment a:hover {
-  color: rgb(138, 2, 2);
-  text-decoration: none;
-}
 .more-information {
   border: 2px dotted rgb(171, 0, 0);
   padding: 15px 10px;
@@ -187,11 +184,13 @@ body {
 .more-information a {
   color: rgb(171, 0, 0);
   font-style: italic;
+  font-weight: bold;
 }
 
 .more-information a:hover {
   color: rgb(138, 2, 2);
   text-decoration: none;
+  font-weight: bold;
 }
 
 #abovezones {
