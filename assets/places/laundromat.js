@@ -11,6 +11,7 @@ function getLaundromats() {
     "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.3497222222,103.9544444444&radius=4000&type=laundry&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
     true
   );
+
   xhr.onload = function () {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
@@ -22,14 +23,15 @@ function getLaundromats() {
       );
     }
   };
+
   xhr.send();
 }
 
 function loadLaundromatMarkers(googleData) {
-  let northEast = { lat: 1.3497222222, lng: 103.9544444444 };
+  let tampines = { lat: 1.3497222222, lng: 103.9544444444 };
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 13,
-    center: northEast
+    center: tampines
   });
   let googleObject = Object.entries(googleData)[2][1];
   for (let i = 0; i < googleObject.length; i++) {
@@ -37,47 +39,46 @@ function loadLaundromatMarkers(googleData) {
     let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
     let markerIcon = markerPath + markerLetter + ".png";
     let listOfObjects = googleObject[i];
-    marker = new google.maps.Marker({
+    let marker = new google.maps.Marker({
       position: listOfObjects["geometry"]["location"],
       map: map,
       icon: markerIcon,
       animation: google.maps.Animation.DROP
     });
 
-    google.maps.event.addListener(marker, "click", function () {
+    let display = {};
+    display.name = listOfObjects.name;
+    display.rating = listOfObjects.rating;
+    display.vicinity = listOfObjects.vicinity;
 
-      let display = {};
-      display.name = listOfObjects.name;
-      display.rating = listOfObjects.rating;
-      display.vicinity = listOfObjects.vicinity;
+    if (display["name"] === undefined) {
+      display["name"] = "No Available Name";
+    } else {
+      display["name"] = display["name"];
+    }
 
-      if (display["name"] === undefined) {
-        display["name"] = "No Available Name";
-      } else {
-        display["name"] = display["name"];
-      }
+    if (display["rating"] === undefined) {
+      display["rating"] = "No Available Rating";
+    } else {
+      display["vicinity"] = display["vicinity"];
+    }
 
-      if (display["rating"] === undefined) {
-        display["rating"] = "No Available Rating";
-      } else {
-        display["vicinity"] = display["vicinity"];
-      }
-
-      if (display["vicinity"] === undefined) {
-        display["vicinity"] = "No Available Address";
-      } else {
-        display["vicinity"] = display["vicinity"];
-      }
+    if (display["vicinity"] === undefined) {
+      display["vicinity"] = "No Available Address";
+    } else {
+      display["vicinity"] = display["vicinity"];
+    }
 
 
-      let infoWindow = new google.maps.InfoWindow({
-        content: `<h5 class="infoWindow-header">${display.name}</h5>
+    marker.info = new google.maps.InfoWindow({
+      content: `<h5 class="infoWindow-header">${display.name}</h5>
       <br>
     <p class="infoWindow-content">Address: ${display.vicinity}</p>
     <p class="infoWindow-content">Rating: ${display.rating}</p>`
-      });
+    });
 
-      infoWindow.open(map, marker);
+    google.maps.event.addListener(marker, "click", function () {
+      marker.info.open(map, marker);
     });
   }
 }
@@ -86,6 +87,7 @@ function loadLaundromatTable(googleData) {
   let resultsTable = document.querySelector(".results-table");
   let googleObject = Object.entries(googleData);
   let googleResult = googleObject[2][1];
+  let tableRow = "";
   let tableHead = `<thead>
   <tr class="table-header">
   <th scope="col">#</th>
@@ -93,14 +95,11 @@ function loadLaundromatTable(googleData) {
   <th scope="col">Address</th>
   </tr>
   </thead>`;
-  let tableRow = "";
   let status = googleObject[3][1];
-
   if (status === "OK") {
     for (let i = 0; i < googleResult.length; i++) {
       let markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
       let tableList = googleResult[i];
-
       tableRow += `<tr>
               <th scope="row">${markerLetter}</th>
               <td>${tableList["name"]}</td>
@@ -113,6 +112,6 @@ function loadLaundromatTable(googleData) {
     }
   } else {
     resultsTable.innerHTML = `There is no data available`;
-    alert("There was an error with data retrieval. \nPlease try again.");
+    alert(`There was an error with data retrieval because: ${status}. \nPlease try again.`);
   }
 }

@@ -13,10 +13,9 @@ function getClinics() {
     true
   );
 
-  xhr.onload = function() {
+  xhr.onload = function () {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
-
       loadClinicMarkers(response);
       loadClinicTable(response);
     } else {
@@ -78,7 +77,7 @@ function loadClinicMarkers(googleData) {
     <p class="infoWindow-content">Rating: ${display.rating}</p>`
     });
 
-    google.maps.event.addListener(marker, "click", function() {
+    google.maps.event.addListener(marker, "click", function () {
       marker.info.open(map, marker);
     });
   }
@@ -113,6 +112,6 @@ function loadClinicTable(googleData) {
     }
   } else {
     resultsTable.innerHTML = `There is no data available`;
-    alert("There was an error with data retrieval because: " + status);
+    alert(`There was an error with data retrieval because: ${status}. \nPlease try again.`);
   }
 }
