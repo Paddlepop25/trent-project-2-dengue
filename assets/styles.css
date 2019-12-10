@@ -76,6 +76,36 @@ body {
   margin-bottom: 50px;
 }
 
+.dengue-cases {
+  border: 2px dotted rgb(171, 0, 0);
+  padding: 15px 10px;
+  margin-bottom: 20px;
+}
+.dengue-cases h4 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mosq-div {
+  text-align: center;
+}
+
+.mosq-icon {
+  width: 120px;
+  height: 100px;
+}
+
+.cases-div {
+  text-align: center;
+}
+
+.reported-cases {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: rgb(171, 0, 0);
+}
+
 .dengue-description {
   border: 2px dotted rgb(171, 0, 0);
   padding: 15px 10px;
@@ -99,41 +129,73 @@ body {
 }
 
 .dengue-description a:hover {
-  color: rgb(171, 0, 0);
+  color: rgb(138, 2, 2);
+  text-decoration: none;
 }
 
-.dengue-cases {
+.symptoms {
   border: 2px dotted rgb(171, 0, 0);
   padding: 15px 10px;
+  margin-bottom: 20px;
 }
-.dengue-cases h4 {
+
+.symptoms h4 {
+  text-align: center;
   font-family: "Rubik", sans-serif;
   font-weight: bold;
+}
+
+.symptoms ul {
+  line-height: 30px;
+  padding-left: 20px;
+}
+.treatment {
+  border: 2px dotted rgb(171, 0, 0);
+  padding: 15px 10px;
+  margin-bottom: 20px;
+}
+
+.treatment h4 {
   text-align: center;
-}
-
-.div-for-icon {
-  text-align: center;
-}
-
-.mosq-icon {
-  width: 120px;
-  height: 100px;
-}
-
-.div-for-cases {
-  text-align: center;
-}
-
-.reported-cases {
-  font-size: 2.2rem;
+  font-family: "Rubik", sans-serif;
   font-weight: bold;
-  color: rgb(171, 0, 0);
 }
 
-#abovezones {
-  height: 40px;
+.treatment a {
+  color: rgb(171, 0, 0);
+  font-style: italic;
 }
+
+.treatment a:hover {
+  color: rgb(138, 2, 2);
+  text-decoration: none;
+}
+.more-information {
+  border: 2px dotted rgb(171, 0, 0);
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.more-information h4 {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+
+.more-information a {
+  color: rgb(171, 0, 0);
+  font-style: italic;
+}
+
+.more-information a:hover {
+  color: rgb(138, 2, 2);
+  text-decoration: none;
+}
+
+/* #abovezones {
+  height: 40px;
+} */
 
 .select-zone h3 {
   font-family: "Rubik", sans-serif;
@@ -327,7 +389,7 @@ thead .table-header {
 
 .footer small {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 767.98px) {
