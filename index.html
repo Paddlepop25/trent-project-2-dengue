@@ -42,22 +42,20 @@
     </div>
   </div>
 
-  <!-- Start of Dengue Description -->
+  <!-- About Dengue -->
   <div class="container" id="dengue-update">
     <div class="row">
       <div class="col-sm-12 col-lg-6">
-        <div class="dengue-description" id="about-dengue">
+        <div class="about-dengue" id="about-dengue">
           <h4>About Dengue</h4>
           <ul>
             <li>Singapore has reported recent Dengue cases.</li>
             <li>
-              Dengue is a viral infection caused by four types of viruses
-              transmitted through the bite of infected Aedes female mosquitoes
-              that feed both indoors and outdoors.
+              Dengue is a viral infection caused by four types of viruses transmitted through the bite of infected Aedes
+              female mosquitoes that feed both indoors and outdoors.
             </li>
             <li>
-              Risk is present year-round with peak transmission during the
-              rainy season, from September to February.
+              Risk is present year-round with peak transmission during the rainy season, from September to February.
             </li>
             <li>
               Read some
@@ -68,6 +66,7 @@
         </div>
       </div>
 
+      <!-- Dengue Cases -->
       <div class="col-sm-12 col-lg-6">
         <div class="dengue-cases" id="dengue-cases">
           <h4>Dengue cases</h4>
@@ -82,13 +81,12 @@
           </div>
         </div>
       </div>
-
-
     </div>
 
+    <!-- Dengue Symptoms -->
     <div class="row">
       <div class="col-sm-12 col-lg-6">
-        <div class="symptoms">
+        <div class="dengue-symptoms">
           <h4>Symptoms of Dengue Fever</h4>
           <ul>
             <li>Sudden onset of fever for 2-7 days</li>
@@ -96,16 +94,19 @@
             <li>Joint and muscle pain</li>
             <li>Skin rashes</li>
             <li>Nausea and vomiting</li>
-            <li>Mild bleeding (e.g. nose or gum bleed, or easy bruising of the Symptoms usually appear 4-7 days after
+            <li>Mild bleeding (e.g. nose or gum bleed) or easy bruising </li>
+            <br>
+            <p> Symptoms usually appear 4-7 days after
               being bitten
-              (ranges from 3-14 days).</li>
-
+              (ranges from 3-14 days).
+            </p>
           </ul>
         </div>
       </div>
 
+      <!-- Dengue treatment -->
       <div class="col-sm-12 col-lg-6">
-        <div class="treatment">
+        <div class="dengue-treatment">
           <h4>Treatment for Dengue Fever</h4>
           <p>There is no specific treatment for dengue fever, or its more serious forms, dengue haemorrhagic fever and
             dengue shock syndrome.</p>
@@ -133,17 +134,18 @@
     </div>
   </div>
 
-  <!-- End of Dengue Description -->
+  <!-- In between Dengue information and Select zone -->
   <div class="container">
     <div id="abovezones"></div>
   </div>
+
   <!-- Start of Select Zone -->
   <div class="container">
     <div class="select-zone" id="select-zone">
       <h3>
-        Click an area to view it's surrounding dengue clusters
+        Click a zone to view it's surrounding dengue cluster
       </h3>
-      <div class="zonebtns">
+      <div class="zonebtns" id="zonebtns">
         <div class="row">
           <div class="col-6 col-md-3">
             <button type="button" class="btn btn-block north-east">
@@ -189,35 +191,39 @@
       <div class=" card-body">
         <h4 class="card-title" id="amenities">Amenities near you</h4>
         <p class="card-text">
-          To see nearby medical supplies and services on Google map, select
-          options below.<br />
+          Are you or your loved ones suffering from dengue fever?</p>
+        <p>
+          Here are some recommendations to assist in this difficult time.</p>
+        <p>Select an option below to see the nearby 20 places for medical supplies and services on the Google map above.
+        </p>
+        <p>
           Scroll down further to see an expanded list of the option selected.
         </p>
 
         <div class="row nearby-places" id="nearby-places">
           <div class="col-md-4 col-lg-3">
-            <a href="#singapore" class="card-link clinics"><i class="fas fa-clinic-medical"></i>Clinics</a>
+            <a href="#zonebtns" class="card-link clinics"><i class="fas fa-clinic-medical"></i>Clinics</a>
           </div>
           <div class="col-md-4 col-lg-3">
-            <a href="#singapore" class="card-link pharmacies"><i class="fas fa-pills"></i>Pharmacies</a>
+            <a href="#zonebtns" class="card-link pharmacies"><i class="fas fa-pills"></i>Pharmacies</a>
           </div>
           <div class="col-md-4 col-lg-3">
-            <a href="#singapore" class="card-link spmkt"><i class="fas fa-shopping-cart"></i>Supermarkets</a>
+            <a href="#zonebtns" class="card-link spmkt"><i class="fas fa-shopping-cart"></i>Supermarkets</a>
           </div>
           <div class="col-md-4 col-lg-3">
-            <a href="#singapore" class="card-link meals"><i class="fas fa-utensils"></i>Meal Delivery</a>
+            <a href="#zonebtns" class="card-link meals"><i class="fas fa-utensils"></i>Meal Delivery</a>
           </div>
           <div class="col-md-4 col-lg-3 laundromat">
-            <a href="#singapore" class="card-link laundromats"><i class="fas fa-tshirt"></i>Laundromats</a>
+            <a href="#zonebtns" class="card-link laundromats"><i class="fas fa-tshirt"></i>Laundromats</a>
           </div>
           <div class="col-md-4 col-lg-3">
-            <a href="#singapore" class="card-link shopping"><i class="fas fa-building"></i>Shopping Malls</a>
+            <a href="#zonebtns" class="card-link shopping"><i class="fas fa-building"></i>Shopping Malls</a>
           </div>
           <div class="col-lg-3 d-none d-lg-block">
-            <a href="#singapore" class="card-link insurance"><i class="fas fa-landmark"></i>Insurance agencies</a>
+            <a href="#zonebtns" class="card-link insurance"><i class="fas fa-landmark"></i>Insurance agencies</a>
           </div>
           <div class="col-lg-3 d-none d-lg-block">
-            <a href="#singapore" class="card-link funeral"><i class="fas fa-store"></i>Funeral</a>
+            <a href="#zonebtns" class="card-link funeral"><i class="fas fa-store"></i>Funeral</a>
           </div>
         </div>
       </div>
@@ -238,8 +244,8 @@
       </div>
       <p>
         &copy; Designed by Linda Hsu, 2019
-        <a href="https://www.nea.gov.sg/dengue-zika" target="_blank"><img src="assets/images/mosquito-favicon-big.png"
-            alt="" class="footer-mosq" />
+        <a href="https://www.moh.gov.sg/diseases-updates/dengue" target="_blank"><img
+            src="assets/images/mosquito-favicon-big.png" alt="" class="footer-mosq" />
         </a>
       </p>
       <small>For educational purpose</small>

@@ -106,67 +106,68 @@ body {
   color: rgb(171, 0, 0);
 }
 
-.dengue-description {
+.about-dengue {
   border: 2px dotted rgb(171, 0, 0);
   padding: 15px 10px;
   margin-bottom: 20px;
 }
 
-.dengue-description h4 {
+.about-dengue h4 {
   text-align: center;
   font-family: "Rubik", sans-serif;
   font-weight: bold;
 }
 
-.dengue-description ul {
+.about-dengue ul {
   line-height: 30px;
   padding-left: 20px;
 }
 
-.dengue-description a {
+.about-dengue a {
   color: rgb(171, 0, 0);
   font-style: italic;
 }
 
-.dengue-description a:hover {
+.about-dengue a:hover {
   color: rgb(138, 2, 2);
   text-decoration: none;
 }
 
-.symptoms {
+.dengue-symptoms {
   border: 2px dotted rgb(171, 0, 0);
   padding: 15px 10px;
-  margin-bottom: 20px;
+  margin-bottom: 20px;dengue-
 }
 
-.symptoms h4 {
+.dengue-symptoms h4 {
   text-align: center;
   font-family: "Rubik", sans-serif;
-  font-weight: bold;
+  font-weight: bold;dengue-
 }
 
-.symptoms ul {
+.dengue-symptoms ul {
   line-height: 30px;
   padding-left: 20px;
 }
-.treatment {
+
+.dengue-treatment {
   border: 2px dotted rgb(171, 0, 0);
   padding: 15px 10px;
   margin-bottom: 20px;
 }
 
-.treatment h4 {
+.dengue-treatment h4 {
   text-align: center;
   font-family: "Rubik", sans-serif;
   font-weight: bold;
 }
 
-.treatment a {
+.dengue-treatment a {
   color: rgb(171, 0, 0);
   font-style: italic;
 }
 
-.treatment a:hover {
+.dengue-treatment a:hover {
   color: rgb(138, 2, 2);
   text-decoration: none;
 }
@@ -193,9 +194,9 @@ body {
   text-decoration: none;
 }
 
-/* #abovezones {
+#abovezones {
   height: 40px;
-} */
+}
 
 .select-zone h3 {
   font-family: "Rubik", sans-serif;
@@ -260,7 +261,7 @@ body {
 
 #map {
   width: 100%;
-  height: 50vh;
+  height: 500px;
   margin: 30px auto;
 }
 
@@ -340,7 +341,7 @@ thead .table-header {
 .footer-icons i {
   color: #333333;
   font-size: 1.7rem;
-  margin: 20px 10px 0 10px;
+  margin: 30px 5px 0 10px;
 }
 
 .footer-icons i:hover {
@@ -413,10 +414,17 @@ thead .table-header {
     height: 120px;
     margin-top: 15px;
   }
-}
+  .dengue-symptoms {
+    height: 351px;
+  }
 
-@media (min-width: 992px) {
   .table-sm {
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dengue-treatment {
+    height: 351px;
   }
 }
