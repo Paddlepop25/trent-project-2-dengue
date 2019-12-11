@@ -32,7 +32,7 @@ The white background was utilized to enable users to focus their attention on th
 
 In the large devices' view, I placed the boxes containing important information towards the center of the screen to have the users' eyes level to follow the website smoothly downwards. This was contrasted with a full width map for creating a subtle interesting visual appeal to the users.
 
-I also added a secret 'easter egg' in the form of a small mosquito icon in the footer. When the user hovers over it, it shakes and it makes one feel like slapping it dead. Well, it also points users to the Ministry of Health wesbite. If one didn't manage to spot this, it is okay as the same link is provided in the 'For More Information' section. I deliberately left out the shadow upon hover as when it shakes, it looks just like an Andes mosquito with the stripped black and white legs.
+I also added a secret 'easter egg' in the form of a small mosquito icon in the footer. When the user hovers over it, it shakes and it makes one feel like slapping it dead. Well, it also points users to the Ministry of Health wesbite. If one didn't manage to spot this, it is okay as the same link is provided in the 'For More Information' section. I deliberately left out the shadow upon hover as when the mosquito shakes, it looks just like an Andes mosquito with the stripped black and white legs.
 
 ## UI
 
@@ -50,7 +50,7 @@ Next is the [dengue cluster](https://paddlepop25.github.io/trent-project-2-dengu
 
 Each pink box or polygon on the google map is a link which would show an infobox when the user clicks on it. Information about the exact locality, cases counts, and places where mosquito breeding ground are found is displayed on it. I gave the table some light pink background to be aligned with the theme color of the website. The infoboxes are best displayed on a large screen device, but is also shown for small and medium sized devices. There are horizontal and vertical scroll bars for the user to navigate on.
 
-The [amenities near you](https://paddlepop25.github.io/trent-project-2-dengue/#amenities) section was provided to give information on twenty nearby places and services a dengue patient or their loved one may need. I thought of medical supplies, clinics, meal delivery and even insurance agencies and funeral homes. I chose my home area as the home ground for these amenities. In future development I would like to use a google geolocation API that can locate where the user is and give the places near their location.
+The [amenities near you](https://paddlepop25.github.io/trent-project-2-dengue/#amenities) section was provided to give information on twenty nearby places and services a dengue patient or their loved one may need. I thought of medical supplies, clinics, meal delivery and even insurance agencies and funeral homes. I chose my home area as the home ground for these amenities.
 
 Upon clicking on one of the amenity, google markers will drop on the map with alphabets on the pins. One could click on the pin to see the name, address and rating of the amenity. The twenty locations are also listed below the amenity box, and this is communicated in the last sentence of the amenity box. The alphabets of the list is an exact match to the pins on the map so one could refer to one or the other easily.
 
@@ -61,15 +61,29 @@ Upon clicking on one of the amenity, google markers will drop on the map with al
 These are the user stories that I intended to achieve while building this website:
 
 1. To build a modern looking website that is easy for the user to navigate around
-2. To provide accurate, important and basic information on dengue. This includes on what it is, what symptoms does one have from dengue fever, how to prevent mosquito breeding
+2. To provide accurate, important and basic information on dengue. This includes on what it is, what symptoms does one have from dengue fever and how to prevent mosquito breeding
 3. To show users where the dengue clusters in Singapore are with added information in each infobox
 4. To provide users information on nearby amenities for those who need medical supplies or relevant useful services
 5. To direct users to other websites for further reading. This includes a doctor's interview, the Ministry of Health's official website and others
-6. To showcase my current skills utilizing HTML5, CSS3, Bootstrap, Javascript and other tools to make a website inspired by an unfortunate incident 2 Christmas ago
+6. To showcase my current skills utilizing HTML5, CSS3, Bootstrap, Javascript, Google Places API and other tools to make a website inspired by an unfortunate incident 2 Christmas ago
 
 ## Features
 
+- The links in the navigation bar changes to the theme maroon color (rgb(171, 0, 0)) when hovered over to indicate that it is a link that the user could click on. This brings them to different sections of the website
+- I introduced a smooth scrolling effect so the transition to another section of the website is not abrupt
+- When hovering over any links, the cursor changes from a pointer to a hand to indicate that it is not a static word. An action could be made on the link to give the user more information on another page
+- I grouped basic but the important information about dengue in different boxes. For further reading, links in the theme maroon color is provided so the user can click on them easily
+- In the dengue cluster section, buttons reflecting the different zones in Singapore are provided. When the user clicks on one of them, the google map is updated with boxes or polygrams to reflect the dengue cluster in that area. This is useful to select an area where the user resides
+- The boxes and polygons shown on the google map are clickable and they show extra detailed information in the form of an infobox
+- In the amenities section, suggested places and services are highlighted in the maroon theme color to suggest they are clickable links. Once an option is selected, the google map is updated with 20 results. This is reflected with drop down pins with alphabets on them. They are clickable to show an infobox of each location, address and rating
+- A list is also shown below the amenityt box and the "#" alphabetical index on the list matches the alphabets on the google pins
+- The footer section has a short, fun surprise for the user when he/she hovers over it. The mosquito icon shakes and it looks like the female Andes mosquito with the white and black striped legs. It is a link that will bring the user to the Ministry Of Health website for more information on dengue
+
 Future features
+
+- When a relevant API by the NEA (National Environment Agency) is available, I would like the number of dengue cases on this website to be updated daily
+- I would like to include testimonies in the form of a video by two or three former dengue patients
+- In future development I would like to use a google geolocation API that can locate where the user is and give the places near their location
 
 ## Technologies Used
 
@@ -79,7 +93,9 @@ Here are a list of programming languages, frameworks, technologies and tools use
 - CSS3
 - JavaScript
 - JQuery
-- Markdown
+- [Google Maps API](https://cloud.google.com/maps-platform/)
+  - Used places to select locations and the data layers to display information from geoJSON files
+- Markdown in [Google Colaboratory](https://research.google.com/colaboratory/faq.html)
   - Used for writing this README.md file
 - [Visual Studio Code](https://code.visualstudio.com/)
   - Used as the IDE to write the codes for this website
@@ -91,6 +107,8 @@ Here are a list of programming languages, frameworks, technologies and tools use
   - Used for social media icons and other icons
 - [Favicon & App Icon Generator](https://www.favicon-generator.org/)
   - Used for generating Dengue's favicon
+- [JSONLint formatter and validator](https://jsonlint.com/)
+  - Used to format and validate the GeoJSON files
 - [Mockflow](https://mockflow.com/)
   - Used to design and create the wireframes for this project
 - [Git](https://git-scm.com/)
@@ -101,3 +119,37 @@ Here are a list of programming languages, frameworks, technologies and tools use
   - Used to see across multiple devices with different screen sizes the responsiveness of the website
 - [Screen To Gif](https://www.screentogif.com/)
   - Used to capture the responsive screens into a gif file
+
+## Testing
+
+This website was tested on different web browsers and on different devices. I also requested friends and co-workers for feedback on what they liked and didn't like about this website. Adjustments were made accordingly until the final product upon project submission.
+
+Devices and browesers:
+
+- iPad 3
+  - Safari
+- MacBook Air
+  - Google Chrome
+  - Firefox
+  - Safari
+- MacBook Pro
+  - Google Chrome
+  - Firefox
+  - Safari
+- MacPro
+  - Google Chrome
+  - Firefox
+- Windows 10 Enterprise
+  - Google Chrome
+  - Mircosoft Edge
+- Samsung Galaxy 8
+  - Google Chrome
+  - Samsung web browser
+- Redmi Note 7
+  - Google Chrome
+
+Additionally, Google Chrome Devtools was used throughout the project to view this website on a number of stimulated mobile, tablet, laptop and desktop devices to ensure compatibility and responsiveness. Devices include Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 5 / SE, iPhone 6/7/8, iPhone 6/7/8 plus, iPhone X, iPad, and iPad Pro.
+
+I found that a standard font size does not work for all screen sizes, so I added a base `font-size: 16px` on the `html` in the css file, and adjusted accordingly. Where needed to fit the elements neatly in place, I used media queries as well.
+
+All links will open in a new tab having used `target="_blank"` for each 'a tag.' They have been manually tested in each browser to ensure that they point to the correct destination.
