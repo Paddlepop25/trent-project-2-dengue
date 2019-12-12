@@ -56,6 +56,8 @@ Upon clicking on one of the amenity, google markers will drop on the map with al
 
 ## Wireframes
 
+Wireframes were created to help me visualise the website in different sized screens. They can be viewed via this [link]()
+
 ## User Stories
 
 These are the user stories that I intended to achieve while building this website:
@@ -122,7 +124,7 @@ Here are a list of programming languages, frameworks, technologies and tools use
 - [Screen To Gif](https://www.screentogif.com/)
   - Used to capture the responsive screens into a gif file
 - [W3C Markup Validation service](https://validator.w3.org/)
-  - Used to validate HTML codes and this result is returned 'Illegal character in query: | is not allowed.' This is ignore because the pipe "|" character is necessary for Google Fonts to allow additional fonts used
+  - Used to validate HTML codes and this result is returned 'Illegal character in query: | is not allowed.' This is ignored because the pipe "|" character is necessary for Google Fonts to allow additional fonts used
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
   - Used to validate CSS codes and this result is returned 'Congratulations! No Error Found.'
 - [Esprima](https://esprima.org/demo/validate.html)
@@ -174,7 +176,7 @@ These are steps to follow if you would like to run this code locally:
 
 #### Download
 
-1. Download [this](https://github.com/Paddlepop25/trent-project-2-dengue) repository from the Github repository
+1. Download [this repository](https://github.com/Paddlepop25/trent-project-2-dengue) from the Github repository
 
 2. At the right hand side, click on green button _Clone or download_ then _Download ZIP_. The repository will automatically be downloaded into a ZIP folder on your computer
 3. Uncompress the ZIP folder
@@ -191,7 +193,7 @@ These are steps to follow if you would like to run this code locally:
 
 ## Credits
 
-Many of the sections describing dengue were taken from the Ministry of Health's [website](https://www.moh.gov.sg/diseases-updates/dengue) and IAMAT's [website](https://www.iamat.org/country/singapore/risk/dengue)
+Many of the sections describing dengue were taken from the [Ministry of Health website](https://www.moh.gov.sg/diseases-updates/dengue) and [IAMAT website](https://www.iamat.org/country/singapore/risk/dengue)
 
 Longitude and Latitude reference taken from [travelmath](https://www.travelmath.com/cities/Tampines,+Singapore)
 
