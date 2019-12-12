@@ -3,6 +3,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+#page-top {
+  height: 56px;
+  background: red;
+}
+
 .navbar {
   background: #fde3e3;
 }
@@ -17,7 +22,7 @@ body {
   font-family: "Rubik", sans-serif;
   color: #333333;
   font-weight: bolder;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: center;
   margin-left: 25px;
 }

@@ -13,7 +13,7 @@ function getClinics() {
     true
   );
 
-  xhr.onload = function () {
+  xhr.onload = function() {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
       loadClinicMarkers(response);
@@ -31,7 +31,7 @@ function getClinics() {
 function loadClinicMarkers(googleData) {
   let tampines = { lat: 1.3497222222, lng: 103.9544444444 };
   let map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 13,
+    zoom: 14,
     center: tampines
   });
   let googleObject = Object.entries(googleData)[2][1];
@@ -77,9 +77,15 @@ function loadClinicMarkers(googleData) {
     <p class="infoWindow-content">Rating: ${display.rating}</p>`
     });
 
-    google.maps.event.addListener(marker, "click", function () {
+    google.maps.event.addListener(marker, "mouseover", function() {
       marker.info.open(map, marker);
     });
+    google.maps.event.addListener(marker, "mouseout", function() {
+      marker.info.close(map, marker);
+    });
+    // google.maps.event.addListener(marker, "click", function() {
+    //   marker.info.open(map, marker);
+    // });
   }
 }
 
@@ -112,6 +118,8 @@ function loadClinicTable(googleData) {
     }
   } else {
     resultsTable.innerHTML = `There is no data available`;
-    alert(`There was an error with data retrieval because: ${status}. \nPlease try again.`);
+    alert(
+      `There was an error with data retrieval because: ${status}. \nPlease try again.`
+    );
   }
 }
