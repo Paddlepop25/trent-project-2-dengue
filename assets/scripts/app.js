@@ -1,3 +1,14 @@
+// Hide dropdown menu of navbar after clicking on any anchor tag
+let navBarNav = document.querySelector(".navbar-nav");
+let aTaginnavBarNav = navBarNav.getElementsByTagName("a");
+let navBarCollapse = document.querySelector("#navbarNavAltMarkup");
+
+Array.from(aTaginnavBarNav).forEach(e => {
+  e.addEventListener("click", function(e) {
+    navBarCollapse.classList.remove("show");
+  });
+});
+
 // These 5 functions are from the dengue-clusters.js file:
 // getNorthDengue(), getSouthEastDengue(), getCentralDengue(), getSouthWestDengue(), getSouthWestDengue()
 
@@ -52,7 +63,7 @@ function initMap() {
     strokeWeight: 1
   });
 
-  map.data.addListener("click", function (event) {
+  map.data.addListener("click", function(event) {
     let myHTML = event.feature.getProperty("Description");
     let infoWindow = new google.maps.InfoWindow({
       content: `<div>${myHTML}</div>`
