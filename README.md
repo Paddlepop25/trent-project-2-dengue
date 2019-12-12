@@ -95,6 +95,8 @@ Here are a list of programming languages, frameworks, technologies and tools use
 - JQuery
 - [Google Maps API](https://cloud.google.com/maps-platform/)
   - Used places to select locations and the data layers to display information from geoJSON files
+- [Place Types](https://developers.google.com/places/supported_types) page
+  - Used for selecting places for query
 - Markdown in [Google Colaboratory](https://research.google.com/colaboratory/faq.html)
   - Used for writing this README.md file
 - [Visual Studio Code](https://code.visualstudio.com/)
@@ -119,6 +121,12 @@ Here are a list of programming languages, frameworks, technologies and tools use
   - Used to see across multiple devices with different screen sizes the responsiveness of the website
 - [Screen To Gif](https://www.screentogif.com/)
   - Used to capture the responsive screens into a gif file
+- [W3C Markup Validation service](https://validator.w3.org/)
+  - Used to validate HTML codes and this result is returned 'Illegal character in query: | is not allowed.' This is ignore because the pipe "|" character is necessary for Google Fonts to allow additional fonts used
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+  - Used to validate CSS codes and this result is returned 'Congratulations! No Error Found.'
+- [Esprima](https://esprima.org/demo/validate.html)
+  - Used to validate all Javascript files and this result is returned 'Code is syntactically valid.'
 
 ## Testing
 
@@ -198,9 +206,8 @@ Connect to API using Javascript taken from [programmableweb](https://www.program
 
 ### GeoJSON files
 
-1. https://data.gov.sg/search?q=dengue
-
-- files on zonal and whole of country's dengue clusters
+- https://data.gov.sg/search?q=dengue
+  - files on zonal and whole of country's dengue clusters
 
 ### Images
 
