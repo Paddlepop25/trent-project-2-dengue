@@ -80,6 +80,10 @@ body {
   margin-bottom: 50px;
 }
 
+#dengue-update {
+  height: 1px;
+}
+
 .dengue-cases {
   border: 2px dotted rgb(171, 0, 0);
   padding: 15px 10px;
