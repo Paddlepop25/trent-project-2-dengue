@@ -243,6 +243,10 @@ body {
   margin-bottom: 0;
 }
 
+.select-zone span {
+  font-size: 1.1rem;
+}
+
 .select-zone small a {
   color: #af0000;
 }
