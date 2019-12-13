@@ -13,7 +13,7 @@ function getShoppingMalls() {
     true
   );
 
-  xhr.onload = function () {
+  xhr.onload = function() {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
       loadShoppingMallMarkers(response);
@@ -31,7 +31,7 @@ function getShoppingMalls() {
 function loadShoppingMallMarkers(googleData) {
   let tampines = { lat: 1.3497222222, lng: 103.9544444444 };
   let map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 13,
+    zoom: 14,
     center: tampines
   });
   let googleObject = Object.entries(googleData)[2][1];
@@ -70,7 +70,6 @@ function loadShoppingMallMarkers(googleData) {
       display["vicinity"] = display["vicinity"];
     }
 
-
     marker.info = new google.maps.InfoWindow({
       content: `<h5 class="infoWindow-header">${display.name}</h5>
       <br>
@@ -78,10 +77,19 @@ function loadShoppingMallMarkers(googleData) {
     <p class="infoWindow-content">Rating: ${display.rating}</p>`
     });
 
-    google.maps.event.addListener(marker, "click", function () {
-
-      marker.info.open(map, marker);
-    });
+    let w = window.innerWidth;
+    if (w < 768) {
+      google.maps.event.addListener(marker, "click", function() {
+        marker.info.open(map, marker);
+      });
+    } else if (w >= 768) {
+      google.maps.event.addListener(marker, "mouseover", function() {
+        marker.info.open(map, marker);
+      });
+      google.maps.event.addListener(marker, "mouseout", function() {
+        marker.info.close(map, marker);
+      });
+    }
   }
 }
 
@@ -115,6 +123,8 @@ function loadShoppingTable(googleData) {
     }
   } else {
     resultsTable.innerHTML = `There is no data available`;
-    alert(`There was an error with data retrieval because: ${status}. \nPlease try again.`);
+    alert(
+      `There was an error with data retrieval because: ${status}. \nPlease try again.`
+    );
   }
 }

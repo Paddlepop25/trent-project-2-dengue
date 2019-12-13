@@ -8,12 +8,11 @@ function getMeals() {
   const xhr = new XMLHttpRequest();
 
   xhr.open(
-
     "GET",
     "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.3497222222,103.9544444444&radius=4000&type=meal_delivery&key=AIzaSyAQOzXrUwtwRVkzSyWzeRdxfpiPe7kBliU",
     true
   );
-  xhr.onload = function () {
+  xhr.onload = function() {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
       loadMealMarkers(response);
@@ -31,7 +30,7 @@ function getMeals() {
 function loadMealMarkers(googleData) {
   let tampines = { lat: 1.3497222222, lng: 103.9544444444 };
   let map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 13,
+    zoom: 14,
     center: tampines
   });
   let googleObject = Object.entries(googleData)[1][1];
@@ -77,9 +76,19 @@ function loadMealMarkers(googleData) {
     <p class="infoWindow-content">Rating: ${display.rating}</p>`
     });
 
-    google.maps.event.addListener(marker, "click", function () {
-      marker.info.open(map, marker);
-    });
+    let w = window.innerWidth;
+    if (w < 768) {
+      google.maps.event.addListener(marker, "click", function() {
+        marker.info.open(map, marker);
+      });
+    } else if (w >= 768) {
+      google.maps.event.addListener(marker, "mouseover", function() {
+        marker.info.open(map, marker);
+      });
+      google.maps.event.addListener(marker, "mouseout", function() {
+        marker.info.close(map, marker);
+      });
+    }
   }
 }
 
@@ -113,6 +122,8 @@ function loadMealTable(googleData) {
     }
   } else {
     resultsTable.innerHTML = `There is no data available`;
-    alert(`There was an error with data retrieval because: ${status}. \nPlease try again.`);
+    alert(
+      `There was an error with data retrieval because: ${status}. \nPlease try again.`
+    );
   }
 }
