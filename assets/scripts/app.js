@@ -4,10 +4,24 @@ let aTaginnavBarNav = navBarNav.getElementsByTagName("a");
 let navBarCollapse = document.querySelector("#navbarNavAltMarkup");
 
 Array.from(aTaginnavBarNav).forEach(e => {
-  e.addEventListener("click", function(e) {
+  e.addEventListener("click", function (e) {
     navBarCollapse.classList.remove("show");
   });
 });
+
+// For large devices, on click of 'dengue update' on the navbar to scroll upwards to show the Dengue Cases box
+
+function dengueCasesScroll() {
+  let selectNavBarNav = document.querySelector(".navbar-nav");
+  let secondATagInNavBar = selectNavBarNav.getElementsByTagName('a')[1];
+  if (window.innerWidth >= 992) {
+    secondATagInNavBar.addEventListener("click", function () {
+      console.log(secondATagInNavBar)
+    })
+  }
+}
+
+dengueCasesScroll()
 
 // These 5 functions are from the dengue-clusters.js file:
 // getNorthDengue(), getSouthEastDengue(), getCentralDengue(), getSouthWestDengue(), getSouthWestDengue()
@@ -43,8 +57,6 @@ let singaporeButton = document
     initMap();
   });
 
-1;
-
 function initMap() {
   let singapore = { lat: 1.35027, lng: 103.821959 };
   let map = new google.maps.Map(document.getElementById("map"), {
@@ -63,7 +75,7 @@ function initMap() {
     strokeWeight: 1
   });
 
-  map.data.addListener("click", function(event) {
+  map.data.addListener("click", function (event) {
     let myHTML = event.feature.getProperty("Description");
     let infoWindow = new google.maps.InfoWindow({
       content: `<div>${myHTML}</div>`

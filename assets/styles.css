@@ -77,7 +77,11 @@ body {
   width: 90%;
   display: block;
   margin: 100px auto;
-  margin-bottom: 50px;
+  margin-bottom: 0;
+}
+
+#aboveAboutDengue {
+  height: 70px;
 }
 
 #dengue-update {
@@ -329,6 +333,10 @@ body {
   background: #fcf6f6;
   margin-bottom: 5px;
   font-size: 0.9rem;
+}
+
+#amenities {
+  height: 60px;
 }
 
 .eastcard {
