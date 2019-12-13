@@ -27,7 +27,7 @@ body {
 }
 
 .navbar-nav a:hover {
-  color: rgb(171, 0, 0);
+  color: #af0000;
 }
 
 .hamburger {
@@ -85,7 +85,7 @@ body {
 }
 
 .dengue-cases {
-  border: 2px dotted rgb(171, 0, 0);
+  border: 2px dotted #af0000;
   padding: 15px 10px;
   margin-bottom: 20px;
 }
@@ -111,11 +111,11 @@ body {
 .reported-cases {
   font-size: 2.2rem;
   font-weight: bold;
-  color: rgb(171, 0, 0);
+  color: #af0000;
 }
 
 .about-dengue {
-  border: 2px dotted rgb(171, 0, 0);
+  border: 2px dotted #af0000;
   padding: 15px 10px;
   margin-bottom: 20px;
 }
@@ -132,20 +132,20 @@ body {
 }
 
 .about-dengue a {
-  color: rgb(171, 0, 0);
+  color: #af0000;
   font-style: italic;
   font-weight: bold;
   font-size: 1.1rem;
 }
 
 .about-dengue a:hover {
-  color: rgb(138, 2, 2);
+  color: #900000;
   text-decoration: none;
   font-weight: bold;
 }
 
 .dengue-symptoms {
-  border: 2px dotted rgb(171, 0, 0);
+  border: 2px dotted #af0000;
   padding: 15px 10px;
   margin-bottom: 20px;
 }
@@ -162,7 +162,7 @@ body {
 }
 
 .dengue-treatment {
-  border: 2px dotted rgb(171, 0, 0);
+  border: 2px dotted #af0000;
   padding: 15px 10px;
   margin-bottom: 20px;
 }
@@ -174,20 +174,20 @@ body {
 }
 
 .dengue-treatment a {
-  color: rgb(171, 0, 0);
+  color: #af0000;
   font-style: italic;
   font-weight: bold;
   font-size: 1.1rem;
 }
 
 .dengue-treatment a:hover {
-  color: rgb(138, 2, 2);
+  color: #900000;
   text-decoration: none;
   font-weight: bold;
 }
 
 .more-information {
-  border: 2px dotted rgb(171, 0, 0);
+  border: 2px dotted #af0000;
   padding: 15px 10px;
   margin-bottom: 20px;
   text-align: center;
@@ -200,13 +200,13 @@ body {
 }
 
 .more-information a {
-  color: rgb(171, 0, 0);
+  color: #af0000;
   font-style: italic;
   font-weight: bold;
 }
 
 .more-information a:hover {
-  color: rgb(138, 2, 2);
+  color: #900000;
   text-decoration: none;
   font-weight: bold;
 }
@@ -224,11 +224,11 @@ body {
 }
 
 .select-zone small a {
-  color: rgb(171, 2, 2);
+  color: #af0000;
 }
 
 .select-zone small a:hover {
-  color: rgb(109, 2, 2);
+  color: #900000;
   text-decoration: none;
 }
 
@@ -240,70 +240,70 @@ body {
   margin: 5px 0;
   font-weight: bold;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
-  color: rgb(171, 2, 2);
+  color: #af0000;
   background: #fcf6f6;
-  border: 1px solid rgb(138, 2, 2);
+  border: 1px solid #900000;
 }
 
 .zonebtns .north-east:hover {
-  background: rgb(255, 237, 237);
-  color: rgb(109, 2, 2);
+  background: #fae5e5;
+  color: #900000;
 }
 
 .zonebtns .central {
   margin: 5px 0;
   font-weight: bold;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
-  color: rgb(171, 2, 2);
+  color: #af0000;
   background: #fcf6f6;
-  border: 1px solid rgb(138, 2, 2);
+  border: 1px solid #900000;
 }
 
 .zonebtns .central:hover {
-  background: rgb(255, 237, 237);
-  color: rgb(109, 2, 2);
+  background: #fae5e5;
+  color: #900000;
 }
 
 .zonebtns .south-east {
   margin: 5px 0;
   font-weight: bold;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
-  color: rgb(171, 2, 2);
+  color: #af0000;
   background: #fcf6f6;
-  border: 1px solid rgb(138, 2, 2);
+  border: 1px solid #900000;
 }
 
 .zonebtns .south-east:hover {
-  background: rgb(255, 237, 237);
-  color: rgb(109, 2, 2);
+  background: #fae5e5;
+  color: #900000;
 }
 
 .zonebtns .south-west {
   margin: 5px 0;
   font-weight: bold;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
-  color: rgb(171, 2, 2);
+  color: #af0000;
   background: #fcf6f6;
-  border: 1px solid rgb(138, 2, 2);
+  border: 1px solid #900000;
 }
 
 .zonebtns .south-west:hover {
-  background: rgb(255, 237, 237);
-  color: rgb(109, 2, 2);
+  background: #fae5e5;
+  color: #900000;
 }
 
 .zonebtns .singapore {
   margin: 5px 0;
   font-weight: bold;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
-  color: rgb(171, 2, 2);
+  color: #af0000;
   background: #fcf6f6;
-  border: 1px solid rgb(138, 2, 2);
+  border: 1px solid #900000;
 }
 
 .zonebtns .singapore:hover {
-  background: rgb(255, 237, 237);
-  color: rgb(109, 2, 2);
+  background: #fae5e5;
+  color: #900000;
 }
 
 #map {
@@ -321,7 +321,7 @@ body {
 .infoWindow-header {
   font-family: "Rubik", sans-serif;
   margin-bottom: -8px;
-  color: rgb(171, 0, 0);
+  color: #af0000;
   font-weight: bold;
 }
 
@@ -332,7 +332,7 @@ body {
 }
 
 .eastcard {
-  border: 2px dotted rgb(171, 0, 0);
+  border: 2px dotted #af0000;
   margin-bottom: 20px;
 }
 
@@ -348,7 +348,7 @@ body {
 }
 
 .eastcard a {
-  color: rgb(171, 0, 0);
+  color: #af0000;
   font-style: italic;
   text-align: left;
   line-height: 32px;
@@ -356,7 +356,7 @@ body {
 }
 
 .eastcard a:hover {
-  color: rgb(138, 2, 2);
+  color: #900000;
 }
 
 .results-table {
@@ -392,7 +392,7 @@ thead .table-header {
 }
 
 .footer-icons i:hover {
-  color: rgb(171, 0, 0);
+  color: #af0000;
 }
 
 .footer p {
