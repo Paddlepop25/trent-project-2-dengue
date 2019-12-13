@@ -9,20 +9,6 @@ Array.from(aTaginnavBarNav).forEach(e => {
   });
 });
 
-// For large devices, on click of 'dengue update' on the navbar to scroll upwards to show the Dengue Cases box
-
-function dengueCasesScroll() {
-  let selectNavBarNav = document.querySelector(".navbar-nav");
-  let secondATagInNavBar = selectNavBarNav.getElementsByTagName('a')[1];
-  if (window.innerWidth >= 992) {
-    secondATagInNavBar.addEventListener("click", function () {
-      console.log(secondATagInNavBar)
-    })
-  }
-}
-
-dengueCasesScroll()
-
 // These 5 functions are from the dengue-clusters.js file:
 // getNorthDengue(), getSouthEastDengue(), getCentralDengue(), getSouthWestDengue(), getSouthWestDengue()
 

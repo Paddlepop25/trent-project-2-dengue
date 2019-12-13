@@ -3,10 +3,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-#page-top {
+#aboveMozImage {
   height: 1px;
 }
 
+/* Start of Navbar */
 .navbar {
   background: #fde3e3;
 }
@@ -37,17 +38,20 @@ body {
   height: 30px;
   right: 25px;
 }
+
 .hamburger span {
   margin: 0 auto;
   position: relative;
   top: 8px;
   right: 13px;
 }
+
 .hamburger span:before,
 .hamburger span:after {
   position: absolute;
   content: "";
 }
+
 .hamburger span,
 .hamburger span:before,
 .hamburger span:after {
@@ -56,22 +60,27 @@ body {
   background-color: #000;
   display: block;
 }
+
 .hamburger span:before {
   margin-top: -12px;
 }
+
 .hamburger span:after {
   margin-top: 12px;
 }
+
 .hamburger-animation {
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
+
 .hamburger-animation:hover {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+/* End of Navbar */
 
 .mozzie-wipeout img {
   width: 90%;
@@ -84,40 +93,7 @@ body {
   height: 70px;
 }
 
-#dengue-update {
-  height: 1px;
-}
-
-.dengue-cases {
-  border: 2px dotted #af0000;
-  padding: 15px 10px;
-  margin-bottom: 20px;
-}
-.dengue-cases h4 {
-  font-family: "Rubik", sans-serif;
-  font-weight: bold;
-  text-align: center;
-}
-
-.mosq-div {
-  text-align: center;
-}
-
-.mosq-icon {
-  width: 120px;
-  height: 100px;
-}
-
-.cases-div {
-  text-align: center;
-}
-
-.reported-cases {
-  font-size: 2.2rem;
-  font-weight: bold;
-  color: #af0000;
-}
-
+/* Start of Dengue box */
 .about-dengue {
   border: 2px dotted #af0000;
   padding: 15px 10px;
@@ -147,7 +123,41 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+/* End of Dengue box */
 
+/* Start of Dengue cases box */
+.dengue-cases {
+  border: 2px dotted #af0000;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+}
+.dengue-cases h4 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mosq-div {
+  text-align: center;
+}
+
+.mosq-icon {
+  width: 120px;
+  height: 100px;
+}
+
+.cases-div {
+  text-align: center;
+}
+
+.reported-cases {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #af0000;
+}
+/* End of Dengue cases box */
+
+/* Start of Dengue symptoms box */
 .dengue-symptoms {
   border: 2px dotted #af0000;
   padding: 15px 10px;
@@ -164,7 +174,9 @@ body {
   line-height: 30px;
   padding-left: 20px;
 }
+/* End of Dengue symptoms box */
 
+/* Start of Dengue treatment box */
 .dengue-treatment {
   border: 2px dotted #af0000;
   padding: 15px 10px;
@@ -189,7 +201,9 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+/* End of Dengue treatment box */
 
+/* Start of More Information box */
 .more-information {
   border: 2px dotted #af0000;
   padding: 15px 10px;
@@ -214,11 +228,13 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+/* End of More Information box */
 
-#abovezones {
+#aboveZones {
   height: 40px;
 }
 
+/* Start of Select zones section */
 .select-zone h3 {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
@@ -309,7 +325,9 @@ body {
   background: #fae5e5;
   color: #900000;
 }
+/* End of Select zones section */
 
+/* Goodle map */
 #map {
   width: 100%;
   height: 500px;
@@ -335,27 +353,28 @@ body {
   font-size: 0.9rem;
 }
 
-#amenities {
+#aboveAmenities {
   height: 60px;
 }
 
-.eastcard {
+/* Start of Amenities card */
+.amenitiesCard {
   border: 2px dotted #af0000;
   margin-bottom: 20px;
 }
 
-.eastcard h4 {
+.amenitiesCard h4 {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
 }
 
-.eastcard i {
+.amenitiesCard i {
   margin-right: 8px;
   font-size: 1.3rem;
   text-align: left;
 }
 
-.eastcard a {
+.amenitiesCard a {
   color: #af0000;
   font-style: italic;
   text-align: left;
@@ -363,10 +382,12 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-.eastcard a:hover {
+.amenitiesCard a:hover {
   color: #900000;
 }
+/* End of Amenities card */
 
+/* Start of Amenities' result table */
 .results-table {
   margin-bottom: 50px;
 }
@@ -378,7 +399,9 @@ tr:nth-child(even) {
 thead .table-header {
   background: #fcf1f1;
 }
+/* End of Amenities' result table */
 
+/* Start of Footer */
 .footer-div {
   padding-left: 0;
   padding-right: 0;
@@ -446,6 +469,7 @@ thead .table-header {
   display: block;
   margin-bottom: 10px;
 }
+/* End of Footer */
 
 @media (max-width: 767.98px) {
   .navbar-nav a:first-child {
@@ -469,7 +493,7 @@ thead .table-header {
     margin-top: 15px;
   }
   .dengue-symptoms {
-    height: 351px;
+    height: 355px;
   }
 
   .table-sm {
@@ -479,6 +503,6 @@ thead .table-header {
 
 @media (min-width: 1200px) {
   .dengue-treatment {
-    height: 351px;
+    height: 355px;
   }
 }
