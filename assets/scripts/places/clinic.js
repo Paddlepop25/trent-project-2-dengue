@@ -77,15 +77,19 @@ function loadClinicMarkers(googleData) {
     <p class="infoWindow-content">Rating: ${display.rating}</p>`
     });
 
-    google.maps.event.addListener(marker, "mouseover", function() {
-      marker.info.open(map, marker);
-    });
-    google.maps.event.addListener(marker, "mouseout", function() {
-      marker.info.close(map, marker);
-    });
-    // google.maps.event.addListener(marker, "click", function() {
-    //   marker.info.open(map, marker);
-    // });
+    let w = window.innerWidth;
+    if (w < 768) {
+      google.maps.event.addListener(marker, "click", function() {
+        marker.info.open(map, marker);
+      });
+    } else if (w >= 768) {
+      google.maps.event.addListener(marker, "mouseover", function() {
+        marker.info.open(map, marker);
+      });
+      google.maps.event.addListener(marker, "mouseout", function() {
+        marker.info.close(map, marker);
+      });
+    }
   }
 }
 
