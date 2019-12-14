@@ -9,29 +9,6 @@ Array.from(aTaginnavBarNav).forEach(e => {
   });
 });
 
-let randomMosquito = document.querySelector(".small-mosquito")
-
-function slapRandomMosquito() {
-  randomMosquito.addEventListener("mouseenter", function () {
-    document.body.style.cursor = "pointer";
-    // document.body.style.cursor = url("http://www.rw-designer.com/cursor-detail/20350");
-    // document.body.style.cursor = "assets/images/swatter.png";
-  })
-
-  randomMosquito.addEventListener("click", function () {
-    randomMosquito.src = "assets/images/splat.png";
-    randomMosquito.style.pointerEvents = "none";
-    document.body.style.cursor = "default";
-  })
-
-  randomMosquito.addEventListener("mouseout", function () {
-    document.body.style.cursor = "default";
-  })
-}
-
-slapRandomMosquito()
-// console.log(randomMosquito)
-
 // These 5 functions are from the dengue-clusters.js file:
 // getNorthDengue(), getSouthEastDengue(), getCentralDengue(), getSouthWestDengue(), getSouthWestDengue()
 
