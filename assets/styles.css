@@ -397,12 +397,12 @@ body {
   margin-bottom: 50px;
 }
 
-tr:nth-child(even) {
-  background: #fcf6f6;
-}
-
 thead .table-header {
   background: #fcf1f1;
+}
+
+tr:nth-child(even) {
+  background: #fcf6f6;
 }
 /* End of Amenities' result table */
 
