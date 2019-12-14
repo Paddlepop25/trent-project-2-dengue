@@ -12,7 +12,7 @@ function getLaundromats() {
     true
   );
 
-  xhr.onload = function() {
+  xhr.onload = function () {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
       loadLaundromatMarkers(response);
@@ -69,8 +69,10 @@ function loadLaundromatMarkers(googleData) {
       display["vicinity"] = display["vicinity"];
     }
 
+    let tableHeadIcon = '<i class="fas fa-tshirt"></i>';
+
     marker.info = new google.maps.InfoWindow({
-      content: `<h5 class="infoWindow-header">${display.name}</h5>
+      content: `<h5 class="infoWindow-header">${tableHeadIcon} ${display.name}</h5>
       <br>
     <p class="infoWindow-content">Address: ${display.vicinity}</p>
     <p class="infoWindow-content">Rating: ${display.rating}</p>`
@@ -78,14 +80,14 @@ function loadLaundromatMarkers(googleData) {
 
     let w = window.innerWidth;
     if (w < 768) {
-      google.maps.event.addListener(marker, "click", function() {
+      google.maps.event.addListener(marker, "click", function () {
         marker.info.open(map, marker);
       });
     } else if (w >= 768) {
-      google.maps.event.addListener(marker, "mouseover", function() {
+      google.maps.event.addListener(marker, "mouseover", function () {
         marker.info.open(map, marker);
       });
-      google.maps.event.addListener(marker, "mouseout", function() {
+      google.maps.event.addListener(marker, "mouseout", function () {
         marker.info.close(map, marker);
       });
     }
