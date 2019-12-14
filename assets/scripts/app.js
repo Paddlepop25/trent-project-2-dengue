@@ -20,19 +20,13 @@ function slapRandomMosquito() {
 
   randomMosquito.addEventListener("click", function () {
     randomMosquito.src = "assets/images/splat.png";
+    randomMosquito.style.pointerEvents = "none";
+    document.body.style.cursor = "default";
   })
-
-  if (randomMosquito.src === "assets/images/splat.png") {
-    // console.log("move on");
-  }
 
   randomMosquito.addEventListener("mouseout", function () {
     document.body.style.cursor = "default";
   })
-  // randomMosquito.addEventListener("click", function () {
-
-  // })
-
 }
 
 slapRandomMosquito()
