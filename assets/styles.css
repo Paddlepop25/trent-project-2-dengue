@@ -339,6 +339,20 @@ body {
   margin: 30px auto;
 }
 
+.small-mosquito {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  left: 20vw;
+}
+
+.small-mosquito:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
 /* Styling for clusters' infowindows */
 #cluster-infobox {
   line-height: 23px;
@@ -436,11 +450,11 @@ tr:nth-child(even) {
   margin-bottom: 0;
 }
 
-.footer-mosq {
+.small-mosq {
   width: 40px;
 }
 
-.footer-mosq:hover {
+.small-mosq:hover {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
