@@ -245,7 +245,7 @@ body {
 }
 
 .small-mosquito1:hover {
-  animation: shake 0.6s cubic-bezier(0.36, 0.3, 0.24, 0.47) both;
+  animation: shake 0.5s cubic-bezier(0.36, 0.3, 0.24, 0.47) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
@@ -355,6 +355,7 @@ body {
   margin: 30px auto;
 }
 
+/* Random mosquito 2 */
 .small-mosquito2 {
   width: 40px;
   height: 30px;
@@ -364,7 +365,7 @@ body {
 }
 
 .small-mosquito2:hover {
-  animation: shake 0.6s cubic-bezier(0.46, 0.2, 0.64, 0.2) both;
+  animation: shake 0.5s cubic-bezier(0.46, 0.2, 0.64, 0.2) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
@@ -481,7 +482,7 @@ tr:nth-child(even) {
 @keyframes shake {
   10%,
   90% {
-    transform: translate3d(-1px, -3px, 0);
+    transform: translate3d(-1px, -2px, 0);
   }
 
   20%,
