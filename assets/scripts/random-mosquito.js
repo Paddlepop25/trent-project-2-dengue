@@ -1,11 +1,11 @@
+// For slapping the buzzing mosquitos
+
 let randomMosquito1 = document.querySelector(".small-mosquito1");
 let randomMosquito2 = document.querySelector(".small-mosquito2");
 
 function slapRandomMosquito() {
   randomMosquito1.addEventListener("mouseenter", function() {
     document.body.style.cursor = "pointer";
-    // document.body.style.cursor = url("http://www.rw-designer.com/cursor-detail/20350");
-    // document.body.style.cursor = "assets/images/swatter.png";
   });
 
   randomMosquito1.addEventListener("click", function() {
@@ -20,8 +20,6 @@ function slapRandomMosquito() {
 
   randomMosquito2.addEventListener("mouseenter", function() {
     document.body.style.cursor = "pointer";
-    // document.body.style.cursor = url("http://www.rw-designer.com/cursor-detail/20350");
-    // document.body.style.cursor = "assets/images/swatter.png";
   });
 
   randomMosquito2.addEventListener("click", function() {

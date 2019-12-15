@@ -4,7 +4,7 @@ let aTaginnavBarNav = navBarNav.getElementsByTagName("a");
 let navBarCollapse = document.querySelector("#navbarNavAltMarkup");
 
 Array.from(aTaginnavBarNav).forEach(e => {
-  e.addEventListener("click", function (e) {
+  e.addEventListener("click", function(e) {
     navBarCollapse.classList.remove("show");
   });
 });
@@ -61,7 +61,7 @@ function initMap() {
     strokeWeight: 1
   });
 
-  map.data.addListener("click", function (event) {
+  map.data.addListener("click", function(event) {
     let myHTML = event.feature.getProperty("Description");
     let infoWindow = new google.maps.InfoWindow({
       content: `<div>${myHTML}</div>`
